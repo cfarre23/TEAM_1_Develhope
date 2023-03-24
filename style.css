@@ -311,6 +311,11 @@ body {
 }
 /* div_5 */
 
+.transition_div4_div5 {
+    width: 100%;
+    padding: 0px 0px;
+}
+
 .trade_anything {
     display: flex;
     align-items: center;
