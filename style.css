@@ -1,66 +1,147 @@
 /* main */
 
 /* div_1 */
+
 .navbar{
     display: flex;
-    justify-content: space-between;
+    gap: 3rem;
+    background-color: white;
+    font-family: kanit, sans-serif;
+    height: 2rem;
+}
+.div_cir_dot{
+    display: flex;
+    gap: 0.1rem;
+    align-items: center;
+}
+.green_dot{
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #31d0aa;
+    display: inline-block;
+}
+.cir_dot{
+    border-radius: 50%;
+    width: 0.25rem;
+    height: 0.25rem;
+    background-color: black;
+    display: inline-block;
+}
+.div_bnb{
+    display: flex;
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    color: #321967;
+    gap: 0.5rem;
+    height: 100%;
+    background-color: #eff4f5;
+    padding-right: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+.bnb_word{
+    width: 9rem;
+}
+.down_arrow{
+    width: 0.8rem;
+    background-color: white;
+}
+.btn_cwallect{
+    border-radius: 1.5rem;
+    background-color: #1fc7d4;
+    color: white;
+    padding: 1rem;
+    width: 7.5rem;
 }
 .sep1,.sep2{
     display: flex;
 }
 .sep1{
-    gap: 3.5rem;
+    gap: 1.4rem;
+}
+.sep2{
+    gap: 1.3rem;
 }
 .btn_\(\.\.\.{
     font-size: xx-large;
 }
 .img_beer{
-    width: 1.75rem;
-    height: 1.75rem;
+    width: 1.9rem;
 }
 img{
-    width: 1.6rem;
+    width: 1.8rem;
     background-color: white;
-    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .sec_1{
     display: flex;
     gap: 0.58rem;
+    justify-content: center;
+    align-items: center;
+}
+.img_globe:hover,.img_settings:hover,.div_bnb:hover,.btn_cwallect:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+.img_deer2:hover{
+    transform: scale(120%);
+    transition-delay: 0.5ms;
 }
 .sec_2{
     display: flex;
     gap: 1.5rem;
-    padding-top: 0.13rem;
 }
 .sec_3{
     display: flex;
     gap: 0.46rem;
-
+    justify-content: center;
+    align-items: center;
 }
 .api-price{
     font-weight: bolder;
     color: #7a6eaa;
-    padding-top: 0.3rem;
-    font-size: 0.94rem;
+    font-size: small;
 }
 .sec_4{
     display: flex;
-    gap: 1.2rem;
+    gap: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .btn_cwallect{
     font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .ps_word{
     font-size: larger;
     font-weight: bolder;
-    padding-top: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 button{
     background: none;
     color: #7a6eaa;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
 }
+
+button:hover{
+    cursor: pointer;
+    background-color: #b2b2b2;
+    border-radius: 0.5rem;
+}
+
 @media screen and (max-width: 768px){
 }
 @media screen and (max-width: 375px){
