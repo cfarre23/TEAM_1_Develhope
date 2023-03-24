@@ -1,7 +1,71 @@
 /* main */
 
 /* div_1 */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.sep1,.sep2{
+    display: flex;
+}
+.sep1{
+    gap: 3.5rem;
+}
+.btn_\(\.\.\.{
+    font-size: xx-large;
+}
+.img_beer{
+    width: 1.75rem;
+    height: 1.75rem;
+}
+img{
+    width: 1.6rem;
+    background-color: white;
+    border: 1px solid red;
+}
+.sec_1{
+    display: flex;
+    gap: 0.58rem;
+}
+.sec_2{
+    display: flex;
+    gap: 1.5rem;
+    padding-top: 0.13rem;
+}
+.sec_3{
+    display: flex;
+    gap: 0.46rem;
 
+}
+.api-price{
+    font-weight: bolder;
+    color: #7a6eaa;
+    padding-top: 0.3rem;
+    font-size: 0.94rem;
+}
+.sec_4{
+    display: flex;
+    gap: 1.2rem;
+}
+.btn_cwallect{
+    font-weight: bolder;
+}
+.ps_word{
+    font-size: larger;
+    font-weight: bolder;
+    padding-top: 0.3rem;
+}
+button{
+    background: none;
+    color: #7a6eaa;
+    font-weight: bold;
+    border: none;
+}
+@media screen and (max-width: 768px){
+}
+@media screen and (max-width: 375px){
+
+}
 /* div_2 */
 
 /* div_3 */
