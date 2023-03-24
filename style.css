@@ -113,6 +113,8 @@ h2 {
     color: #9A6AFF;
 }
 .img_trade img {
+    background-color: transparent;
+    border: 0px;
     width: 150px;
     height: 150px;
 }
