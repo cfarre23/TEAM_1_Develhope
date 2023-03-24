@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e9d859a-c7cd-4ab1-8016-42c5c02abb97" name="Changes" comment="">
+    <list default="true" id="9e9d859a-c7cd-4ab1-8016-42c5c02abb97" name="Changes" comment="Working on navbar">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/homepage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
@@ -57,8 +58,18 @@
       <workItem from="1679404076078" duration="37000" />
       <workItem from="1679404177287" duration="22000" />
       <workItem from="1679527950409" duration="3390000" />
-      <workItem from="1679613020815" duration="5275000" />
+      <workItem from="1679613020815" duration="5760000" />
+      <workItem from="1679648026019" duration="9215000" />
+      <workItem from="1679657619428" duration="2386000" />
     </task>
+    <task id="LOCAL-00001" summary="Working on navbar">
+      <created>1679618707772</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679618707772</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -74,5 +85,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Working on navbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on navbar" />
   </component>
 </project>
