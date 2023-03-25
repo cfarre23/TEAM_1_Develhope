@@ -5,7 +5,7 @@
 .navbar{
     display: flex;
     gap: 3rem;
-    background-color: white;
+    background-color: #27262c;
     font-family: kanit, sans-serif;
     height: 2rem;
 }
@@ -28,7 +28,10 @@
     background-color: black;
     display: inline-block;
 }
-.div_bnb{
+.scale_border{
+
+}
+#div_bnb{
     display: flex;
     border-radius: 2rem;
     justify-content: center;
@@ -44,16 +47,20 @@
 .bnb_word{
     width: 9rem;
 }
-.down_arrow{
+#down_arrow{
     width: 0.8rem;
     background-color: white;
 }
-.btn_cwallect{
+#btn_cwallect{
     border-radius: 1.5rem;
     background-color: #1fc7d4;
-    color: white;
+    color: #6b5b91;
     padding: 1rem;
     width: 7.5rem;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .sep1,.sep2{
     display: flex;
@@ -64,13 +71,13 @@
 .sep2{
     gap: 1.3rem;
 }
-.btn_\(\.\.\.{
+#btn_\(\.\.\.{
     font-size: xx-large;
 }
-.img_beer{
+#img_beer{
     width: 1.9rem;
 }
-img{
+.imgs{
     width: 1.8rem;
     background-color: white;
     display: flex;
@@ -83,11 +90,12 @@ img{
     justify-content: center;
     align-items: center;
 }
-.img_globe:hover,.img_settings:hover,.div_bnb:hover,.btn_cwallect:hover{
+#img_globe:hover,#img_settings:hover,#div_bnb:hover,#btn_cwallect:hover{
     opacity: 50%;
     cursor: pointer;
+
 }
-.img_deer2:hover{
+#img_deer2:hover{
     transform: scale(120%);
     transition-delay: 0.5ms;
 }
@@ -109,13 +117,6 @@ img{
 .sec_4{
     display: flex;
     gap: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.btn_cwallect{
-    font-weight: bolder;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -126,7 +127,7 @@ img{
     justify-content: center;
     align-items: center;
 }
-button{
+.buttons{
     background: none;
     color: #7a6eaa;
     font-weight: bold;
@@ -134,9 +135,10 @@ button{
     justify-content: center;
     align-items: center;
     border: none;
+    position: relative;
 }
 
-button:hover{
+.buttons:hover{
     cursor: pointer;
     background-color: #b2b2b2;
     border-radius: 0.5rem;
