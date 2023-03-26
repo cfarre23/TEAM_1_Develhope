@@ -1,0 +1,70 @@
+#earnpassive{
+    background-color: rgb(74, 58, 100);
+    color:white;
+}
+#earn{
+    color:rgb(129, 19, 180);
+}
+
+section#upperpart{
+    display: flex;
+}
+
+.content{
+    flex-basis: 200px;
+    border: 2px red solid;
+    flex: 1 1 50%;
+    align-self: center;
+    padding-bottom: 100px;
+    font-size: 150%;  
+}
+
+#space{
+    width: 20%;
+    height: 500px;
+}
+
+#explore{
+    background-color: rgb(45, 224, 224);
+    color:rgb(78, 68, 94);
+    font: bold;
+    width: 70px;
+    height: 30px;
+    border: 0px;
+}
+#learn{
+    color: rgb(154, 255, 255);
+    text-decoration: none;
+    font-size: 70%;
+}
+
+.images{
+    border: 2px red solid;
+    flex: 1 1 50%;
+    height: 430px;
+}
+
+img{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+#pieimg{
+    padding-top: 100px;
+    padding-right: 90px;
+}
+
+#topsyruptools{
+    
+}
+
+#syruptools{
+    display: flex;
+    justify-content: center;
+    font-size: 70%;
+}
+#topsyrup{
+    display: flex;
+    justify-content: center;
+}
