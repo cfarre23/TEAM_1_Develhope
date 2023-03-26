@@ -1,10 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e9d859a-c7cd-4ab1-8016-42c5c02abb97" name="Changes" comment="image tag and button tage fixed. Still working to get everything finsihed on before monday">
+    <list default="true" id="9e9d859a-c7cd-4ab1-8016-42c5c02abb97" name="Changes" comment="Navbar finished.">
+      <change afterPath="$PROJECT_DIR$/images/1387be74b2c4d1c58982a7b056f8e54e (1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/3037366 (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/3037366.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/3524636.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/56.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Aptos.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/CAKE_trade_anything.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Home_PancakeSwap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/OIP.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Web capture_25-3-2023_215345_pancakeswap.finance.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/div4_1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/div4_2a.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/golden-storage-production.s3.amazonaws.com_topic_images_1fe25e0930cc43f98b00da480754632d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/gs2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/images (1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/images.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/images.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pancakeswap-cake-token-symbol-vector-39141488.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pancakeswap.finance_.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fred_images/1387be74b2c4d1c58982a7b056f8e54e (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fred_images/3037366 (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fred_images/3037366.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fred_images/3524636.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fred_images/56.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fred_images/Aptos.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fred_images/CAKE_trade_anything.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fred_images/Home_PancakeSwap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fred_images/OIP.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fred_images/Web capture_25-3-2023_215345_pancakeswap.finance.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fred_images/div4_1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fred_images/div4_2a.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fred_images/golden-storage-production.s3.amazonaws.com_topic_images_1fe25e0930cc43f98b00da480754632d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fred_images/gs2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fred_images/images (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fred_images/images.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fred_images/images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fred_images/pancakeswap-cake-token-symbol-vector-39141488.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fred_images/pancakeswap.finance_.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/homepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,17 +68,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "list.type.of.created.stylesheet": "CSS",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -85,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679785559849</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Navbar finished.">
+      <created>1679842237783</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679842237783</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +151,7 @@
     <MESSAGE value="Almost done" />
     <MESSAGE value="image tag and" />
     <MESSAGE value="image tag and button tage fixed. Still working to get everything finsihed on before monday" />
-    <option name="LAST_COMMIT_MESSAGE" value="image tag and button tage fixed. Still working to get everything finsihed on before monday" />
+    <MESSAGE value="Navbar finished." />
+    <option name="LAST_COMMIT_MESSAGE" value="Navbar finished." />
   </component>
 </project>
