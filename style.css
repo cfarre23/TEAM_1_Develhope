@@ -4,10 +4,12 @@
 
 .navbar{
     display: flex;
-    gap: 3rem;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: #27262c;
     font-family: kanit, sans-serif;
-    height: 2rem;
+    height: 100%;
+    padding: 0.5rem;
 }
 .div_cir_dot{
     display: flex;
@@ -28,21 +30,20 @@
     background-color: black;
     display: inline-block;
 }
-.scale_border{
 
-}
 #div_bnb{
     display: flex;
     border-radius: 2rem;
     justify-content: center;
     align-items: center;
     font-weight: bolder;
-    color: #321967;
+    color: white;
     gap: 0.5rem;
-    height: 100%;
-    background-color: #eff4f5;
+    height: 60%;
+    background-color: #353547;
     padding-right: 0.3rem;
     padding-bottom: 0.3rem;
+    padding-top: 0.3rem;
 }
 .bnb_word{
     width: 9rem;
@@ -52,15 +53,16 @@
     background-color: white;
 }
 #btn_cwallect{
-    border-radius: 1.5rem;
+    border-radius: 2rem;
     background-color: #1fc7d4;
-    color: #6b5b91;
-    padding: 1rem;
-    width: 7.5rem;
+    color: #191626;
+    height: 60%;
     font-weight: bolder;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0.3rem;
+    margin-top: 0.2rem;
 }
 .sep1,.sep2{
     display: flex;
@@ -76,6 +78,9 @@
 }
 #img_beer{
     width: 1.9rem;
+}
+#img_beer:hover,.ps_word:hover{
+    cursor: pointer;
 }
 .imgs{
     width: 1.8rem;
@@ -93,8 +98,33 @@
 #img_globe:hover,#img_settings:hover,#div_bnb:hover,#btn_cwallect:hover{
     opacity: 50%;
     cursor: pointer;
-
 }
+.buttons{
+    color: #aa92ad;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    position: relative;
+    opacity: 70%;
+    background: none;
+}
+.buttons:hover{
+    cursor: pointer;
+    opacity: 10000000000%;
+}
+.scale_borders{
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+}
+.scale_borders:hover{
+    background-color: #353547;
+    transform: scalex(140%) scaley(115%);
+    border-radius: 0.7rem;
+    opacity: 60%;
+}
+
 #img_deer2:hover{
     transform: scale(120%);
     transition-delay: 0.5ms;
@@ -114,6 +144,9 @@
     color: #7a6eaa;
     font-size: small;
 }
+.api-price:hover, #img_beer:hover,.ps_word:hover{
+    cursor: pointer;
+}
 .sec_4{
     display: flex;
     gap: 1.5rem;
@@ -126,22 +159,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.buttons{
-    background: none;
-    color: #7a6eaa;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    position: relative;
-}
-
-.buttons:hover{
-    cursor: pointer;
-    background-color: #b2b2b2;
-    border-radius: 0.5rem;
 }
 
 @media screen and (max-width: 768px){
