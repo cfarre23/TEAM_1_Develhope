@@ -1,6 +1,9 @@
 /* main */
 
 /* div_1 */
+body{
+    font-family: Kanit, sans-serif;
+}
 
 .navbar{
     display: flex;
@@ -31,6 +34,7 @@
     display: inline-block;
 }
 .moon_is_made_of_pancakes{
+    position: absolute;
     display: flex;
     gap: 2rem;
     padding: 1rem;
@@ -41,25 +45,63 @@
     background-color: #1d1630;
 }
 .img_astronaut{
-    width: 30rem;
-    height: 30rem;
+    position: relative;
+    width: 34rem;
+    height: 34rem;
     border: 1px solid red;
     text-align: left;
+    margin-top: -8rem;
+    animation: astro 2.5s ease-in-out 0.33s infinite alternate;
+}
+@keyframes astro{
+    0%{left:0; top:0}
+    100%{left:0.5rem;top: 0.5rem}
+}
+#top_star{
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    top: -26.8rem;
+    right: -26rem;
+    animation: top_star 1.3s ease-in-out 0.33s infinite alternate;
+}
+@keyframes top_star {
+    0%{opacity:20%}
+    20%{opacity:40%}
+    40%{opacity:60%}
+    60%{opacity:80%}
+    80%{opacity:90%}
+    100%{opacity:100%}
+}
+.bottom_star{
+    position: relative;
+    width: 2.3rem;
+    height: 2.3rem;
+    top: -14rem;
+    right: -24.2rem;
+    animation: bottom_star 2s ease-in-out 0.33s infinite alternate;
+}
+@keyframes bottom_star {
+    0%{opacity:20%}
+    20%{opacity:40%}
+    40%{opacity:60%}
+    60%{opacity:80%}
+    80%{opacity:90%}
+    100%{opacity:100%}
 }
 .astro_pa{
 color: white;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-align: left;
 }
 .astro_word_div{
     flex-direction: column;
-    gap:;
 }
 .astro_heading{
     font-weight: bolder;
     font-size: 4rem;
     color: #9a6aff;
-
+    width: 80%;
 
 }
 .btn_cwallect2{
@@ -79,6 +121,9 @@ color: white;
     background-color: #1c152f;
     width: 4rem;
     font-weight: bold;
+}
+.btn_tc_div{
+    margin-top: 2.5rem;
 }
 
 #div_bnb{
