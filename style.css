@@ -1,15 +1,15 @@
 /* main */
 
-/* div_1 *./
+/* div_1 wallet bshadow=#1db1c0 bnb-shadow=#d7dbdc */
 
 .navbar{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    background-color: #27262c;
+    background-color: #191326;
     font-family: kanit, sans-serif;
-    height: 100%;
     padding: 0.5rem;
+    height: 100%;
+    width: 100%;
 }
 .div_cir_dot{
     display: flex;
@@ -30,6 +30,56 @@
     background-color: black;
     display: inline-block;
 }
+.moon_is_made_of_pancakes{
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    width: 100%;
+    left: 0;
+    right: 0;
+    border: 1px solid red;
+    background-color: #1d1630;
+}
+.img_astronaut{
+    width: 30rem;
+    height: 30rem;
+    border: 1px solid red;
+    text-align: left;
+}
+.astro_pa{
+color: white;
+    font-size: 1.3rem;
+    text-align: left;
+}
+.astro_word_div{
+    flex-direction: column;
+    gap:;
+}
+.astro_heading{
+    font-weight: bolder;
+    font-size: 4rem;
+    color: #9a6aff;
+
+
+}
+.btn_cwallect2{
+    padding: 1rem;
+    background-color: #1fc7d4;
+    border-radius: 0.8rem;
+    font-size: larger;
+    color: #191a2d;
+    width: 4rem;
+    font-weight: bold;
+}
+.btn_trade_now{
+    border: 0.1rem solid #1e92a2;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    color: #1e92a2;
+    background-color: #1c152f;
+    width: 4rem;
+    font-weight: bold;
+}
 
 #div_bnb{
     display: flex;
@@ -44,6 +94,7 @@
     padding-right: 0.3rem;
     padding-bottom: 0.3rem;
     padding-top: 0.3rem;
+    box-shadow:  0px 0.1rem #353547;
 }
 .bnb_word{
     width: 9rem;
@@ -52,7 +103,7 @@
     width: 0.8rem;
     background-color: white;
 }
-#btn_cwallect{
+.btn_cwallect{
     border-radius: 2rem;
     background-color: #1fc7d4;
     color: #191626;
@@ -63,6 +114,7 @@
     align-items: center;
     padding: 0.3rem;
     margin-top: 0.2rem;
+    box-shadow:  0px 0.1rem #1fc7d4;
 }
 .sep1,.sep2{
     display: flex;
@@ -155,6 +207,7 @@
 }
 .ps_word{
     font-size: larger;
+    color: white;
     font-weight: bolder;
     display: flex;
     justify-content: center;
