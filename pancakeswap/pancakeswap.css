@@ -1,9 +1,9 @@
 #earnpassive{
-    background-color: rgb(74, 58, 100);
+    background-color: rgb(82, 74, 96);
     color:white;
 }
-#earn{
-    color:rgb(129, 19, 180);
+.purple{
+    color:rgb(155, 100, 181);
 }
 
 section#upperpart{
@@ -12,13 +12,11 @@ section#upperpart{
 
 .content{
     flex-basis: 200px;
-    border: 2px red solid;
     flex: 1 1 50%;
     align-self: center;
     padding-bottom: 100px;
     font-size: 150%;  
 }
-
 #space{
     width: 20%;
     height: 500px;
@@ -37,34 +35,175 @@ section#upperpart{
     text-decoration: none;
     font-size: 70%;
 }
-
 .images{
-    border: 2px red solid;
     flex: 1 1 50%;
     height: 430px;
+    width: 400px;
+    position: relative;
+    top:0px;
+    left:0px;
 }
-
-img{
-    width: 500px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
+.image{
+    width: 400px;
 }
 #pieimg{
-    padding-top: 100px;
+    padding-top: 40px;
     padding-right: 90px;
+    position:relative;
+    animation-name: pieimg;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes pieimg{
+    0%{left:0px; top:0px;}
+    50%{left: 0px; top:20px;}
+    100%{left:0px; top: 0px;}
+}
+#stonksimg{
+    position:absolute;
+    top:35px;
+    left:20px;
+    animation-name: stonksimg;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes stonksimg{
+    0%{left:0px; top:0px;}
+    50%{left: 10px; top:20px;}
+    100%{left:0px; top: 0px;}
+}
+#folderimg{
+    position:absolute;
+    padding-top:20px;
+    left:10px;
+    animation-name: folderimg;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes folderimg{
+    0%{left:0px; top:0px;}
+    50%{left: 20px; top:15px;}
+    100%{left:0px; top: 0px;}
 }
 
-#topsyruptools{
-    
+.topsyruppools{
+    align-self: center;
+    height: 170px;
+    padding-left: 20%;
+    padding-right: 20%;
+    display: grid;
+    font-size: small;
+    gap: 5px;
+    grid-template-rows: 30px 70px 70px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-#syruptools{
-    display: flex;
-    justify-content: center;
+#line1{
+    color:rgb(155, 100, 181);
+}
+
+#syruppools{
     font-size: 70%;
 }
-#topsyrup{
+.topsyruppools #topsyruppoolstext{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#topsyruppoolstext{
+    font-size: medium;
+    height: 1ch;
+}
+button#topsyruppoolstext{
+    width: 40px;
+    height: 30px;
+    background-color: rgb(82, 74, 96);
+    color: grey;
+    border: 0px;
+}
+.topsyruppools #firstc{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.topsyruppools #secondc{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.topsyruppools #thirdc{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.topsyruppools #forthc{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.topsyruppools #fifthc{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.topsyruppools #sixthc{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.topsyruppools #seventhc{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.topsyruppools #eighthc{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.topsyruppools #ninethc{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.topsyruppools #tenthc{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+
+
+#winmillions{
+    background: linear-gradient(rgb(2, 49, 74), rgb(1, 14, 24)) ;
+    border: red solid 3px;
+}
+#frame{
+    color:white;
     display: flex;
-    justify-content: center;
+}
+#ball2{
+    border: 3px solid red;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    left:0px;
+    top:0px;
+    order: 1;
+    display: flex;
+    align-self: flex-end;
+}
+#ball4{
+    order: 2;
 }
