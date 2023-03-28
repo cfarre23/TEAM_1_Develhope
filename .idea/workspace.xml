@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e9d859a-c7cd-4ab1-8016-42c5c02abb97" name="Changes" comment="div3 almost done" />
+    <list default="true" id="9e9d859a-c7cd-4ab1-8016-42c5c02abb97" name="Changes" comment="div3 almost done">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/homepage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,7 +66,7 @@
       <workItem from="1679657619428" duration="2586000" />
       <workItem from="1679775825198" duration="11471000" />
       <workItem from="1679911410365" duration="8864000" />
-      <workItem from="1679920842285" duration="2659000" />
+      <workItem from="1679920842285" duration="6158000" />
     </task>
     <task id="LOCAL-00001" summary="Working on navbar">
       <created>1679618707772</created>
@@ -120,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679924612538</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="div3 almost done">
+      <created>1679925053029</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1679925053029</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
