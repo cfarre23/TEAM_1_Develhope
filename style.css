@@ -18,12 +18,13 @@ body{
     width: 100%;
     height: 100%;
 }
+#options1{
 
+}
 .options{
-    visibility: hidden;
     background-color: #191326;
     padding: 1.4rem;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 1.7rem;
     position: absolute;
@@ -60,17 +61,21 @@ body{
     left: 43rem;
 }
 #options7{
-    visibility: visible;
+    visibility: hidden;
     width: 11rem;
-    left: 36.5rem;
+    left: 47rem;
     border-radius: 0;
+
 }
 /* Style the select tag */
 #select {
-    width: 5rem;
+    width: 10rem;
     overflow-y: auto;
     background-color: #191326;
-    color: white;
+    color: #aa92ad;
+}
+.option{
+    padding: 3rem;
 }
 
 /* Style the scrollbar */
@@ -283,10 +288,7 @@ color: white;
     opacity: 70%;
     background: none;
 }
-.buttons:hover{
-    cursor: pointer;
-    opacity: 10000000000%;
-}
+
 .scale_borders{
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
@@ -296,6 +298,7 @@ color: white;
     transform: scalex(140%) scaley(115%);
     border-radius: 0.7rem;
     opacity: 60%;
+    cursor: pointer;
 }
 
 #img_deer2:hover{
@@ -340,6 +343,12 @@ color: white;
 
 }
 
+
+
+
+
+
+
 /* div_2 */
 
 /* div_3 */
@@ -353,7 +362,7 @@ body {
     background: linear-gradient(180deg,#09070c 22%,#201335 100%);
     padding-top: 48px;
     padding-bottom: 48px;
-    margin: 0px;
+    margin: 0;
     box-sizing: border-box;
 }
 .div4_container {
