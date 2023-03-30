@@ -2,27 +2,27 @@
     background-color: rgb(82, 74, 96);
     color:white;
 }
-.purple{
+#earnpassive .purple{
     color:rgb(155, 100, 181);
 }
 
-section#upperpart{
+#earnpassive section#upperpart{
     display: flex;
 }
 
-.content{
+#earnpassive .content{
     flex-basis: 200px;
     flex: 1 1 50%;
     align-self: center;
     padding-bottom: 100px;
     font-size: 150%;  
 }
-#space{
+#earnpassive #space{
     width: 20%;
     height: 500px;
 }
 
-#explore{
+#earnpassive #explore{
     background-color: rgb(45, 224, 224);
     color:rgb(78, 68, 94);
     font: bold;
@@ -30,12 +30,12 @@ section#upperpart{
     height: 30px;
     border: 0px;
 }
-#learn{
+#earnpassive #learn{
     color: rgb(154, 255, 255);
     text-decoration: none;
     font-size: 70%;
 }
-.images{
+#earnpassive .images{
     flex: 1 1 50%;
     height: 430px;
     width: 400px;
@@ -43,7 +43,7 @@ section#upperpart{
     top:0px;
     left:0px;
 }
-.image{
+#earnpassive .image{
     width: 400px;
 }
 #pieimg{
@@ -86,7 +86,7 @@ section#upperpart{
     100%{left:0px; top: 0px;}
 }
 
-.topsyruppools{
+#earnpassive .topsyruppools{
     align-self: center;
     height: 170px;
     padding-left: 20%;
@@ -98,85 +98,85 @@ section#upperpart{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-#line1{
+#earnpassive #line1{
     color:rgb(155, 100, 181);
 }
 
-#syruppools{
+#earnpassive #syruppools{
     font-size: 70%;
 }
-.topsyruppools #topsyruppoolstext{
+#earnpassive .topsyruppools #topsyruppoolstext{
     grid-column-start: 1;
     grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 2;
 }
-#topsyruppoolstext{
+#earnpassive #topsyruppoolstext{
     font-size: medium;
     height: 1ch;
 }
-button#topsyruppoolstext{
+#earnpassive button#topsyruppoolstext{
     width: 40px;
     height: 30px;
     background-color: rgb(82, 74, 96);
     color: grey;
     border: 0px;
 }
-.topsyruppools #firstc{
+#earnpassive .topsyruppools #firstc{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
 }
-.topsyruppools #secondc{
+#earnpassive .topsyruppools #secondc{
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
 }
-.topsyruppools #thirdc{
+#earnpassive .topsyruppools #thirdc{
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
 }
-.topsyruppools #forthc{
+#earnpassive .topsyruppools #forthc{
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 3;
 }
-.topsyruppools #fifthc{
+#earnpassive .topsyruppools #fifthc{
     grid-column-start: 5;
     grid-column-end: 6;
     grid-row-start: 2;
     grid-row-end: 3;
 }
-.topsyruppools #sixthc{
+#earnpassive .topsyruppools #sixthc{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
 }
-.topsyruppools #seventhc{
+#earnpassive .topsyruppools #seventhc{
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
 }
-.topsyruppools #eighthc{
+#earnpassive .topsyruppools #eighthc{
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
 }
-.topsyruppools #ninethc{
+#earnpassive .topsyruppools #ninethc{
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 3;
     grid-row-end: 4;
 }
-.topsyruppools #tenthc{
+#earnpassive .topsyruppools #tenthc{
     grid-column-start: 5;
     grid-column-end: 6;
     grid-row-start: 3;
@@ -189,11 +189,11 @@ button#topsyruppoolstext{
     background: linear-gradient(rgb(2, 49, 74), rgb(1, 14, 24)) ;
     border: red solid 3px;
 }
-#frame{
+#winmillions #frame{
     color:white;
     display: flex;
 }
-#ball2{
+#winmillions #ball2{
     border: 3px solid red;
     width: 400px;
     height: 400px;
@@ -204,6 +204,6 @@ button#topsyruppoolstext{
     display: flex;
     align-self: flex-end;
 }
-#ball4{
+#winmillions #ball4{
     order: 2;
 }
