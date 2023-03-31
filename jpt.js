@@ -21,9 +21,7 @@ buttons.forEach((button,index) =>{
     });
 
     divs.addEventListener('mouseout', () => {
-        timeoutId = setTimeout(() => {
             hideBoth();
-        }, 0);
     });
 
     // Function to hide the div
