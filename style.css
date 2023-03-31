@@ -920,3 +920,119 @@ body {
 /* div_9 */
 
 /* div_10 */
+#div10 {
+    background: #27262c;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    padding-top: 50px;
+}
+
+#div10 .tenthdiv {
+    width: 100%,1200px;
+    display: flex;
+    flex-direction: column;
+}
+
+#div10 .content {
+    order: 2,1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    float: left;
+}
+
+#div10 .contentlist {
+    list-style: none;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+}
+
+#div10 #about {
+    color: #9a6aff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: list-item;
+    
+}
+
+#div10 .about-info {
+    font-size: 16px;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+    display: list-item;
+}
+
+#div10 .contacted {
+    color: #ffb237;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    font-weight: 400;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+#div10 .frombrand {
+    color: #f4eeff;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px;
+    text-decoration: none;
+    
+}
+
+#div10 #iconpage {
+    border-bottom: 1px solid #383241;
+    display: flex;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+}
+
+#div10 .socials_icon {
+    fill:  #b8add2;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    line-height: 1.5;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+#div10 .pancklogo {
+    width: 160px;
+    fill: #f4eeff;
+}
+
+#div10 #announcements {
+    position: relative;
+}
+
+#div10 .langs {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #27262c;
+    padding: 16px;
+    overflow: hidden;
+    z-index: 10;
+    border-radius: 4px;
+
+}
+
+#div10 .translation-lang {
+    font-size: 16px;
+    color: #b8add2;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
