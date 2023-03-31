@@ -56,17 +56,25 @@ body{
     visibility: hidden;
     left: 27.7rem;
     width: 15.3rem;
+
 }
 #options6{
     visibility: hidden;
-    left: 43rem;
+    display: none;
+    float: right;
+    position: static;
+    margin-right: 7rem;
+
 }
 
 #options7{
-    visibility: visible;
+    visibility: hidden;
+    display: flex;
     width: 11rem;
-    left: 47rem;
+    margin-right: 1.5rem;
+    float: right;
     border-radius: 0;
+    position: static;
 
 }
 /* Style the select tag */
@@ -250,7 +258,7 @@ color: white;
     padding-right: 0.3rem;
     padding-bottom: 0.3rem;
     padding-top: 0.3rem;
-    box-shadow:  0px 0.1rem #353547;
+    box-shadow:  0 0.1rem #353547;
 }
 .bnb_word{
     width: 9rem;
@@ -268,9 +276,9 @@ color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.3rem;
+    padding: 0.3rem 0.6rem;
     margin-top: 0.2rem;
-    box-shadow:  0px 0.1rem #1fc7d4;
+    box-shadow:  0 0.1rem #1fc7d4;
 }
 .sep1,.sep2{
     display: flex;
