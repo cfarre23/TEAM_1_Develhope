@@ -8,7 +8,7 @@ body{
 .navbar{
     display: flex;
     justify-content: space-between;
-    background-color: #191326;
+    background-color: #27262c;
     font-family: kanit, sans-serif;
     padding: 0.5rem;
     height: 100%;
@@ -35,7 +35,7 @@ body{
     top: 3.46rem;
     left: 11.5rem;
     border-radius: 1.2rem;
-    color: #aa92ad;
+    color: #b8add2;
 }
 #options2{
     visibility: hidden;
@@ -82,7 +82,7 @@ body{
     width: 10rem;
     overflow-y: auto;
     background-color: #191326;
-    color: #aa92ad;
+    color: #b8add2;
 }
 .option{
     padding: 3rem;
@@ -95,7 +95,7 @@ body{
 }
 
 #select::-webkit-scrollbar-thumb {
-    background-color: #aa92ad;
+    background-color: #b8add2;
     border-radius: 1rem;
     width: 0.8rem;
 }
@@ -122,7 +122,7 @@ body{
     border-radius: 50%;
     width: 0.25rem;
     height: 0.25rem;
-    background-color: #aa92ad;
+    background-color: #b8add2;
     display: inline-block;
 }
 @media screen and (max-width: 1000px) {
@@ -251,7 +251,7 @@ color: white;
     justify-content: center;
     align-items: center;
     font-weight: bolder;
-    color: white;
+    color: #afabbd;
     gap: 0.5rem;
     height: 60%;
     background-color: #353547;
@@ -263,10 +263,7 @@ color: white;
 .bnb_word{
     width: 9rem;
 }
-#down_arrow{
-    width: 0.8rem;
-    background-color: white;
-}
+
 .btn_cwallect{
     border-radius: 2rem;
     background-color: #1fc7d4;
@@ -292,16 +289,21 @@ color: white;
 
 #img_beer{
     width: 1.9rem;
+
 }
 #img_beer:hover,.ps_word:hover{
     cursor: pointer;
 }
 .imgs{
     width: 1.8rem;
-    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+#img_globe{
+    border: none;
+    background: none;
 }
 .sec_1{
     display: flex;
@@ -314,7 +316,7 @@ color: white;
     cursor: pointer;
 }
 .buttons{
-    color: #aa92ad;
+    color: #b8add2;
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -323,6 +325,8 @@ color: white;
     position: relative;
     opacity: 70%;
     background: none;
+    width: 3rem;
+    font-size: 0.98rem;
 }
 
 .scale_borders{
@@ -353,7 +357,7 @@ color: white;
 }
 .api-price{
     font-weight: bolder;
-    color: #aa92ad;
+    color: #b8add2;
 }
 .api-price:hover, #img_beer:hover,.ps_word:hover{
     cursor: pointer;
@@ -365,9 +369,9 @@ color: white;
     align-items: center;
 }
 .ps_word{
-    font-size: larger;
-    color: white;
-    font-weight: bolder;
+    font-size: 1.2rem;
+    color: #e4e4e4;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
