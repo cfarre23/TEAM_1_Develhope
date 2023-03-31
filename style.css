@@ -12,8 +12,10 @@ body{
     font-family: kanit, sans-serif;
     padding: 0.5rem;
     height: 100%;
-
+    left: 0;
+    right: 0;
 }
+
 .opt_kids{
     width: 100%;
     height: 100%;
@@ -59,18 +61,23 @@ body{
     visibility: hidden;
     left: 43rem;
 }
+
 #options7{
     visibility: visible;
     width: 11rem;
-    left: 36.5rem;
+    left: 47rem;
     border-radius: 0;
+
 }
 /* Style the select tag */
 #select {
-    width: 5rem;
+    width: 10rem;
     overflow-y: auto;
     background-color: #191326;
-    color: white;
+    color: #aa92ad;
+}
+.option{
+    padding: 3rem;
 }
 
 /* Style the scrollbar */
@@ -110,16 +117,42 @@ body{
     background-color: #aa92ad;
     display: inline-block;
 }
+@media screen and (max-width: 1000px) {
+    .astro_enclosure1{
+        padding: 0;
+    }
+    .astro_enclosure2{
+        padding: 0;
+    }
+
+}
 .moon_is_made_of_pancakes{
-    position: absolute;
     display: flex;
     gap: 2rem;
     padding: 1rem;
     width: 100%;
-    left: 0;
-    right: 0;
     border: 1px solid red;
     background-color: #1d1630;
+    max-width: 1100px;
+}
+.astro_enclosure1{
+    padding: 2rem;
+    border: 1px solid green;
+    background-color: #1d1630;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.astro_enclosure2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 5rem;
+    border: 1px solid blue;
+    width: 1100px;
+    background-color: inherit;
 }
 .img_astronaut{
     position: relative;
@@ -283,10 +316,7 @@ color: white;
     opacity: 70%;
     background: none;
 }
-.buttons:hover{
-    cursor: pointer;
-    opacity: 10000000000%;
-}
+
 .scale_borders{
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
@@ -296,6 +326,7 @@ color: white;
     transform: scalex(140%) scaley(115%);
     border-radius: 0.7rem;
     opacity: 60%;
+    cursor: pointer;
 }
 
 #img_deer2:hover{
@@ -340,6 +371,12 @@ color: white;
 
 }
 
+
+
+
+
+
+
 /* div_2 */
 
 /* div_3 */
@@ -353,7 +390,7 @@ body {
     background: linear-gradient(180deg,#09070c 22%,#201335 100%);
     padding-top: 48px;
     padding-bottom: 48px;
-    margin: 0px;
+    margin: 0;
     box-sizing: border-box;
 }
 .div4_container {
