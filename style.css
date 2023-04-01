@@ -4,21 +4,60 @@
 body{
     font-family: Kanit, sans-serif;
 }
-
+:root{
+    --wavy_line: linear-gradient(to right,#09070e, #171226)
+}
 .navbar{
     display: flex;
     justify-content: space-between;
     background-color: #27262c;
     font-family: kanit, sans-serif;
-    padding: 0.5rem;
-    height: 100%;
-    left: 0;
-    right: 0;
+    padding: 0.7rem;
+    height: 2.3rem;
+}
+@media screen and (max-width: 1130px) {
+    #options1,#options2,#options3,#options4,#options5{
+        top: 4.7rem;
+    }
+    .navbar {
+
+    }
+    .btn_cwallect{
+        font-size: 0.97rem;
+    }
+}
+@media screen and (max-width: 1110px){
+    .btn_cwallect{
+
+    }
+}
+@media  screen and (max-width: 1105px) {
+    #sec_3{
+        display: none;
+    }
+    #ps_word{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 851px) {
+    #btn_trade, #btn_earn,#btn_trade,#btn_nft,#btn_win,#div_cir_dot {
+        display: none;
+    }
+    #img_beer{
+        width: 1.5rem;
+    }
+}
+#paint0_linear_light{
+    stop-color: ;
 }
 
 .opt_kids{
     width: 100%;
     height: 100%;
+}
+#sec{
+    display: flex;
 }
 
 .options{
@@ -32,8 +71,8 @@ body{
     border: 1px solid red;
     width: 15.6rem;
     height: auto;
-    top: 3.46rem;
-    left: 11.5rem;
+    left: 10.7rem;
+    top:  3.7rem;
     border-radius: 1.2rem;
     color: #b8add2;
 }
@@ -92,6 +131,28 @@ body{
 #select::-webkit-scrollbar {
     width: 0.5rem;
 
+}
+#potteryDiv{
+    display: flex;
+    justify-content: space-between;
+}
+#pottery{
+    border: 0.15rem solid #31d0aa;
+    border-radius: 1.4rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    font-size: 0.88rem;
+    color: #31d0aa;
+}
+#wavy_line{
+   fill: var(--wavy_line);
+}
+#arrow{
+    fill: green;
+}
+#perpetual, #bridge,#blog ,#docs{
+    display: flex;
+    justify-content: space-between;
 }
 
 #select::-webkit-scrollbar-thumb {
@@ -261,7 +322,7 @@ color: white;
     box-shadow:  0 0.1rem #353547;
 }
 .bnb_word{
-    width: 9rem;
+    width: auto;
 }
 
 .btn_cwallect{
@@ -276,6 +337,7 @@ color: white;
     padding: 0.3rem 0.6rem;
     margin-top: 0.2rem;
     box-shadow:  0 0.1rem #1fc7d4;
+    width: auto;
 }
 .sep1,.sep2{
     display: flex;
@@ -288,7 +350,8 @@ color: white;
 }
 
 #img_beer{
-    width: 1.9rem;
+    width: 1.5rem;
+    height: 1.5rem;
 
 }
 #img_beer:hover,.ps_word:hover{

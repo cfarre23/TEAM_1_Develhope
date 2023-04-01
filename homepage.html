@@ -14,38 +14,37 @@
 </head>
 <body>
     <div class="navbar" >
-      <div class="sep1">
+      <div  class="sep1">
           <div class="sec_1">
               <img  class="imgs" id="img_beer" src="images/beer.svg">
-              <span class="ps_word">PancakeSwap</span>
+              <span id="ps_word" class="ps_word">PancakeSwap</span>
           </div>
-        <button class="buttons" id="btn_trade">Trade <span class="scale_borders"></span></button>
+        <buttons class="buttons" id="btn_trade">Trade <span class="scale_borders"></span></buttons>
           <div class="sec_2">
-        <div class="options">
+        <div class="options" id="options1">
           <span class="opt_kids">Swap</span>
           <span class="opt_kids">Liquid</span>
           <span class="opt_kids">Liquidity</span>
-          <span class="opt_kids">Perpetual</span>
-          <span class="opt_kids">Bridge</span>
+          <span class="opt_kids" id="perpetual">Perpetual <img src="images/l-arrow.svg"></span>
+          <span class="opt_kids" id="bridge">Bridge <img src="images/l-arrow.svg"></span>
         </div>
         <button class="buttons" id ="btn_earn">Earn <span class="scale_borders"></span></button>
         <div class="options" id="options2">
           <span class="opt_kids">Farms</span>
           <span class="opt_kids">Pools</span>
         </div>
-        <button class="buttons" id="btn_win">Win <span class="scale_borders"></span></button>
+        <button class="buttons" id="btn_win">Win</span><span class="green_dot"><span class="scale_borders"></span></button>
         <div class="options" id="options3">
           <span class="opt_kids">Trading Competition</span>
           <span class="opt_kids">Prediction(BETA)</span>
           <span class="opt_kids">Lottery</span>
-          <span class="opt_kids">Pottery(BETA)</span>
+          <span class="opt_kids" id="potteryDiv">Pottery (BETA) <span id="pottery">POT OPEN</span></span>
         </div>
         <button class="buttons" id="btn_nft">NFT <span class="scale_borders"></span></button><button class="buttons" id="btn_(... .)"><span class="scale_borders"></span>
-          <span class="div_cir_dot">
-          <span class="cir_dot"></span>
-          <span class="cir_dot"></span>
-          <span class="cir_dot"></span>&nbsp;
-          <span class="green_dot"></span>
+          <span id="div_cir_dot" class="div_cir_dot">
+              <span class="cir_dot"></span>
+              <span class="cir_dot"></span>
+              <span class="cir_dot"></span>&nbsp;
           </span>
         </button>
         <div class="options" id="options4">
@@ -58,20 +57,20 @@
           <span class="opt_kids">IFO</span>
           <span class="opt_kids">Voting</span>
           <span class="opt_kids">Leaderboard</span>
-          <span class="opt_kids">Block</span>
-          <span class="opt_kids">Docs</span>
+          <span class="opt_kids" id="blog">Blog <img  src="images/l-arrow.svg"></span>
+          <span class="opt_kids" id="docs">Docs <img src="images/l-arrow.svg"> </span>
         </div>
       </div>
       </div>
       <div class="sep2">
-      <div class="sec_3">
+      <div id="sec_3" class="sec_3">
         <img class="imgs" id="img_deer2" src="/images/7186.png">
         <span class="api-price">$1.234</span>
       </div>
       <div class="sec_4">
         <img  class="imgs" id="img_globe" src="images/globe.svg">
         <img  class="imgs" id="img_settings" src="images/settings.svg">
-        <span id="div_bnb"><img  class="imgs" src="images/56.png"><span class="bnb_word">BNB Smart Chain</span> <img class="imgs" id="down_arrow" src="images/down arrow.svg"></span>
+        <span id="div_bnb"><img  class="imgs" src="images/56.png"><p class="bnb_word">BNB Smart Chain</p> <img class="imgs" id="down_arrow" src="images/down arrow.svg"></span>
       </div>
         <div class="btn_cwallect">Connect Wallet</div>
     </div>
@@ -133,7 +132,19 @@
         </div>
         </div>
         </div>
-         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <svg viewBox="0 0 1660 339" id="wavy_line" width="100%" color="text" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="gradient" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="#0a080f"/>
+                    <stop offset="100%" stop-color="#191329"/>
+                </linearGradient>
+            </defs>
+            <path d="M0 304.5C267.5 290.522 520.5 167.023 804 167.023C1104 167.023 1358.83 0.5 1660 0.5V339H0V304.5Z" fill="url(#gradient)"/>
+        </svg>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
         <div class="div4_parent_container">
           <div class="div4_container">
               <div class="div4">
