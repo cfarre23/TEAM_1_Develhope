@@ -465,7 +465,7 @@ body {
     background: linear-gradient(180deg,#09070c 22%,#201335 100%);
     padding-top: 48px;
     padding-bottom: 48px;
-    margin: 0;
+    margin: 0px;
     box-sizing: border-box;
 }
 .div4_container {
@@ -572,7 +572,7 @@ body {
     justify-content: flex-end;
     margin-top: 64px;
 }
-#div4_box_a_text1 {
+.div4_box_a_text1 {
     color: #F4EEFF;
     font-size: 40px;
     font-weight: 600;
@@ -615,6 +615,27 @@ body {
     top: 24px;
     right:24px;
 }
+@media screen and (max-width: 851px) {
+.div4_box1 {
+    flex-direction: column;
+}
+.div4_box2 {
+    margin-bottom: 16px;
+    margin-right: 0px;
+}
+.div4_box5 {
+    margin-top:0px;
+    justify-content: flex-start;
+}
+.div4_box4 {
+    max-height: 118px;
+}
+}
+@media screen and (max-width: 968px) {
+#div4_text1, #div4_text2, .div4_box_a_text1, #div4_box_a_text1a, #div4_box_a_text2a, #div4_box_a_text3a {
+    font-size: 32px;
+}
+}   
 
 /* div_5 */
 .transition_div4_div5 {
