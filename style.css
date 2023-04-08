@@ -503,7 +503,9 @@ body{
 /* div_2 */
 
 /* div_3 */
-
+.div3-div4-svg {
+    display: block;
+}
 /* div_4 */
 
 body {
