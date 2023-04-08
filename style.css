@@ -4,8 +4,15 @@
 body{
     font-family: Kanit, sans-serif;
 }
+#body {
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+}
 *{
     font-family: Kanit, sans-serif;
+    border: 1px solid green;
 }
 :root{
     --wavy_line: linear-gradient(to right,#09070e, #171226)
@@ -185,23 +192,24 @@ body{
     display: flex;
     border: 1px solid red;
     background-color: #1d1630;
-    max-width: 1130px;
 }
 .astro_enclosure1{
+    position: relative;
     border: 1px solid green;
     background-color: #1d1630;
     display: flex;
     justify-content: center;
     align-items: center;
-    height:150%;
-    padding: 1.6rem;
+    margin: 0;
+    padding: 111px;
 }
 
 .astro_word_div{
     border: 1px solid red;
-    width: 50%;
-    height: 100%;
+    width: auto;
     letter-spacing: 0.03rem;
+    display: flex;
+    flex-direction: column;
 }
 .astro_pa{
     color: white;
@@ -243,14 +251,15 @@ body{
 }
 
 .animation_div{
-    width: 50%;
+    width: 65%;
     height: 100%;
     position: relative;
+
 }
 .img_astronaut{
     position: relative;
-    width: 580px;
-    height: 580px;
+    width: 100%;
+    height: 100%;
     border: 1px solid red;
     margin-top: -7.9rem;
     animation: astro 2.5s ease-in-out 0.33s infinite alternate;
@@ -797,7 +806,7 @@ body {
 }
 .trade-box1{
     height: 430px;
-    width: 428;
+    width: 428px;
 }
 .animation_trade{
     position: relative;
