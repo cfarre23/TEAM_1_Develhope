@@ -875,11 +875,44 @@ body {
     .bigger-box > .box{
         display: flex;
         flex-direction: column-reverse;
+        align-items: flex-end;
+        -webkit-box-pack: center;
+        justify-content: center;
+    }
+    .writing_trade{
+        max-width: 480px;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+    }
+    .text_trade{
+        font-size: 32px;
+        color: #F4EEFF;
+        margin-bottom: 24px;
+        font-weight: 600;
+        line-height: 1.1;
+    }
+    .subtext_trade{
+        margin-bottom: 24px;
+        color: #B8ADD2;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
     }
     .trade-box1{
         width: 192px;
         height: 192px;
         margin-bottom: 24px;
+    }
+    .animation_trade{
+        position: relative;
+        max-height: 512px;
+    }
+    .animation_trade img{
+        position: absolute;
+        top:0;
+        left: 0;
+        height: 192px;
     }
 
 }
