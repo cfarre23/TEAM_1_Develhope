@@ -1034,6 +1034,323 @@ body {
 
 /* div_7 */
 
+#div7winmillions{
+    background: linear-gradient(rgb(2, 49, 74), rgb(1, 14, 24));
+    border: rgb(2, 49, 74) solid 1px;
+    width: 100vw;
+    height: 800px;
+    position: relative;
+    }
+       #div7card{
+           display: flex;
+           justify-content: center;
+           margin: 7%;
+       }
+    
+       #div7frame{
+           background-color: rgb(17, 12, 12, 0.5);
+           backdrop-filter:blur(10px);
+           width: 70%;
+           height: 600px;
+           border: 1px solid rgb(43, 7, 60);
+           border-radius: 90px;
+           color: white;    
+           text-align: center;
+           display: grid;
+           grid-template-rows: 3fr 6fr;
+           z-index: 1;
+           }
+    
+        #div7caption1{
+         color: white;
+         opacity: 1;
+         display: grid;
+         grid-template-rows: 2fr 1fr 1fr;
+         width: 100%;
+        }
+            #div7h1{
+               display: flex;
+               justify-content: center;
+               margin-bottom: 40px;
+            }
+            #div7p1{
+               color:gray;
+               height: 1ch;
+               display: flex;
+               justify-content: center;
+               margin-top: 15px;
+               margin-bottom: 0px;
+            }
+            #div7p2{
+               color:gray;
+               height: 1ch;
+               display: flex;
+               justify-content: center;
+               margin:0px;
+            }
+    
+    
+    
+        #div72cards{
+           display: flex;
+           justify-content: center;
+           padding: 10px;
+           margin-bottom: 15px;
+       }
+    
+            #div7yellowcard{
+            width: 280px;
+            height: 350px;
+            background: linear-gradient(rgb(252, 194, 47), rgb(253, 223, 89));
+            border-bottom: 4px solid rgb(252, 194, 47);
+            border-radius: 25px;
+            rotate: -5deg;
+            margin-right: 12px;
+            display:flex;
+            flex-direction: column;
+            }
+                #div7magicball{
+                   width:40px;
+                   height: 45px;
+                   align-self: flex-end;
+                   rotate: -4deg;
+                   margin: 20px;
+                   margin-bottom: 5px;
+                   align-self: flex-end;
+                }
+                #div7yctext{
+                   color:rgb(99, 56, 138);
+                   margin: 5px;
+                }
+                    #div7yctext1{
+                     font-size: 15px;
+                     margin: 10px; 
+                     text-align: left;
+                    }
+                    #div7yctext2{
+                       font-size: 40px;
+                       margin: 10px;
+                       text-align: left;
+                    }
+                    #div7yctext3{
+                     font-size: 15px;
+                     margin: 10px; 
+                     text-align: left;
+                    }
+                    #div7yctext4{
+                     font-size: 15px;
+                     margin-left: 10px; 
+                     margin-top: 15px;
+                     margin-bottom: 15px;
+                     text-align: left;
+                    }
+              
+    
+            #div7purplecard{
+            width: 280px;
+            height: 350px;
+            background-color: rgb(99, 56, 138);
+            border-radius: 25px;
+            rotate: 3deg;
+            margin-left: 12px;
+            display: flex;
+            flex-direction: column;
+            }   
+                #div7ticket{
+                   align-self: flex-end;
+                   margin: 20px;
+                   margin-bottom: 5px;
+                }
+                #div7pctext2{
+                   color:rgb(253, 223, 89);
+                   font-size: 40px;
+                   text-align: left;
+                   margin: 10px; 
+                }
+                #div7pctext1, #div7pctext3{
+                   color: white;
+                   font-size: 15px;
+                   margin: 10px; 
+                   margin-top: 5px;
+                   margin-bottom: 5px;
+                   text-align: left;
+                }
+                #div7pctext4{
+                   font-size: 15px;
+                   margin-left: 10px; 
+                   margin-top: 15px;
+                   margin-right: 10px;
+                   margin-bottom: 15px;
+                   text-align: left;
+                
+                }
+    
+            #div7play, #div7buytickets{
+            background-color: rgb(62, 186, 186);
+            border: 0px;
+            width: 220px;
+            height: 40px;
+            border-radius: 10px;
+            color: black;
+            align-self: center;
+            margin: 30px;
+            }  
+    
+    
+                 #div7ball2{
+                 width: 400px;
+                 height: 400px;
+                 position: absolute;
+                 left:870px;
+                 top:0px;
+                 order: 1;
+                 display: flex;
+                 align-self: flex-end;
+                 animation-name: ball2;
+                 animation-duration: 2s;
+                 animation-delay: 3s;
+                 animation-iteration-count: infinite;
+                  }
+                  @keyframes ball2{
+                 0%{left:900px; top:0px;}
+                 50%{left: 902px; top:10px;}
+                 100%{left:900px; top: 0px;}
+                  }
+                  #div7ball7{
+                 width: 510px;
+                 height: 500px;
+                 position: absolute;
+                 top: 0px;
+                 left: 770px;
+                 animation-name: ball7;
+                 animation-duration: 4s;
+                 animation-delay: 3s;
+                 animation-iteration-count: infinite;
+                  }
+                  @keyframes ball7{
+                 0%{left:805px; top:0px;}
+                 50%{left: 840px; top:10px;}
+                 100%{left:805px; top: 0px;}
+                  }
+                  #div7ball4{
+                 position: absolute;
+                 top: 0px;
+                 left:720px;
+                 width: 510px;
+                 height: 500px;
+                 animation-name: ball4;
+                 animation-duration: 4s;
+                 animation-delay: 1s;
+                 animation-iteration-count: infinite;
+                  }
+                  @keyframes ball4{
+                 0%{left:765px; top:0px;}
+                 50%{left: 770px; top:10px;}
+                 100%{left:765px; top: 0px;}
+                  }
+                  #div7ball6{
+                 position: absolute;
+                 top: 0px;
+                 left:720px;
+                 width: 510px;
+                 height: 500px;
+                 animation-name: ball6;
+                 animation-duration: 3s;
+                 animation-delay: 0s;
+                 animation-iteration-count: infinite;
+                  }
+                  @keyframes ball6{
+                 0%{left:740px; top:0px;}
+                 50%{left: 750px; top:10px;}
+                 100%{left:740px; top: 0px;}
+                  }
+                  #div7ball9{
+                 position: absolute;
+                 top: 0px;
+                 left:720px;
+                 width: 510px;
+                 height: 500px;
+                 animation-name: ball9;
+                 animation-duration: 3s;
+                 animation-delay: 1s;
+                 animation-iteration-count: infinite;
+                 }
+                 @keyframes ball9{
+                 0%{left:750px; top:0px;}
+                 50%{left: 755px; top:0px;}
+                100%{left:750px; top: 0px;}
+                 }
+                 #div7greencard{
+                position: absolute;
+                top: 0px;
+                left:0px;
+                width: 510px;
+                height: 500px;
+                animation-name: greencard;
+                animation-duration: 2s;
+                animation-delay: 0s;
+                animation-iteration-count: infinite;
+                 }
+                 @keyframes greencard{
+                0%{left:3px; top:380px;}
+                50%{left: 0px; top:375px;}
+                100%{left:3px; top: 380px;}
+                 }
+                 #div7bluecard{
+                position: absolute;
+                top: 180px;
+                left: 0px;
+                width: 510px;
+                height: 500px;
+                animation-name: bluecard;
+                animation-duration: 4s;
+                animation-delay: 3s;
+                animation-iteration-count: infinite;
+                 }
+                 @keyframes bluecard{
+                0%{left:5px; top:380px;}
+                50%{left: 0px; top:370px;}
+                100%{left:5px; top: 380px;}
+                 } 
+                 #div7redcard{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 510px;
+                height: 500px;
+                animation-name: redcard;
+                animation-duration: 3s;
+                animation-delay: 2s;
+                animation-iteration-count: infinite;
+                 }
+                 @keyframes redcard{
+                0%{left:10px; top:320px;}
+                50%{left: 5px; top:315px;}
+                100%{left:10px; top:320px;}
+                 } 
+                 #div7greenbottomcard{
+                position: absolute;
+                top: 180px;
+                left: 0px;
+                width: 510px;
+                height: 500px;
+                animation-name: greenbottomcard;
+                animation-duration: 4s;
+                animation-delay: 0s;
+                animation-iteration-count: infinite;
+                 }
+                 @keyframes greenbottomcard{
+                0%{left:0px; top:360px;}
+                50%{left: 0px; top:375px;}
+                100%{left:0px; top: 360px;}
+                 }
+                 #div7card{
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                padding-bottom: 500px;
+                 }
+
 /* div_8 */
 
 /* div_9 */
