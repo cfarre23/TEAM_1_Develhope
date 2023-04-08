@@ -4,6 +4,7 @@
 body{
     font-family: Kanit, sans-serif;
 }
+
 *{
     font-family: Kanit, sans-serif;
 }
@@ -62,7 +63,6 @@ body{
     flex-direction: column;
     gap: 1.7rem;
     position: absolute;
-    border: 1px solid red;
     width: 15.6rem;
     height: auto;
     left: 10.7rem;
@@ -183,35 +183,37 @@ body{
 
 .moon_is_made_of_pancakes{
     display: flex;
-    border: 1px solid red;
     background-color: #1d1630;
-    max-width: 1130px;
 }
 .astro_enclosure1{
-    border: 1px solid green;
+    position: relative;
     background-color: #1d1630;
     display: flex;
     justify-content: center;
     align-items: center;
-    height:150%;
-    padding: 1.6rem;
+    margin: 0;
+    padding: 7.5rem;
 }
-
-.astro_word_div{
-    border: 1px solid red;
+.animation_div{
     width: 50%;
     height: 100%;
+    position: relative;
+}
+.astro_word_div{
+    width: 45%;
     letter-spacing: 0.03rem;
+    display: flex;
+    flex-direction: column;
 }
 .astro_pa{
     color: white;
-    font-size: 1.25rem;
+    font-size: 1.4rem;
 }
 .astro_heading{
-    font-weight: bold;
-    font-size: 3.7rem;
+    font-weight: bolder;
+    font-size: 3.9rem;
     color: #9a6aff;
-    letter-spacing: 0.03rem;
+    letter-spacing: 0.05rem;
 }
 #flex_item{
     visibility: hidden;
@@ -242,16 +244,10 @@ body{
     }
 }
 
-.animation_div{
-    width: 50%;
-    height: 100%;
-    position: relative;
-}
 .img_astronaut{
     position: relative;
-    width: 580px;
-    height: 580px;
-    border: 1px solid red;
+    width: 100%;
+    height: 100%;
     margin-top: -7.9rem;
     animation: astro 2.5s ease-in-out 0.33s infinite alternate;
 }
@@ -799,7 +795,7 @@ body {
 }
 .trade-box1{
     height: 430px;
-    width: 428;
+    width: 428px;
 }
 .animation_trade{
     position: relative;
@@ -1421,7 +1417,7 @@ body {
 }
 
 #div10 .content {
-    order: 2,1;
+    order: 2;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
