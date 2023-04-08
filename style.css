@@ -876,6 +876,11 @@ body {
         display: flex;
         flex-direction: column-reverse;
     }
+    .trade-box1{
+        width: 192px;
+        height: 192px;
+        margin-bottom: 24px;
+    }
 }
 /* div_6 */
 
