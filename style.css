@@ -167,6 +167,7 @@ body{
     align-items: center;
 }
 .green_dot{
+    visibility: hidden;
     border-radius: 50%;
     width: 0.5rem;
     height: 0.5rem;
@@ -424,16 +425,15 @@ body{
 }
 .buttons{
     color: #b8add2;
-    font-weight: bold;
+    font-weight: normal;
     display: flex;
     justify-content: center;
     align-items: center;
     border: none;
     position: relative;
-    opacity: 70%;
     background: none;
     width: 3rem;
-    font-size: 0.98rem;
+    font-size: 1.1rem;
 }
 
 .scale_borders{
