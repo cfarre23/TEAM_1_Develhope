@@ -51,7 +51,7 @@ buttons.forEach((button,index) =>{
 })
 images.forEach((image, index) => {
     image.addEventListener('mouseover', function todo() {
-        if (index == 2) {
+        if (index === 2) {
             options[6].style.visibility = "visible";
             options[6].style.display = "flex";
             options[6].addEventListener("mouseover", function showOptions() {
@@ -70,12 +70,30 @@ images.forEach((image, index) => {
     });
 
     function remove() {
-        if (index == 2) {
+        if (index === 2) {
             if (!image.matches(':hover') && !options[6].matches(':hover')) {
                 options[6].style.visibility = 'hidden';
                 options[6].style.display = "none";
             }
         }
+        if (!bnbDiv.matches(':hover') && !options[5].matches(':hover')) {
+            options[5].style.visibility = 'hidden';
+            options[5].style.display = "none";
+        }
     }
+    const bnbDiv = document.querySelector('#div_bnb')
+    bnbDiv.addEventListener('mouseover', function todo() {
+            options[5].style.visibility = "visible";
+            options[5].style.display = "flex";
+            options[5].addEventListener("mouseover", function showOptions() {
+                options[5].style.visibility = "visible";
+            });
+    })
+    bnbDiv.addEventListener('mouseout', function () {
+        setTimeout(remove, 40);
+        options[5].addEventListener('mouseout', () => {
+            remove();
+        });
+    });
 });
 
