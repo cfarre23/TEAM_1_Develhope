@@ -4,15 +4,9 @@
 body{
     font-family: Kanit, sans-serif;
 }
-#body {
-    margin: 0;
-    padding: 0;
-    left: 0;
-    right: 0;
-}
+
 *{
     font-family: Kanit, sans-serif;
-    border: 1px solid green;
 }
 :root{
     --wavy_line: linear-gradient(to right,#09070e, #171226)
