@@ -1701,7 +1701,255 @@ body {
     padding: 0px 16px;
 }
 /* div_9 */
+.ninthdiv {
+    font-family: Kanit, sans-serif;
+    overflow: hidden;
+}
 
+#div9 {
+    display: block;
+}
+
+.ninthdiv {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    padding: 48px 0px;
+    display: flex;
+    background: linear-gradient(
+        rgb(118, 69, 217) 0%, rgb(81, 33, 177)
+        100%);
+}
+
+.b4content {
+    margin: 0px;
+    width: 100%;
+    max-width: 968px;
+    display: block;
+}
+
+.pageinfo {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    display: block;
+}
+
+.pagebox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.firstsvg {
+    height: 350%;
+    width: 350%;
+    align-self: center;
+    fill: #f4eeff;
+    color: #f4eeff;
+    flex-shrink: 0;
+}
+
+.many1 {
+    display: block;
+}
+
+.many2 {
+    position: absolute;
+    display: flex;
+    left: 0px;
+    top: 0px;
+}
+
+.many3 {
+    position: relative;
+    max-height: 256px;
+    display: block;
+}
+
+.coin1 {
+    max-height: 256px;
+    visibility: hidden;
+}
+
+.many3 :nth-child(2) {
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: animation_coin;
+}
+
+@keyframes animation_coin {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(3px, 15px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+.many4 {
+    height: 100%;
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 0px;
+}
+
+.coin2 {
+    max-height: 100%;
+    width: auto;
+}
+
+.many3 :nth-child(3) {
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.66s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: animation_penny1;
+}
+
+@keyframes animation_penny1 {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(5px, 10px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+.many3 :nth-child(4) {
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.33s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: animation_penny2;
+}
+
+@keyframes animation_penny2 {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(6px, 5px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+.many5 {
+    position: absolute;
+    display: flex;
+    right: 0px;
+    bottom: 0px;
+}
+
+.many6 {
+    z-index: 1;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    display: flex;
+}
+
+.firstsent {
+    scale: xl;
+    color: white;
+    font-weight: 600;
+    line-height: 1.1;
+    font-size: 32px;
+    margin-bottom: 24px;
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+}
+
+.secsent {
+    color: white;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 16px;
+    display: block;
+}
+
+.register {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    display: block;
+}
+
+.education {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    color: #1fc7d4;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.secsvg {
+    align-self: center;
+    fill: #1fc7d4;
+    color: #1fc7d4;
+    flex-shrink: 0;
+    margin-left: 4px;
+    width: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.buttonwallet {
+    position: relative;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    height: 48px;
+    padding: 0px 24px;
+    background-color:  #1fc7d4;
+    color: #191326;
+    margin-top: 24px;
+}
 /* div_10 */
 #div10 {
     background: #27262c;
