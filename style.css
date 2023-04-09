@@ -3,6 +3,9 @@
 /* div_1 */
 body {
     font-family: Kanit, sans-serif;
+    background-color: #08060b;
+    display: flex;
+    flex-direction: column;
 }
 
 * {
@@ -15,13 +18,14 @@ body {
 
 .navbar {
     position: relative;
-    margin: auto;
+    margin-left: 1rem;
     display: flex;
     justify-content: space-between;
     background-color: #27262c;
     font-family: kanit, sans-serif;
     padding: 0.7rem;
     height: 2.2rem;
+    max-width: 100%;
 }
 
 @media screen and (max-width: 1130px) {
@@ -215,8 +219,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
     padding: 7%;
+}
+.div3-div4-svg {
+    display: block;
+}
+.div2_div3{
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    width: 100%;
+    max-width: 100%;
+    background-color: #1d1630;
 }
 
 .animation_div {
@@ -268,9 +282,11 @@ body {
     }
 
     .moon_is_made_of_pancakes {
+        position: relative;
         display: flex;
         flex-direction: column-reverse;
         align-items: flex-start;
+
     }
 
     .bottom_stars {
@@ -589,6 +605,7 @@ body {
     box-sizing: border-box;
     display: block;
     background-color: rgb(29, 22, 48);
+    position: relative;
 }
 
 .carousel-parent2 {
@@ -857,9 +874,6 @@ body {
 }
 
 /* div_3 */
-.div3-div4-svg {
-    display: block;
-}
 
 /* div_4 */
 
