@@ -15,7 +15,7 @@ body {
 :root {
     --wavy_line: linear-gradient(to right, #09070e, #171226)
 }
-@media  screen and (max-width: 767px) {
+@media  screen and (max-width: 380px) {
     #img_globe, #img_settings,#img_bnb,#down_arrow,#img_deer2{
         width: 1.6rem;
     }
@@ -51,11 +51,6 @@ body {
     #options1, #options2, #options3, #options4, #options5 {
         top: 4.7rem;
     }
-
-    .navbar {
-
-    }
-
     .btn_cwallect {
         font-size: 0.97rem;
     }
