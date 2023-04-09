@@ -15,6 +15,26 @@ body {
 :root {
     --wavy_line: linear-gradient(to right, #09070e, #171226)
 }
+@media  screen and (max-width: 380px) {
+    #img_globe, #img_settings,#img_bnb,#down_arrow,#img_deer2{
+        width: 1.6rem;
+    }
+    #sep2, #sec3,#sec4{
+        gap: 1rem;
+    }
+    #navbar{
+        display: flex;
+        gap: 0.5rem;
+        justify-content: normal;
+    }
+    #div_bnb{
+
+    }
+    #img_bnb{
+
+    }
+}
+
 
 .navbar {
     position: relative;
@@ -31,11 +51,6 @@ body {
     #options1, #options2, #options3, #options4, #options5 {
         top: 4.7rem;
     }
-
-    .navbar {
-
-    }
-
     .btn_cwallect {
         font-size: 0.97rem;
     }
@@ -54,6 +69,9 @@ body {
 
     #img_beer {
         width: 1.5rem;
+    }
+    #navbar{
+        width: 100%;
     }
 }
 
@@ -433,7 +451,8 @@ body {
     gap: 9px;
 }
 
-#div_bnb {
+.div_bnb {
+    width: auto;
     display: flex;
     border-radius: 2rem;
     justify-content: center;
@@ -475,6 +494,7 @@ body {
 
 .sep1 {
     gap: 1.4rem;
+    width: auto;
 }
 
 .sep2 {
@@ -509,6 +529,7 @@ body {
     gap: 0.58rem;
     justify-content: center;
     align-items: center;
+    width: auto;
 }
 
 #img_globe:hover, #img_settings:hover, #div_bnb:hover, .btn_cwallect:hover, .btn_cwallect2:hover, .btn_trade_now:hover {

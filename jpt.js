@@ -2,18 +2,29 @@ const buttons = document.querySelectorAll(".buttons");
 const options = document.querySelectorAll(".options");
 const images = document.querySelectorAll('.imgs');
 const bnbText = document.querySelector('.bnb_word')
+const walletText = document.querySelector('.btn_cwallect')
 const countryList = document.querySelector('#options7')
 const globe = document.querySelector('#img_globe')
 
 
 //Media query to remove a word
 function good() {
-    if (window.innerWidth <= 1127) {
+    if (window.matchMedia("(max-width: 1127px)").matches) {
         bnbText.innerHTML = 'BNB';
+        walletText.innerHTML ='Connect'
+       
+    } else {
+        bnbText.innerHTML = 'BNB Smart Chain';
+        walletText.innerHTML ='Connect Wallet'
+    }
+    if (window.matchMedia("(max-width: 767px)").matches) {
+        bnbText.innerHTML = '';
+        images.style.width = '20px'
     } else {
         bnbText.innerHTML = 'BNB Smart Chain';
     }
 }
+
 
 window.onload = good;
 window.onresize = good;
