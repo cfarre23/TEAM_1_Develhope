@@ -2707,7 +2707,6 @@ a {
     display: none;
     transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
     justify-content: center;
-    z-index: 9999;
   }
 
   .page-up svg {
@@ -2726,6 +2725,7 @@ a {
 
     .page-up {
       display: flex;
+      z-index: 9999;
     }
 
     .page-up:not(:hover) {
