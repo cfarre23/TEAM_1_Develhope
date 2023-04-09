@@ -108,17 +108,20 @@ body{
     float: right;
     border-radius: 0;
     position: static;
-
+    padding: 0;
 }
 /* Style the select tag */
+.list {
+    list-style-type: none;
+
+}
 #select {
     width: 10rem;
     overflow-y: auto;
     background-color: #191326;
     color: #b8add2;
-}
-.option{
-    padding: 3rem;
+    height: 390px;
+    list-style-type: none;
 }
 
 /* Style the scrollbar */
