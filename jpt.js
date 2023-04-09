@@ -2,23 +2,23 @@ const buttons = document.querySelectorAll(".buttons");
 const options = document.querySelectorAll(".options");
 const images = document.querySelectorAll('.imgs');
 const bnbText = document.querySelector('.bnb_word')
-const countryList =  document.querySelector('#options7')
+const countryList = document.querySelector('#options7')
 const globe = document.querySelector('#img_globe')
 
 
 //Media query to remove a word
-function good(){
-    if(window.innerWidth <= 1127){
+function good() {
+    if (window.innerWidth <= 1127) {
         bnbText.innerHTML = 'BNB';
-    }
-    else {
+    } else {
         bnbText.innerHTML = 'BNB Smart Chain';
     }
 }
+
 window.onload = good;
 window.onresize = good;
 
-buttons.forEach((button,index) =>{
+buttons.forEach((button, index) => {
     let timeoutId;
     const divs = options[index]
     button.addEventListener("mouseover", function showOptions() {
@@ -72,6 +72,7 @@ function removes() {
 
     }
 }
+
 function remove() {
     if (!bnbDiv.matches(':hover') && !options[5].matches(':hover')) {
         options[5].style.visibility = 'hidden';
