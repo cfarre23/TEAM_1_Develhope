@@ -94,3 +94,13 @@ bnbDiv.addEventListener('mouseout', function () {
         remove();
     });
 });
+
+const pageUp = document.querySelector('.page-up');
+
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 300) {
+    pageUp.style.display = 'flex';
+  } else {
+    pageUp.style.display = 'none';
+  }
+});
