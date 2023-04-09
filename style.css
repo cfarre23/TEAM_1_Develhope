@@ -103,26 +103,27 @@ body{
 #options7{
     visibility: hidden;
     display: flex;
-    width: 11rem;
-    margin-right: 1.5rem;
+    width: 14rem;
+    margin-right: 340px;
     float: right;
     border-radius: 0;
     position: static;
-
-}
-/* Style the select tag */
-#select {
-    width: 10rem;
+    padding: 0;
     overflow-y: auto;
     background-color: #191326;
     color: #b8add2;
+    height: 390px;
 }
-.option{
-    padding: 3rem;
+/* Style the select tag */
+.list {
+    list-style-type: none;
+    font-size: large;
+    font-weight: bold;
+
 }
 
 /* Style the scrollbar */
-#select::-webkit-scrollbar {
+#options7::-webkit-scrollbar {
     width: 0.5rem;
 
 }
@@ -149,14 +150,14 @@ body{
     justify-content: space-between;
 }
 
-#select::-webkit-scrollbar-thumb {
+#options7::-webkit-scrollbar-thumb {
     background-color: #b8add2;
     border-radius: 1rem;
     width: 0.8rem;
 }
 
 
-#select::-webkit-scrollbar-track {
+#options7::-webkit-scrollbar-track {
     border-radius: 3px;
     background-color: inherit;
 }
@@ -192,8 +193,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    padding: 7.5rem;
+
+    padding: 7%;
 }
 .animation_div{
     width: 50%;

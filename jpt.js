@@ -2,16 +2,18 @@ const buttons = document.querySelectorAll(".buttons");
 const options = document.querySelectorAll(".options");
 const images = document.querySelectorAll('.imgs');
 const bnbText = document.querySelector('.bnb_word')
+const countryList =  document.querySelector('#options7')
+const globe = document.querySelector('#img_globe')
 
 
 //Media query to remove a word
 function good(){
-if(window.innerWidth <= 1127){
-    bnbText.innerHTML = 'BNB';
-}
-else {
-    bnbText.innerHTML = 'BNB Smart Chain';
-}
+    if(window.innerWidth <= 1127){
+        bnbText.innerHTML = 'BNB';
+    }
+    else {
+        bnbText.innerHTML = 'BNB Smart Chain';
+    }
 }
 window.onload = good;
 window.onresize = good;
@@ -49,51 +51,45 @@ buttons.forEach((button,index) =>{
     }
 
 })
-images.forEach((image, index) => {
-    image.addEventListener('mouseover', function todo() {
-        if (index === 2) {
-            options[6].style.visibility = "visible";
-            options[6].style.display = "flex";
-            options[6].addEventListener("mouseover", function showOptions() {
-                options[6].style.visibility = "visible";
-            });
-            options[5].style.display = 'flex';
-            options[5].style.marginLeft = '-5rem';
-        }
-    })
-
-    image.addEventListener('mouseout', function () {
-        setTimeout(remove, 40);
-        options[6].addEventListener('mouseout', () => {
-            remove();
-        });
+globe.addEventListener('mouseover', function todo() {
+    options[6].style.visibility = "visible";
+    options[6].style.display = "flex";
+    options[6].addEventListener("mouseover", function showOptions() {
+        options[6].style.visibility = "visible";
     });
-
-    function remove() {
-        if (index === 2) {
-            if (!image.matches(':hover') && !options[6].matches(':hover')) {
-                options[6].style.visibility = 'hidden';
-                options[6].style.display = "none";
-            }
-        }
-        if (!bnbDiv.matches(':hover') && !options[5].matches(':hover')) {
-            options[5].style.visibility = 'hidden';
-            options[5].style.display = "none";
-        }
-    }
-    const bnbDiv = document.querySelector('#div_bnb')
-    bnbDiv.addEventListener('mouseover', function todo() {
-            options[5].style.visibility = "visible";
-            options[5].style.display = "flex";
-            options[5].addEventListener("mouseover", function showOptions() {
-                options[5].style.visibility = "visible";
-            });
-    })
-    bnbDiv.addEventListener('mouseout', function () {
-        setTimeout(remove, 40);
-        options[5].addEventListener('mouseout', () => {
-            remove();
-        });
+})
+globe.addEventListener('mouseout', function () {
+    setTimeout(removes, 60);
+    options[6].addEventListener('mouseout', () => {
+        removes();
     });
 });
 
+function removes() {
+    if (!globe.matches(':hover') && !options[6].matches(':hover')) {
+        options[6].style.visibility = 'hidden';
+        options[6].style.display = "none";
+
+    }
+}
+function remove() {
+    if (!bnbDiv.matches(':hover') && !options[5].matches(':hover')) {
+        options[5].style.visibility = 'hidden';
+        options[5].style.display = "none";
+    }
+}
+
+const bnbDiv = document.querySelector('#div_bnb')
+bnbDiv.addEventListener('mouseover', function todo() {
+    options[5].style.visibility = "visible";
+    options[5].style.display = "flex";
+    options[5].addEventListener("mouseover", function showOptions() {
+        options[5].style.visibility = "visible";
+    });
+})
+bnbDiv.addEventListener('mouseout', function () {
+    setTimeout(remove, 60);
+    options[5].addEventListener('mouseout', () => {
+        remove();
+    });
+});
