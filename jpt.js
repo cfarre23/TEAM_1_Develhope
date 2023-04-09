@@ -2,7 +2,7 @@ const buttons = document.querySelectorAll(".buttons");
 const options = document.querySelectorAll(".options");
 const images = document.querySelectorAll('.imgs');
 const bnbText = document.querySelector('.bnb_word')
-const countryList =  document.querySelector('#select')
+const countryList =  document.querySelector('#options7')
 const globe = document.querySelector('#img_globe')
 
 
@@ -57,8 +57,6 @@ globe.addEventListener('mouseover', function todo() {
     options[6].addEventListener("mouseover", function showOptions() {
         options[6].style.visibility = "visible";
     });
-    options[5].style.display = 'flex';
-    options[5].style.marginLeft = '-5rem'
 })
 globe.addEventListener('mouseout', function () {
     setTimeout(removes, 60);
