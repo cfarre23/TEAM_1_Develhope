@@ -771,7 +771,6 @@ body {
   top: 0;
   right: 0;
   width: auto;
-  height: 100%;
   margin: auto;
 }
 .rock_slide1{
@@ -780,7 +779,7 @@ body {
   height: 100%;
   right: 0px;
   top: 0px;
-  z-index: 1;
+  z-index: 0;
   overflow-x: visible;
   overflow-y: visible;
 }
@@ -798,6 +797,28 @@ body {
 }
 .smallRock, .smallBunny{
   display: none;
+}
+.eth_slide1{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-20%);
+  height: 100%;
+}
+.bunny_slide1{
+  position: absolute;
+  transform: translateY(-35px) translateX(-175px);
+  height: 135%;
+}
+.bnb_slide1{
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 70%;
+}
+.flag_slide1{
+  position: absolute;
+  transform: translateX(-75px);
+  height: 100%;
 }
 @media screen and (max-width:968px) {
   .carousel-parent3{
@@ -830,7 +851,7 @@ body {
       z-index: 1;
       padding-bottom: 48px;
   }
-  .eth_slide1, .bigRock{
+  .eth_slide1, .bigRock, .bnb_slide1{
     display: none;
   }
   .smallRock{
@@ -844,6 +865,21 @@ body {
     padding: 0px;
     position: relative;
     max-width: 100%;
+  }
+  .flag_slide1{
+    position: absolute;
+    transform: translateY(-20px) translateX(10px);
+    height: 60%;
+  }
+  .bunny_slide1{
+    position: absolute;
+    transform: translateY(-35px) translateX(20px);
+    height: 135%;
+  }
+  .written_slide1{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
   }
 }
 @media screen and (max-width:576px) {
@@ -984,8 +1020,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  z-index: 5;
+  z-index: 1000;
   align-items: flex-start;
+  overflow: visible;
 }
 .written_slide1{
   display: flex;
@@ -1019,7 +1056,7 @@ body {
   color: #191326;
   margin-right: 16px;
   border: none;
-  margin-top: 0;
+  margin-top: 8px;
 }
 .discover-carousel:hover{
   opacity: 0.65;
