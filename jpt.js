@@ -1,28 +1,27 @@
 const buttons = document.querySelectorAll(".buttons");
 const options = document.querySelectorAll(".options");
 const images = document.querySelectorAll('.imgs');
-const bnbText = document.querySelector('.bnb_word')
+const bnbText = document.getElementById('bnb_word')
 const walletText = document.querySelector('.btn_cwallect')
-const countryList = document.querySelector('#options7')
 const globe = document.querySelector('#img_globe')
+const toggleButton = document.querySelector(".toggle")
+const options6 = document.getElementById('options6')
 
-
+// Fred
 //Media query to remove a word
 function good() {
     if (window.matchMedia("(max-width: 1127px)").matches) {
-        bnbText.innerHTML = 'BNB';
         walletText.innerHTML ='Connect'
+        bnbText.innerHTML = 'BNB';
        
     } else {
-        bnbText.innerHTML = 'BNB Smart Chain';
         walletText.innerHTML ='Connect Wallet'
+        bnbText.innerHTML = 'BNB Smart Chain';
     }
     if (window.matchMedia("(max-width: 767px)").matches) {
         bnbText.innerHTML = '';
         images.style.width = '20px'
-    } else {
-        bnbText.innerHTML = 'BNB Smart Chain';
-    }
+    } 
 }
 
 
@@ -62,24 +61,24 @@ buttons.forEach((button, index) => {
     }
 
 })
-globe.addEventListener('mouseover', function todo() {
-    options[6].style.visibility = "visible";
-    options[6].style.display = "flex";
-    options[6].addEventListener("mouseover", function showOptions() {
-        options[6].style.visibility = "visible";
+/* globe.addEventListener('mouseover', function todo() {
+    options6.style.visibility = "visible";
+    options6.style.display = "flex";
+    options6.addEventListener("mouseover", function showOptions() {
+        options6.style.visibility = "visible";
     });
 })
 globe.addEventListener('mouseout', function () {
     setTimeout(removes, 60);
-    options[6].addEventListener('mouseout', () => {
+    options6.addEventListener('mouseout', () => {
         removes();
     });
 });
 
 function removes() {
-    if (!globe.matches(':hover') && !options[6].matches(':hover')) {
-        options[6].style.visibility = 'hidden';
-        options[6].style.display = "none";
+    if (!globe.matches(':hover') && !options6.matches(':hover')) {
+        options6.style.visibility = 'hidden';
+        options6.style.display = "none";
 
     }
 }
@@ -105,13 +104,28 @@ bnbDiv.addEventListener('mouseout', function () {
         remove();
     });
 });
+toggleButton.addEventListener("change", () => {
+    if (toggleButton.checked){
+        toggleButton.style.transform = "translate(100%)"
+        document.querySelector('body').style.background='white'
+
+    }
+    else{
+        toggleButton.style.transform = "translate(-100%)"
+        document.querySelector('body').style.background='#08060b'
+    }
+})
+*/
+// Fred ends
 
 const pageUp = document.querySelector('.page-up');
 
 window.addEventListener('scroll', () => {
-  if (window.pageYOffset > 300) {
+  if (window.pageYOffset > 450) {
     pageUp.style.display = 'flex';
+    pageUp.style.visibility =  'visible'
   } else {
     pageUp.style.display = 'none';
   }
 });
+
