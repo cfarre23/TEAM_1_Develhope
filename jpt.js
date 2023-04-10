@@ -11,8 +11,8 @@ const options6 = document.getElementById('options6')
 //Media query to remove a word
 function good() {
     if (window.matchMedia("(max-width: 1127px)").matches) {
-        walletText.innerHTML ='Connect'
-        bnbText.innerHTML = 'BNB';
+        walletText.textContent ='Connect'
+        bnbText.textContent = 'BNB';
        
     } else {
         walletText.innerHTML ='Connect Wallet'
