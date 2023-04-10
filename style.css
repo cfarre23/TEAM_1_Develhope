@@ -246,6 +246,7 @@ body {
     display: block;
 }
 .div2_div3{
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     gap: 6rem;
@@ -702,7 +703,6 @@ body {
   width: auto;
   height: 100%;
   margin: auto;
-  border: 1px solid red;
 }
 .rock_slide1{
   position: absolute;
@@ -949,7 +949,7 @@ body {
   color: #191326;
   margin-right: 16px;
   border: none;
-  margin-top: 8px;
+  margin-top: 0;
 }
 .discover-carousel:hover{
   opacity: 0.65;
