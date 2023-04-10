@@ -3,7 +3,6 @@ const options = document.querySelectorAll(".options");
 const images = document.querySelectorAll('.imgs');
 const bnbText = document.querySelector('.bnb_word')
 const walletText = document.querySelector('.btn_cwallect')
-const countryList = document.querySelector('#options7')
 const globe = document.querySelector('#img_globe')
 
 
@@ -109,8 +108,9 @@ bnbDiv.addEventListener('mouseout', function () {
 const pageUp = document.querySelector('.page-up');
 
 window.addEventListener('scroll', () => {
-  if (window.pageYOffset > 300) {
+  if (window.pageYOffset > 450) {
     pageUp.style.display = 'flex';
+    pageUp.style.visibility =  'visible'
   } else {
     pageUp.style.display = 'none';
   }

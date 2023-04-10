@@ -2719,6 +2719,7 @@ a {
 }
 /* page up button */
 .page-up {
+    visibility: hidden;
     position: fixed;
     bottom: 135px;
     right: 100px;
