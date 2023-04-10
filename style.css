@@ -17,7 +17,7 @@ body {
 }
 @media  screen and (max-width: 380px) {
     #img_globe, #img_settings,#img_bnb,#down_arrow,#img_deer2{
-        width: 1.6rem;
+        width: 1.64rem;
     }
     #sep2, #sec3,#sec4{
         gap: 1rem;
@@ -28,7 +28,11 @@ body {
         justify-content: normal;
     }
     #div_bnb{
-
+        padding-right: 0;
+        padding-bottom: 0.05rem;
+        padding-top: 0.09rem;
+        gap: 0;
+        height: 70%;
     }
     #img_bnb{
 
