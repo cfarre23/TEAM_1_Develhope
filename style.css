@@ -1042,19 +1042,19 @@ body {
     text-align: center;
     vertical-align: baseline;
     flex-wrap: wrap;
-}
+}   
 
 .div4_box1 {
     display: flex;
     flex-direction: row;
     max-width: 100%;
+    gap: 16px;
 }
 
 .div4_box2 {
     height: fit-content;
     padding: 1px 1px 4px;
     box-sizing: border-box;
-    margin-right: 16px;
     margin-bottom: 0px;
     background: #383241;
     border-radius: 24px;
@@ -1141,7 +1141,6 @@ body {
     }
 
     .div4_box2 {
-        margin-bottom: 16px;
         margin-right: 0px;
     }
 
