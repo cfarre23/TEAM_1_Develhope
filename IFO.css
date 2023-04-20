@@ -30,7 +30,15 @@ h1 {
     font-size: 2.5rem;
     font-weight: 600;
 }
+.h2{
+ font-size: 1.6rem;
+ font-weight: 600;
 
+}
+.stam{
+ font-weight: 600;
+ font-size: 0.7rem;
+}
 
 
 @media screen and (min-width: 53.25rem) {
