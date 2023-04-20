@@ -67,6 +67,9 @@ body {
     --Marine-blue: hsl(213, 96%, 18%);
     --White: hsl(0, 0%, 100%);
 }
+.bodyDisappear{
+    display: none;
+}
 
 :root {
     --wavy_line: linear-gradient(to right, #09070e, #171226)
