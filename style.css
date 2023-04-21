@@ -68,7 +68,7 @@ body {
     --White: hsl(0, 0%, 100%);
 }
 .bodyDisappear{
-    display: none;
+    display: flex;
 }
 
 :root {
@@ -239,7 +239,7 @@ body {
     justify-content: space-between;
 }
 
-#pottery {
+.pottery {
     border: 0.15rem solid #31d0aa;
     border-radius: 1.4rem;
     padding-left: 0.4rem;

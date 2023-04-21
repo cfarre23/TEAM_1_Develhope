@@ -1,6 +1,8 @@
 :root {
     font-size: 16px;
-    display: none;
+}
+body{
+    background-color: white;
 }
 
 .ifoSec1 {
@@ -26,19 +28,19 @@
     justify-content: space-between;
 }
 
-h1 {
+h1{
     color: #f4eeff;
     font-size: 2.5rem;
     font-weight: 600;
 }
 .h2{
- font-size: 1.6rem;
+ font-size: 1.48rem;
  font-weight: 600;
 
 }
 .stam{
  font-weight: 600;
- font-size: 0.7rem;
+ font-size: 1rem;
 }
 
 
@@ -123,8 +125,8 @@ h1 {
 .sCk1, .sCk2{
     border: 1px solid red;
     border-radius: 1rem;
-    width: 18rem;
-    height: 25rem;
+    width: 20rem;
+    height: auto;
     display: flex;
     flex-direction: column;
 }
@@ -140,6 +142,7 @@ h1 {
     height: auto;
     background-color: white;
     color: mediumblue;
+    padding: 1.7rem 1rem;
 
 }
 .ifoImage1{
@@ -148,14 +151,14 @@ h1 {
 
 }
 .beer{
-    width: 5.2rem;
+    width: 4.5rem;
     position: relative;
 }
 .arrReverse{
     position: absolute;
     width: 2.3rem;
     margin-bottom: -0.5rem;
-    margin-left: 2.5rem;
+    margin-left: 2rem;
 
 }
 .k1{
@@ -163,10 +166,41 @@ h1 {
     border-top-left-radius: inherit ;
 
 }
+.k2{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 .k3{
     border-bottom-right-radius: inherit;
     border-bottom-left-radius: inherit ;
 }
 .sCk3{
 
+}
+.k2{
+    border: 1px solid red;
+    padding: 1.7rem;
+}
+.k21{
+    padding: 1rem;
+    border: 1px solid blue;
+}
+.fApy, .fApr{
+    display: flex;
+    justify-content: space-between;
+}
+.ewallet2{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+#auto\/locked{
+    width: 5rem;
+}
+.k3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.7rem;
 }
