@@ -403,9 +403,9 @@ h1{
 }
 @media screen and (max-width: 453px) {
     #verticalLine{
-        width: 650px;
-        margin-bottom: -46px;
-        left: -275px;
+        width: 700px;
+        margin-bottom: -135px;
+        left: -300px;
     }
 }
 .hiddenLin{
