@@ -307,25 +307,30 @@ h1{
     gap: 1.2rem;
     color: #383241;
     border-radius: 24px;
+    padding: 24px;
 }
-.lin1{
+.hiddenLin{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    color: #383241;
+    border-radius: 24px;
+    padding: 1rem;
+}
+.lin1,#hidden1{
     max-width: 28rem;
 }
-.lin2{
+.lin2,#hidden2{
     max-width: 32rem;
 }
-.lin3{
+.lin3,#hidden3{
     max-width: 32rem;
 }
-.lin4{
+.lin4,#hidden4{
     max-width: 32.5rem;
 }
-@media screen and (min-width: 576px){
-    .lin1,.lin2,.lin3,.lin4 {
-        border: 1px solid red;
-        padding: 24px;
-    }
-}
+
 .circleNumbers{
     display: flex;
     width: 80px;
@@ -333,7 +338,7 @@ h1{
     min-height: 80px;
     min-width: 80px;
     height: 80px;
-    box-shadow: rgba(25, 19, 38, 0.15) 0px 1px 4px;
+    box-shadow: rgba(25, 19, 38, 0.15) 0 1px 4px;
     background-color: #191326;
     border: 2px solid transparent;
     border-radius: 50%;
@@ -344,6 +349,11 @@ h1{
     z-index: 5;
 
 }
+#verticalLine{
+    float: left;
+    position: absolute;
+    left: 2px;
+}
 
 .divLine1{
     display: flex;
@@ -352,20 +362,53 @@ h1{
     justify-content: center;
 }
 @media screen and (max-width: 852px) {
-    #circleNumbers {
+    #circleNumbers1,#circleNumbers2,#circleNumbers3,#circleNumbers4 {
         font-size: 32px;
         width: 48px;
         height: 48px;
+        min-height: 48px;
+        min-width: 48px;
     }
-    #hidden2{
-        visibility: visible;
-        display: flex;
+    #main2{
+        justify-content: flex-start;
+        align-items: flex-start;
+        float: left;
+        flex-direction: column;
+        border: 1px solid red;
+        padding: 1.5rem;
+
     }
-    #lin2{
+
+    .lin1,.lin2,.lin3,.lin4{
         display: none;
     }
+    #hidden1,#hidden2,#hidden3,#hidden4{
+        visibility: visible;
+    }
+    #verticalLine {
+        left: -205px;
+        width: 508px;
+    }
+    #divLin1,#divLin3{
+        flex-direction: row-reverse;
+    }
+
 }
-#hidden1,#hidden2,#hidden3,#hidden4{
+@media screen and (max-width: 557px) {
+    #verticalLine{
+        width: 590px;
+        margin-bottom: -20px;
+        left: -245px;
+    }
+}
+@media screen and (max-width: 453px) {
+    #verticalLine{
+        width: 650px;
+        margin-bottom: -46px;
+        left: -275px;
+    }
+}
+.hiddenLin{
     visibility: hidden;
 
 }
