@@ -244,6 +244,7 @@ h1{
 .sect1{
     display: flex;
     gap: 1rem;
+    align-items: center;
     justify-content: center;
     padding-bottom: 2rem;
     padding-left: 1rem;
@@ -307,7 +308,7 @@ h1{
     gap: 1.2rem;
     color: #383241;
     border-radius: 24px;
-    padding: 24px;
+    padding: 1rem;
 }
 .hiddenLin{
     border: 1px solid red;
@@ -349,10 +350,8 @@ h1{
     z-index: 5;
 
 }
-#verticalLine{
-    float: left;
-    position: absolute;
-    left: 2px;
+.verticalLine2{
+    display: none;
 }
 
 .divLine1{
@@ -370,15 +369,20 @@ h1{
         min-width: 48px;
     }
     #main2{
+        gap: 1.3rem;
+    }
+    #main2{
         justify-content: flex-start;
         align-items: flex-start;
         float: left;
         flex-direction: column;
         border: 1px solid red;
         padding: 1.5rem;
-
     }
-
+    .verticalLine1{
+        display: none;
+        visibility: hidden;
+    }
     .lin1,.lin2,.lin3,.lin4{
         display: none;
     }
@@ -386,11 +390,13 @@ h1{
         visibility: visible;
     }
     #verticalLine {
+        display: flex;
         left: -205px;
         width: 508px;
     }
     #divLin1,#divLin3{
         flex-direction: row-reverse;
+
     }
 
 }
@@ -432,7 +438,27 @@ h1{
     color: #9a6aff;
 
 }
-.verticalLine{
+.verticalLine1{
+    display: flex;
+    position: absolute;
+    height: 4px;
+    width: 540px;
+    transform: rotate(90deg);
+    margin-top: 128px;
+    background: linear-gradient(to right, #31d0aa 110px, #31d0aa 110px, #666171 110px, #666171 100%);
+}
+@media screen and (max-width: 1132px) {
+    #verticalLine1{
+        position: absolute;
+        height: 4px;
+        width: 581px;
+        transform: rotate(90deg);
+        margin-top: 122px;
+        background: linear-gradient(to right, #31d0aa 110px, #31d0aa 110px, #666171 110px, #666171 100%);
+    }
+}
+
+.verticalLine2{
     position: absolute;
     height: 4px;
     width: 581px;
