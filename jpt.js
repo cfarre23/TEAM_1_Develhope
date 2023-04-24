@@ -27,7 +27,12 @@ function good() {
 
 window.onload = good;
 window.onresize = good;
+document.getElementsByClassName('ifoMain').addEventListener('click',function (){
 
+})
+document.getElementsByClassName('bodyDisappear'){
+
+}
 buttons.forEach((button, index) => {
     let timeoutId;
     const divs = options[index]

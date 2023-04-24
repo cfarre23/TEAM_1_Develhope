@@ -133,13 +133,13 @@ body{
 .sCk1, .sCk2{
     border-radius: 24px;
     min-width: 280px;
-    width: 22.5rem;
-    height: auto;
+    max-width: 350px;
+    width: 100%;
+    height: 100%;
     display: flex;
     border: 2px solid #74a9f3;
     flex-direction: column;
     background-color: #27262c;
-    max-width: 400px;
     animation: borderAnimation 3s ease-in-out infinite alternate;
     border-bottom: 4px solid #74a9f3;
 
@@ -173,6 +173,7 @@ body{
     flex-direction: column;
     gap: 0;
 }
+
 .ifoImage1{
     display: flex;
     flex-direction: column-reverse;
@@ -194,7 +195,10 @@ body{
     gap: 2rem;
 }
 .sCk3{
-
+    height: 100%;
+    width: 100%;
+    background-color: #383241;
+    color: #f4eeff;
 }
 .k2{
     padding: 1.7rem;
@@ -273,13 +277,12 @@ body{
 }
 @media screen and (min-width: 852px){
     .comingSoon {
-        height: 160px;
-    }
+
 }
 
 .sect1{
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     align-items: center;
     justify-content: center;
     padding-bottom: 2rem;
@@ -311,6 +314,8 @@ body{
 .comingSoon{
     border-top-right-radius: 24px;
     border-top-left-radius: 24px;
+    border-bottom-left-radius: 100% 40px;
+    border-bottom-right-radius: 100% 40px;
 }
 .fle1{
     padding: 15px 24px;
@@ -460,12 +465,12 @@ body{
     flex-direction: column;
     padding: 1.5rem;
 }
+
 .h2{
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 1.48rem;
-    text-align: center;
     font-weight: 600;
     line-height: 1.1;
     margin-bottom: 24px;
@@ -563,6 +568,30 @@ body{
 }
 .ifoMain{
     background-color: #08060b;
+}
+.tkVesting{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.48rem;
+    font-weight: 600;
+    line-height: 1.1;
+    color: #9a6aff;
+    width: 80%;
+}
+
+#stam{
+    margin-left: -0.7rem;
+}
+#beer{
+    margin-top: -0.5rem;
+}
+.hash{
+    color: #f4eeff;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 16px;
 }
 
 
