@@ -7,8 +7,10 @@ body{
 
 .ifoSec1 {
     background-image: url("images/Ifo images/ifo-banner-dark.png");
-    background-position: center top, center center;
+    background-position: center center;
     background-repeat: no-repeat;
+    background-size: cover;
+    height: 11.8rem;
 }
 
 .initialSec {
@@ -32,14 +34,13 @@ body{
     font-weight: 600;
     line-height: 44px;
 }
-.h2{
-    font-size: 1.48rem;
-    font-weight: 600;
 
-}
 .stam{
-    font-weight: 600;
-    font-size: 0.87rem;
+    color: #b8add2;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 14px;
+    padding-left: 0.7rem;
 }
 
 
@@ -167,30 +168,30 @@ body{
     border-top-right-radius: 24px;
     border-top-left-radius: 24px ;
 }
+.k1{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
 .ifoImage1{
     display: flex;
     flex-direction: column-reverse;
-
+    margin-bottom: auto;
 }
 .beer{
-    width: 4.5rem;
+    width: 59px;
 
 }
 .arrReverse{
     position: absolute;
-    width: 2.3rem;
+    width: 32px;
     margin-bottom: -0.5rem;
     margin-left: 2rem;
-
 }
 .k2{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-}
-.k3{
-    border-bottom-right-radius: inherit;
-    border-bottom-left-radius: inherit ;
 }
 .sCk3{
 
@@ -199,7 +200,24 @@ body{
     padding: 1.7rem;
 }
 .k21{
-    padding: 1rem;
+    padding: 1.25rem;
+
+    border: 1px solid #383241;
+    background-color: #08060b;
+    border-radius: 16px;
+}
+.fle{
+    color: #b8add2;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.json{
+    color: #f4eeff;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 16px;
 }
 .fApy, .fApr{
     display: flex;
@@ -212,12 +230,24 @@ body{
 }
 #auto\/locked{
     width: 5rem;
+    display: inline-flex;
+    align-items: center;
+}
+#topDetailsBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: auto;
 }
 .k3{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1.7rem;
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit ;
+    border-top: 1px solid #383241;
+    padding: 24px;
 }
 .k1sec2{
     display: flex;
@@ -431,7 +461,10 @@ body{
     padding: 1.5rem;
 }
 .h2{
-    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.48rem;
     text-align: center;
     font-weight: 600;
     line-height: 1.1;
