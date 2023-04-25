@@ -520,6 +520,12 @@
     color: #9a6aff;
 
 }
+.opt_kids:hover{
+    cursor: pointer;
+}
+#ifoPAGEBtn:hover{
+    text-decoration: underline;
+}
 .verticalLine1{
     border: 1px solid #666171FF;
     display: flex;
@@ -667,6 +673,7 @@
 }
 .ifoMain{
     background-color: #08060b;
+    display: none;
 }
 .tkVesting{
     display: flex;

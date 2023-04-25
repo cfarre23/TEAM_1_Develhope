@@ -68,7 +68,7 @@ body {
     --White: hsl(0, 0%, 100%);
 }
 .bodyDisappear{
-    display: none;
+    display: block;
 }
 
 :root {

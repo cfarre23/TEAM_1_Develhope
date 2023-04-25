@@ -6,12 +6,13 @@ const walletText = document.querySelector('.btn_cwallect')
 const globe = document.querySelector('#img_globe')
 const toggleButton = document.querySelector(".toggle")
 const options6 = document.getElementById('options6')
-const IFO = document.getElementsByClassName('ifoMain')
-const bodyDisappear = document.getElementsByClassName('bodyDisappear')
+const ifoPAGE = document.querySelector('.ifoMain')
+const bodyDisappear = document.querySelector('.bodyDisappear')
 const btnDetails = document.querySelectorAll('.btnDetails')
 const arrow = document.querySelectorAll('.darrow')
 const heheDetails = document.querySelectorAll('.hehe')
 const smallerAds = document.querySelectorAll('.adSmall')
+const ifoPageButton = document.querySelector('#ifoPAGEBtn') 
 
 // Fred
 //Media query to remove a word
@@ -136,6 +137,10 @@ window.addEventListener('scroll', () => {
 });
 
 // IFO SECTION
+ifoPageButton.addEventListener('click',function (){
+    bodyDisappear.style.display = 'none'
+    ifoPAGE.style.display = 'block'
+})
 btnDetails.forEach(function (button,index){
     var clicked = true
     //changes Details to hide when clicked and arrow rotates 180deg
