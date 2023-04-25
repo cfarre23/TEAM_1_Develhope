@@ -523,8 +523,12 @@
 .opt_kids:hover{
     cursor: pointer;
 }
-#ifoPAGEBtn:hover{
-    text-decoration: underline;
+#ifoPAGEBtn{
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #9a6aff;
 }
 .verticalLine1{
     border: 1px solid #666171FF;
