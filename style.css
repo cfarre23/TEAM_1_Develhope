@@ -67,6 +67,9 @@ body {
     --Marine-blue: hsl(213, 96%, 18%);
     --White: hsl(0, 0%, 100%);
 }
+.bodyDisappear{
+    display: block;
+}
 
 :root {
     --wavy_line: linear-gradient(to right, #09070e, #171226)
@@ -236,7 +239,7 @@ body {
     justify-content: space-between;
 }
 
-#pottery {
+.pottery {
     border: 0.15rem solid #31d0aa;
     border-radius: 1.4rem;
     padding-left: 0.4rem;

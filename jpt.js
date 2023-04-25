@@ -6,6 +6,13 @@ const walletText = document.querySelector('.btn_cwallect')
 const globe = document.querySelector('#img_globe')
 const toggleButton = document.querySelector(".toggle")
 const options6 = document.getElementById('options6')
+const ifoPAGE = document.querySelector('.ifoMain')
+const bodyDisappear = document.querySelector('.bodyDisappear')
+const btnDetails = document.querySelectorAll('.btnDetails')
+const arrow = document.querySelectorAll('.darrow')
+const heheDetails = document.querySelectorAll('.hehe')
+const smallerAds = document.querySelectorAll('.adSmall')
+const ifoPageButton = document.querySelector('#ifoPAGEBtn') 
 
 // Fred
 //Media query to remove a word
@@ -24,9 +31,9 @@ function good() {
     } 
 }
 
-
 window.onload = good;
 window.onresize = good;
+
 
 buttons.forEach((button, index) => {
     let timeoutId;
@@ -128,4 +135,111 @@ window.addEventListener('scroll', () => {
     pageUp.style.display = 'none';
   }
 });
+
+// IFO SECTION
+ifoPageButton.addEventListener('click',function (){
+    bodyDisappear.style.display = 'none'
+    ifoPAGE.style.display = 'block'
+})
+btnDetails.forEach(function (button,index){
+    var clicked = true
+    //changes Details to hide when clicked and arrow rotates 180deg
+    button.addEventListener('click',function (){
+        if (clicked) {
+            if (index === 0) {
+                heheDetails[0].innerText = 'hide'
+                arrow[0].style.transform = 'rotate(180deg)'
+                clicked = false
+            }
+            if (index === 1) {
+                heheDetails[1].innerText = 'hide'
+                arrow[1].style.transform = 'rotate(180deg)'
+                smallerAds[0].style.setProperty('display','block')
+                clicked = false
+            }
+            if (index === 2) {
+                heheDetails[2].innerText = 'hide'
+                arrow[2].style.transform = 'rotate(180deg)'
+                smallerAds[1].style.setProperty('display','block')
+                clicked = false
+            }
+            if (index === 3) {
+                heheDetails[3].innerText = 'hide'
+                arrow[3].style.transform = 'rotate(180deg)'
+                smallerAds[2].style.setProperty('display','block')
+                clicked = false
+            }
+            if (index === 4) {
+                heheDetails[4].innerText = 'hide'
+                arrow[4].style.transform = 'rotate(180deg)'
+                smallerAds[3].style.setProperty('display','block')
+                clicked = false
+            }
+            if (index === 5) {
+                heheDetails[5].innerText = 'hide'
+                arrow[5].style.transform = 'rotate(180deg)'
+                smallerAds[4].style.setProperty('display','block')
+                clicked = false
+            }
+            if (index === 6) {
+                heheDetails[6].innerText = 'hide'
+                arrow[6].style.transform = 'rotate(180deg)'
+                smallerAds[5].style.setProperty('display','block')
+                clicked = false
+            }
+        }
+        else if (!clicked){
+            if (index === 0){
+                arrow[0].style.transform = 'rotate(0)'
+                heheDetails[0].innerText = 'Details'
+                clicked = true
+            }
+            if (index === 1){
+                arrow[1].style.transform = 'rotate(0)'
+                smallerAds[0].style.removeProperty('display')
+                heheDetails[1].innerText = 'Details'
+                clicked = true
+            }
+            if (index === 2){
+                arrow[2].style.transform = 'rotate(0)'
+                smallerAds[1].style.removeProperty('display')
+                heheDetails[2].innerText = 'Details'
+                clicked = true
+            }
+            if (index === 3){
+                arrow[3].style.transform = 'rotate(0)'
+                smallerAds[2].style.removeProperty('display')
+                heheDetails[3].innerText = 'Details'
+                clicked = true
+            }
+            if (index === 4){
+                arrow[4].style.transform = 'rotate(0)'
+                smallerAds[3].style.removeProperty('display')
+                heheDetails[4].innerText = 'Details'
+                clicked = true
+            }
+            if (index === 5){
+                arrow[5].style.transform = 'rotate(0)'
+                smallerAds[4].style.removeProperty('display')
+                heheDetails[5].innerText = 'Details'
+                clicked = true
+            }
+            if (index === 6){
+                arrow[6].style.transform = 'rotate(0)'
+                smallerAds[5].style.removeProperty('display')
+                heheDetails[6].innerText = 'Details'
+                clicked = true
+            }
+            if (index === 7){
+                arrow[7].style.transform = 'rotate(0)'
+                smallerAds[6].style.removeProperty('display')
+                heheDetails[7].innerText = 'Details'
+                clicked = true
+            }
+        }
+           
+    })
+})
+//IFO SECTION ENDS
+   
 
