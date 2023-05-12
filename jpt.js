@@ -34,7 +34,7 @@ function good() {
 window.onload = good;
 window.onresize = good;
 
-
+.
 buttons.forEach((button, index) => {
     let timeoutId;
     const divs = options[index]
