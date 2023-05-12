@@ -2451,6 +2451,7 @@ body {
 
 #div9 {
     display: block;
+    overflow: hidden;
 }
 
 .ninthdiv {
@@ -2470,6 +2471,22 @@ body {
     width: 100%;
     max-width: 968px;
     display: block;
+    padding: 16px;
+}
+
+@media screen and (min-width: 576px) {
+    .b4content {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        min-height: auto;
+    }
+}
+
+@media screen and (min-width: 370px) {
+    .b4content {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
 }
 
 .pageinfo {
@@ -2492,15 +2509,25 @@ body {
 
 .firstsvg {
     height: 350%;
-    width: 350%;
     align-self: center;
-    fill: #f4eeff;
-    color: #f4eeff;
     flex-shrink: 0;
 }
 
 .many1 {
-    display: block;
+    visibility: visible;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width: 852px) {
+    .many1 {
+        display: none;
+    }
 }
 
 .many2 {
@@ -2661,11 +2688,8 @@ body {
 
 .secsvg {
     align-self: center;
-    fill: #1fc7d4;
-    color: #1fc7d4;
     flex-shrink: 0;
     margin-left: 4px;
-    width: 20px;
 }
 
 a{
@@ -2698,9 +2722,18 @@ a{
 #div10 {
     background: #27262c;
     display: flex;
-    justify-content: flex-start;
-    position: relative;
-    padding-top: 50px;
+    justify-content: center;
+    padding: 40px 16px;
+    margin-bottom: 44px;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 576px) {
+    #div10 {
+        padding: 56px 40px 32px;
+        margin-bottom: 0px;
+        position: relative;
+    }
 }
 
 #div10 .tenthdiv {
@@ -2709,11 +2742,29 @@ a{
     flex-direction: column;
 }
 
+@media screen and (min-width: 576px) {
+    .tenthdiv {
+        width: 1200px;
+    }
+}
+
 #div10 .content {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     float: left;
+    margin-bottom: 42px;
+}
+
+@media screen and (min-width: 576px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 36px;
+    }
 }
 
 #div10 .contentlist {
@@ -2722,6 +2773,13 @@ a{
     margin-block-start: 1em;
     margin-block-end: 1em;
     padding-inline-start: 40px;
+}
+
+@media screen and (min-width: 852px) {
+    .contentlist {
+        margin-bottom: 0px;
+        list-style: none;
+    }
 }
 
 #div10 #about {
