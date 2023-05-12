@@ -34,7 +34,7 @@ function good() {
 window.onload = good;
 window.onresize = good;
 
-
+.
 buttons.forEach((button, index) => {
     let timeoutId;
     const divs = options[index]
@@ -138,8 +138,7 @@ window.addEventListener('scroll', () => {
 
 // IFO SECTION
 ifoPageButton.addEventListener('click',function (){
-    bodyDisappear.style.display = 'none'
-    ifoPAGE.style.display = 'block'
+    window.location.href = "IFO.html";
 })
 btnDetails.forEach(function (button,index){
     var clicked = true
