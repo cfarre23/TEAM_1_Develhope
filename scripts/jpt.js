@@ -12,7 +12,7 @@ const btnDetails = document.querySelectorAll('.btnDetails')
 const arrow = document.querySelectorAll('.darrow')
 const heheDetails = document.querySelectorAll('.hehe')
 const smallerAds = document.querySelectorAll('.adSmall')
-const ifoPageButton = document.querySelector('#ifoPAGEBtn') 
+const ifoPageButton = document.querySelector('#ifoPAGEBtn')
 
 // Fred
 //Media query to remove a word
@@ -20,7 +20,7 @@ function good() {
     if (window.matchMedia("(max-width: 1127px)").matches) {
         walletText.textContent ='Connect'
         bnbText.textContent = 'BNB';
-       
+
     } else {
         walletText.innerHTML ='Connect Wallet'
         bnbText.innerHTML = 'BNB Smart Chain';
@@ -28,13 +28,13 @@ function good() {
     if (window.matchMedia("(max-width: 767px)").matches) {
         bnbText.innerHTML = '';
         images.style.width = '20px'
-    } 
+    }
 }
 
 window.onload = good;
 window.onresize = good;
 
-.
+
 buttons.forEach((button, index) => {
     let timeoutId;
     const divs = options[index]
@@ -128,12 +128,12 @@ toggleButton.addEventListener("change", () => {
 const pageUp = document.querySelector('.page-up');
 
 window.addEventListener('scroll', () => {
-  if (window.pageYOffset > 450) {
-    pageUp.style.display = 'flex';
-    pageUp.style.visibility =  'visible'
-  } else {
-    pageUp.style.display = 'none';
-  }
+    if (window.pageYOffset > 450) {
+        pageUp.style.display = 'flex';
+        pageUp.style.visibility =  'visible'
+    } else {
+        pageUp.style.display = 'none';
+    }
 });
 
 // IFO SECTION
@@ -236,9 +236,8 @@ btnDetails.forEach(function (button,index){
                 clicked = true
             }
         }
-           
+
     })
 })
 //IFO SECTION ENDS
-   
 
