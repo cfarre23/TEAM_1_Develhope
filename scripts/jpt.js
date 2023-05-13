@@ -13,7 +13,14 @@ const arrow = document.querySelectorAll('.darrow')
 const heheDetails = document.querySelectorAll('.hehe')
 const smallerAds = document.querySelectorAll('.adSmall')
 const ifoPageButton = document.querySelector('#ifoPAGEBtn')
-
+const EarnBtn = document.querySelector('#earnBtn')
+const WinBtn = document.querySelector('#winBtn')
+const NftBtn = document.querySelector('#nftBtn')
+const DotsBtn = document.querySelector('#dotsBtn')
+const Earn = document.querySelector('#earn')
+const Win = document.querySelector('#win')
+const Nft = document.querySelector('#nft')
+const Dots = document.querySelector('#dots')
 // Fred
 //Media query to remove a word
 function good() {
@@ -34,7 +41,55 @@ function good() {
 window.onload = good;
 window.onresize = good;
 
-
+//Mobile site Navbar
+EarnBtn.addEventListener('mouseover',function (){
+    Earn.style.display = 'flex'
+    Win.style.display = 'none'
+    Nft.style.display = 'none'
+    Dots.style.display = 'none'
+})
+EarnBtn.addEventListener('mouseout',function (){
+        Earn.style.display = 'none'
+        Win.style.display = 'none'
+        Nft.style.display = 'none'
+        Dots.style.display = 'none'
+})
+WinBtn.addEventListener('mouseover',function (){
+    Earn.style.display = 'none'
+    Win.style.display = 'flex'
+    Nft.style.display = 'none'
+    Dots.style.display = 'none'
+})
+WinBtn.addEventListener('mouseout',function (){
+    Earn.style.display = 'none'
+    Win.style.display = 'none'
+    Nft.style.display = 'none'
+    Dots.style.display = 'none'
+})
+NftBtn.addEventListener('mouseover',function (){
+    Earn.style.display = 'none'
+    Win.style.display = 'none'
+    Nft.style.display = 'flex'
+    Dots.style.display = 'none'
+})
+NftBtn.addEventListener('mouseout',function (){
+    Earn.style.display = 'none'
+    Win.style.display = 'none'
+    Nft.style.display = 'none'
+    Dots.style.display = 'none'
+})
+DotsBtn.addEventListener('mouseover',function (){
+    Earn.style.display = 'none'
+    Win.style.display = 'none'
+    Nft.style.display = 'none'
+    Dots.style.display = 'flex'
+})
+DotsBtn.addEventListener('mouseout',function (){
+    Earn.style.display = 'none'
+    Win.style.display = 'none'
+    Nft.style.display = 'none'
+    Dots.style.display = 'none'
+})
 buttons.forEach((button, index) => {
     let timeoutId;
     const divs = options[index]
