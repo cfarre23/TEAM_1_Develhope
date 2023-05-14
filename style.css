@@ -396,7 +396,7 @@ body {
 
 }
 
-#potteryDiv {
+#potteryDiv,#potteryDiv2{
     display: flex;
     justify-content: space-between;
 }
@@ -418,7 +418,7 @@ body {
     fill: green;
 }
 
-#perpetual, #bridge, #blog, #docs {
+#perpetual, #bridge, #blog, #docs ,#blog2,#docs2{
     display: flex;
     justify-content: space-between;
 }
