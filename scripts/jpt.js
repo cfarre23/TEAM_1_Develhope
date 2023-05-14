@@ -21,7 +21,9 @@ const Earn = document.querySelector('#earn')
 const Win = document.querySelector('#win')
 const Nft = document.querySelector('#nft')
 const Dots = document.querySelector('#dots')
-// Fred
+
+
+// Fred Homepage Section Starts
 //Media query to remove a word
 function good() {
     if (window.matchMedia("(max-width: 1127px)").matches) {
@@ -123,46 +125,48 @@ buttons.forEach((button, index) => {
     }
 
 })
-/* globe.addEventListener('mouseover', function todo() {
-    options6.style.visibility = "visible";
-    options6.style.display = "flex";
-    options6.addEventListener("mouseover", function showOptions() {
+
+globe.addEventListener('mouseover', function todo() {
+    options[5].style.visibility = "visible";
+    options[5].style.display = "flex";
+    options[5].addEventListener("mouseover", function showOptions() {
         options6.style.visibility = "visible";
     });
 })
 globe.addEventListener('mouseout', function () {
     setTimeout(removes, 60);
-    options6.addEventListener('mouseout', () => {
+    options[5].addEventListener('mouseout', () => {
         removes();
     });
 });
 
 function removes() {
-    if (!globe.matches(':hover') && !options6.matches(':hover')) {
-        options6.style.visibility = 'hidden';
-        options6.style.display = "none";
+    if (!globe.matches(':hover') && !options[5].matches(':hover')) {
+        options[5].style.visibility = 'hidden';
+        options[5].style.display = "none";
 
     }
 }
 
 function remove() {
-    if (!bnbDiv.matches(':hover') && !options[5].matches(':hover')) {
-        options[5].style.visibility = 'hidden';
-        options[5].style.display = "none";
+    if (!bnbDiv.matches(':hover') && !options6.matches(':hover')) {
+        options6.style.visibility = 'hidden';
+        options6.style.display = "none";
     }
 }
 
+
 const bnbDiv = document.querySelector('#div_bnb')
 bnbDiv.addEventListener('mouseover', function todo() {
-    options[5].style.visibility = "visible";
-    options[5].style.display = "flex";
-    options[5].addEventListener("mouseover", function showOptions() {
+    options6.style.visibility = "visible";
+    options6.style.display = "flex";
+    options6.addEventListener("mouseover", function showOptions() {
         options[5].style.visibility = "visible";
     });
 })
 bnbDiv.addEventListener('mouseout', function () {
     setTimeout(remove, 60);
-    options[5].addEventListener('mouseout', () => {
+    options6.addEventListener('mouseout', () => {
         remove();
     });
 });
@@ -177,8 +181,8 @@ toggleButton.addEventListener("change", () => {
         document.querySelector('body').style.background='#08060b'
     }
 })
-*/
-// Fred ends
+
+// Fred Homepage Section ends
 
 const pageUp = document.querySelector('.page-up');
 
