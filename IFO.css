@@ -1,9 +1,6 @@
 :root {
     font-size: 16px;
 }
-*{
-
-}
 
 .ifoSec1 {
     background-image: url("images/Ifo images/ifo-banner-dark.png");
@@ -523,8 +520,7 @@
 .opt_kids:hover{
     cursor: pointer;
 }
-#ifoPAGEBtn{
-
+#ifoPAGEBtn,#ifoPAGEBtn2{
     font-weight: 600;
     font-size: 16px;
     line-height: 16px;
@@ -677,7 +673,7 @@
 }
 .ifoMain{
     background-color: #08060b;
-    display: none;
+    display: block;
 }
 .tkVesting{
     display: flex;
