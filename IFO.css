@@ -520,8 +520,7 @@
 .opt_kids:hover{
     cursor: pointer;
 }
-#ifoPAGEBtn{
-
+#ifoPAGEBtn,#ifoPAGEBtn2{
     font-weight: 600;
     font-size: 16px;
     line-height: 16px;
