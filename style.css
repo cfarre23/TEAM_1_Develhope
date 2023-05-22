@@ -110,7 +110,7 @@ body {
     max-width: 100%;
 }
 .mbNavbar{
-    display: flex;
+    display: none;
     position: fixed;
     bottom: 0;
     justify-content: space-between;
@@ -246,6 +246,9 @@ body {
     }
     #btn_\(\.\.\.\ \.\){
         display: none;
+    }
+    .mbNavbar{
+        display: flex;
     }
 }
 
@@ -3245,4 +3248,3 @@ a{
     margin-right: 20px;
     display: block;
 }
-
