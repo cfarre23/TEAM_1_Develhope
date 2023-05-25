@@ -15,7 +15,8 @@
     display: none;
     transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
     justify-content: center;
-    z-index: 9999;
+    align-items: center;
+    z-index: 9999999999;
     opacity: 1;
   }
 
@@ -3099,19 +3100,7 @@ a{
     align-items: center;
     width: fit-content;
 }
-/* page up button */
-.page-up {
-    visibility: hidden;
-    position: fixed;
-    bottom: 135px;
-    right: 100px;
-    background-color: #1fc7d4;
-    color: #fff;
-    border: none;
-    width: 48px;
-    height: 48px;
-    border-radius: 16px;
-}
+
 .dark-theme {
     position: relative;
     width: 56px;
