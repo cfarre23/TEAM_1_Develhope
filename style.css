@@ -1728,6 +1728,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center ;
+    padding-bottom: 50px;
     }
 
       #div6upperpart{
@@ -1735,6 +1736,7 @@ body {
       justify-content:space-evenly;
       max-width: 1200px;
       flex: 1 1;
+      margin-bottom: 30px;
       }
     
        .div6images{
@@ -1755,11 +1757,21 @@ body {
        animation-name: pieimg;
        animation-duration: 4s;
        animation-iteration-count: infinite;
+                 animation-direction: normal;
+                animation-fill-mode: none;
+                animation-play-state: running;
+                animation-timing-function: ease-in-out;
               }
               @keyframes pieimg{
-       0%{left:0px; top:0px;}
-       50%{left: 0px; top:20px;}
-       100%{left:0px; top: 0px;}
+                0%{
+                    transform: translate(0px, 0px);
+                }
+                50%{
+                    transform: translate(0px, 20px);
+                }
+                100%{
+                    transform: translate(0px, 0px);
+                }
               }
               #div6stonksimg{
        position:absolute;
@@ -1769,11 +1781,21 @@ body {
        animation-duration: 4s;
        animation-delay: 1s;
        animation-iteration-count: infinite;
+                 animation-direction: normal;
+                animation-fill-mode: none;
+                animation-play-state: running;
+                animation-timing-function: ease-in-out;
               }
               @keyframes stonksimg{
-       0%{left:0px; top:0px;}
-       50%{left: 10px; top:20px;}
-       100%{left:0px; top: 0px;}
+                0%{
+                    transform: translate(0px, 0px);
+                }
+                50%{
+                    transform: translate(10px, 20px);
+                }
+                100%{
+                    transform: translate(0px, 0px);
+                }
               }
               #div6folderimg{
        position:absolute;
@@ -1783,11 +1805,22 @@ body {
        animation-duration: 5s;
        animation-delay: 2s;
        animation-iteration-count: infinite;
+                 animation-direction: normal;
+                animation-fill-mode: none;
+                animation-play-state: running;
+                animation-timing-function: ease-in-out;
+       
               }
               @keyframes folderimg{
-       0%{left:0px; top:0px;}
-       50%{left: 20px; top:10px;}
-       100%{left:0px; top: 0px;}
+                0%{
+                    transform: translate(0px, 0px);
+                }
+                50%{
+                    transform: translate(20px, 10px);
+                }
+                100%{
+                    transform: translate(0px, 0px);
+                }
               }
     
     
@@ -1837,148 +1870,158 @@ body {
             top: 5px;
             fill:rgb(45, 224, 224);
             }
-    
-      
+            #div6_learn {
+                font-weight: 600;
+                line-height: 1.5;
+                font-size: 16px;
+            }
+            #div6_explore {
+                font-weight: 600;
+                line-height: 1.5;
+                font-size: 16px;
+                box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+                height: 48px;
+            }
+            
+        .div6_child {
+            display: flex;
+            flex-direction: column;
+        }
+
         .div6topsyruppools{
            align-self: center;
-           max-width: 1200px;
+           min-width: 968px;
            height: 170px;
-           padding-left: 20%;
-           padding-right: 20%;
-           display: grid;
-           font-size: small;
-           gap: 5px;
-           grid-template-rows: 30px 70px 70px;
-          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
           }
-    
-            #div6line1{
-            color:rgb(155, 100, 181);
+
+
+            .div6line1{
+            color:#9a6aff;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 1.5;
             }
     
-           #div6syruppools{
-            font-size: 70%;
+         
+           #div6_switch{
+            background-color: transparent;
+            color: rgb(189, 19, 19);
+            border: 0px;
+            cursor: pointer;
             }
-          .div6topsyruppools #div6topsyruppoolstext{
+            #div6_switch:hover{
+                transition: opacity 0.5s ease;
+                opacity: 0.7;
+            }
+
+            #div6_visible {
+            display: grid;
+            font-size: small;
+            gap: 5px;
+            grid-template-rows: 100px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s;
+            }
+            #div6_hidden {
+            display: none;
+            font-size: small;
+            gap: 5px;
+            grid-template-rows: 100px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s;
+            }
+
+            .div6firstc{
             grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            padding-left: 50px;
+            margin: 0px;
+            }
+    
+            .div6secondc{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            padding-left: 20px;
+            border-left: 1px solid black;
+            margin: 0px;
+            }
+            .div6thirdc{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            border-left: 1px solid black;
+            padding-left: 20px;
+            margin: 0px;
+            }
+            .div6forthc{
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            border-left: 1px solid black;
+            padding-left: 20px;
+            margin: 0px;
+            }
+            .div6fifthc{
+            grid-column-start: 5;
             grid-column-end: 6;
             grid-row-start: 1;
             grid-row-end: 2;
+            border-left: 1px solid black;
+            padding-left: 20px;
+            margin: 0px;
             }
-          #div6topsyruppoolstext{
-            font-size: medium;
-            height: 1ch;
+            
+            #aprtext {
+                font-weight: 400;
+                color: #b8add2;
+                line-height: 1;
+                font-size: 16px;
             }
-          button#div6topsyruppoolstext{
-       width: 40px;
-       height: 30px;
-       background-color: rgb(82, 74, 96);
-       color: grey;
-       border: 0px;
+            #aprnumber {
+                font-weight: 600;
+                color: white;
+                line-height: 1;
+                font-size: 16px;
             }
-            .div6topsyruppools #div6firstc{
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 2;
-            grid-row-end: 3;
-            }
-            .div6topsyruppools #div6secondc{
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 2;
-            grid-row-end: 3;
-            }
-            .div6topsyruppools #div6thirdc{
-            grid-column-start: 3;
-            grid-column-end: 4;
-            grid-row-start: 2;
-            grid-row-end: 3;
-            }
-            .div6topsyruppools #div6forthc{
-            grid-column-start: 4;
-            grid-column-end: 5;
-            grid-row-start: 2;
-            grid-row-end: 3;
-            }
-            .div6topsyruppools #div6fifthc{
-            grid-column-start: 5;
-            grid-column-end: 6;
-            grid-row-start: 2;
-            grid-row-end: 3;
-            }
-            .div6topsyruppools #div6sixthc{
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 3;
-            grid-row-end: 4;
-            }
-            .div6topsyruppools #div6seventhc{
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 3;
-            grid-row-end: 4;
-            }
-            .div6topsyruppools #div6eighthc{
-            grid-column-start: 3;
-            grid-column-end: 4;
-            grid-row-start: 3;
-            grid-row-end: 4;
-            }
-            .div6topsyruppools #div6ninethc{
-            grid-column-start: 4;
-            grid-column-end: 5;
-            grid-row-start: 3;
-            grid-row-end: 4;
-            }
-            .div6topsyruppools #div6tenthc{
-            grid-column-start: 5;
-            grid-column-end: 6;
-            grid-row-start: 3;
-            grid-row-end: 4;
-            }
-    
     
 /* div_7 */
 
-@media (max-width: 1020px) {
-    #div7ball2, #div7ball6, #div7ball9, #div7ball, #div7ball7, #div7ball4{
-        right: 0px;
-    }
-    #div7frame{
-        width:90%;
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-    }
-
-}
 
     #div7winmillions{
     background: linear-gradient(180deg,#0b4576 0%,#091115 100%);
     border: rgb(2, 49, 74) solid 1px;
-    width: 100vw;
     height: 800px;
     position: relative;
+    display: flex;
+    justify-content: center;
     }
        #div7card{
            display: flex;
            justify-content: center;
-           margin: 7%;
        }
     
        #div7frame{
-           background-color: rgb(17, 12, 12, 0.5);
+           background-color: rgba(8, 6, 11, 0.6);
            backdrop-filter:blur(10px);
-           max-width: 968px;
+           max-width: 840px;
+           min-width: 840px;
            width: 100%;
            height: 600px;
-           border: 1px solid rgb(43, 7, 60);
-           border-radius: 90px;
+           border: 1px solid #383241;
+           border-radius: 75px;
            color: white;    
            text-align: center;
-           display: grid;
-           grid-template-rows: 3fr 6fr;
+           display: flex;
+           flex-direction: column;
            z-index: 1;
+           padding: 16px;
+           margin-top: 96px;
            }
     
         #div7caption1{
@@ -1991,20 +2034,21 @@ body {
             #div7h1{
                display: flex;
                justify-content: center;
-               margin-bottom: 40px;
+               margin-bottom: 10px;
+               font-size: 40px;
+               font-weight: 600;
             }
             #div7p1{
-               color:gray;
-               height: 1ch;
-               display: flex;
+               color:#b8add2;
+               font-size: 16px;
+               font-weight: 400;
                justify-content: center;
-               margin-top: 15px;
                margin-bottom: 0px;
             }
             #div7p2{
-               color:gray;
-               height: 1ch;
-               display: flex;
+               color:#b8add2;
+               font-size: 16px;
+               font-weight: 400;
                justify-content: center;
                margin:0px;
             }
@@ -2021,10 +2065,10 @@ body {
             #div7yellowcard{
             width: 280px;
             height: 350px;
-            background: linear-gradient(rgb(252, 194, 47), rgb(253, 223, 89));
-            border-bottom: 4px solid rgb(252, 194, 47);
+            background: linear-gradient(rgb(255, 178, 55) 0%, rgb(255, 205, 81) 50%, rgb(255, 231, 106) 100%);
+            border-bottom: 3px solid rgb(249, 183, 16);
             border-radius: 25px;
-            rotate: -5deg;
+            rotate: -2.5deg;
             margin-right: 12px;
             display:flex;
             flex-direction: column;
@@ -2033,43 +2077,51 @@ body {
                    width:40px;
                    height: 45px;
                    align-self: flex-end;
-                   rotate: -4deg;
+                   rotate: -2.5deg;
                    margin: 20px;
                    margin-bottom: 5px;
                    align-self: flex-end;
                 }
                 #div7yctext{
-                   color:rgb(99, 56, 138);
-                   margin: 5px;
+                   color:rgb(40, 13, 95);
+                   margin-left: 24px;
                 }
                     #div7yctext1{
-                     font-size: 15px;
-                     margin: 10px; 
+                     font-size: 16px;
+                     line-height: 1.5;
                      text-align: left;
+                     font-weight: 600;
+                     margin-bottom: 0px;
                     }
                     #div7yctext2{
-                       font-size: 40px;
-                       margin: 10px;
-                       text-align: left;
+                        margin-top: 5px;
+                        font-size: 32px;
+                        line-height: 1.1;
+                        text-align: left;
+                        font-weight: 600;
+                        margin-bottom: 0px;
                     }
                     #div7yctext3{
-                     font-size: 15px;
-                     margin: 10px; 
-                     text-align: left;
+                        margin-top: 5px;
+                        font-size: 16px;
+                        line-height: 1.5;
+                        text-align: left;
+                        font-weight: 600;
                     }
                     #div7yctext4{
-                     font-size: 15px;
-                     margin-left: 10px; 
-                     margin-top: 15px;
-                     margin-bottom: 15px;
-                     text-align: left;
+                        font-size: 16px;
+                        line-height: 1.5;
+                        text-align: left;
+                        font-weight: 400;
                     }
               
     
             #div7purplecard{
             width: 280px;
+            max-width: 280px;
             height: 350px;
-            background-color: rgb(99, 56, 138);
+            background: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
+            border-bottom: 4px solid rgb(72, 40, 135);
             border-radius: 25px;
             rotate: 3deg;
             margin-left: 12px;
@@ -2082,39 +2134,55 @@ body {
                    margin-bottom: 5px;
                 }
                 #div7pctext2{
-                   color:rgb(253, 223, 89);
+                   background: linear-gradient(rgb(255, 178, 55) 0%, rgb(255, 205, 81) 50%, rgb(255, 231, 106) 100%);
+                   -webkit-background-clip: text;
+                   -webkit-text-fill-color: transparent;
                    font-size: 40px;
                    text-align: left;
-                   margin: 10px; 
+                   margin: 0px;
+                   font-weight: 600;
+                   margin-left: 24px;
                 }
                 #div7pctext1, #div7pctext3{
                    color: white;
-                   font-size: 15px;
-                   margin: 10px; 
+                   font-size: 16px;
                    margin-top: 5px;
                    margin-bottom: 5px;
                    text-align: left;
+                   font-weight: 600;
+                   margin-top: 0px;
+                   margin-bottom: 0px;
+                   margin-left: 24px;
                 }
+
                 #div7pctext4{
-                   font-size: 15px;
+                   font-size: 16px;
+                   font-weight: 400;
                    margin-left: 10px; 
-                   margin-top: 15px;
+                   margin-top: 25px;
                    margin-right: 10px;
                    margin-bottom: 15px;
                    text-align: left;
+                   margin-left: 24px;
+                   line-height: 1.5;
+                   padding-right: 5px;
                 
                 }
     
-            #div7play, #div7buytickets{
-            background-color: rgb(62, 186, 186);
-            border: 0px;
+            #div7_play, #div7_buytickets {
+            display: flex;
             width: 220px;
             height: 40px;
-            border-radius: 10px;
-            color: black;
-            align-self: center;
             margin: 30px;
+            font-weight: 600;
+            justify-content: center;
+            box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+            min-height: 45px;
             }  
+            #div7_play svg, #div7_buytickets svg{
+                position: relative;
+                top: 5px;
+            }
     
     
                  #div7ball2{
@@ -2128,8 +2196,12 @@ body {
                  align-self: flex-end;
                  animation-name: ball2;
                  animation-duration: 2s;
+                 animation-timing-function: ease-in-out;
                  animation-delay: 3s;
                  animation-iteration-count: infinite;
+                 animation-direction: normal;
+                animation-fill-mode: none;
+                animation-play-state: running;
                   }
                   @keyframes ball2{
                         0%{
@@ -2152,6 +2224,10 @@ body {
                  animation-duration: 4s;
                  animation-delay: 3s;
                  animation-iteration-count: infinite;
+                 animation-direction: normal;
+                animation-fill-mode: none;
+                animation-play-state: running;
+                animation-timing-function: ease-in-out;
                   }
                   @keyframes ball7{
                     0%{
@@ -2172,8 +2248,12 @@ body {
                  height: 500px;
                  animation-name: ball4;
                  animation-duration: 4s;
+                 animation-timing-function: ease-in-out;
                  animation-delay: 1s;
                  animation-iteration-count: infinite;
+                 animation-direction: normal;
+                animation-fill-mode: none;
+                animation-play-state: running;
                   }
                   @keyframes ball4{
                     0%{
@@ -2194,8 +2274,12 @@ body {
                  height: 500px;
                  animation-name: ball6;
                  animation-duration: 3s;
+                 animation-timing-function: ease-in-out;
                  animation-delay: 0s;
                  animation-iteration-count: infinite;
+                 animation-direction: normal;
+                animation-fill-mode: none;
+                animation-play-state: running;
                   }
                   @keyframes ball6{
                     0%{
@@ -2216,8 +2300,12 @@ body {
                  height: 500px;
                  animation-name: ball9;
                  animation-duration: 3s;
+                 animation-timing-function: ease-in-out;
                  animation-delay: 1s;
                  animation-iteration-count: infinite;
+                 animation-direction: normal;
+                animation-fill-mode: none;
+                animation-play-state: running;
                  }
                  @keyframes ball9{
                     0%{
@@ -2232,14 +2320,18 @@ body {
                  }
                  #div7greencard{
                 position: absolute;
-                top: 0px;
+                bottom: 0px;
                 left:0px;
                 width: 510px;
                 height: 500px;
                 animation-name: greencard;
                 animation-duration: 2s;
+                animation-timing-function: ease-in-out;
                 animation-delay: 0s;
                 animation-iteration-count: infinite;
+                animation-direction: normal;
+                animation-fill-mode: none;
+                animation-play-state: running;
                  }
                  @keyframes greencard{
                     0%{
@@ -2254,14 +2346,18 @@ body {
                  }
                  #div7bluecard{
                 position: absolute;
-                top: 180px;
+                bottom: 0px;
                 left: 0px;
                 width: 510px;
                 height: 500px;
                 animation-name: bluecard;
                 animation-duration: 4s;
+                animation-timing-function: ease-in-out;
                 animation-delay: 3s;
                 animation-iteration-count: infinite;
+                animation-direction: normal;
+                animation-fill-mode: none;
+                animation-play-state: running;
                  }
                  @keyframes bluecard{
                     0%{
@@ -2276,14 +2372,18 @@ body {
                  } 
                  #div7redcard{
                 position: absolute;
-                top: 0px;
+                bottom: 0px;
                 left: 0px;
                 width: 510px;
                 height: 500px;
                 animation-name: redcard;
                 animation-duration: 3s;
+                animation-timing-function: ease-in-out;
                 animation-delay: 2s;
                 animation-iteration-count: infinite;
+                animation-direction: normal;
+                animation-fill-mode: none;
+                animation-play-state: running;
                  }
                  @keyframes redcard{
                 0%{
@@ -2298,14 +2398,18 @@ body {
                  } 
                  #div7greenbottomcard{
                 position: absolute;
-                top: 180px;
+                bottom: 0px;
                 left: 0px;
                 width: 510px;
                 height: 500px;
                 animation-name: greenbottomcard;
                 animation-duration: 4s;
+                animation-timing-function: ease-in-out;
                 animation-delay: 0s;
                 animation-iteration-count: infinite;
+                animation-direction: normal;
+                animation-fill-mode: none;
+                animation-play-state: running;
                  }
                  @keyframes greenbottomcard{
                     0%{
@@ -2322,10 +2426,12 @@ body {
                 display: flex;
                 justify-content: center;
                 align-content: center;
-                padding-bottom: 500px;
                  }
-    
-
+    .div7_parent {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
 
 /* div_8 */
 
@@ -2379,7 +2485,7 @@ body {
     color: #1fc7d4;
 }
 
-#div8_buycake {
+.div8_buycake {
     display: flex;
     align-items: center;
     margin-right: 16px;
@@ -2391,10 +2497,10 @@ body {
     transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
     cursor: pointer;
 }
-#div8_buycake:hover {
+.div8_buycake:hover {
     opacity: 50%;
 }
-#div8_buycake_anchor {
+.div8_buycake_anchor {
     font-weight: 600;
     text-decoration: none;
     font-family: 'Kanit', sans-serif;
@@ -2402,7 +2508,7 @@ body {
     font-size: 16px;
     color: #191326;
 }
-#div8_learn {
+.div8_learn {
     display: flex;
     align-items: center;
     text-decoration: none;
