@@ -34,3 +34,5 @@ function switchTable() {
 switchButton.addEventListener("click", switchTable);
 
 setInterval(switchTable, 5000);
+
+//
