@@ -1991,6 +1991,15 @@ body {
                 line-height: 1;
                 font-size: 16px;
             }
+            #options5 > #ooo{
+                color: inherit;
+            }
+            #options5 > #o{
+                color: inherit;
+            }
+            #options1 > a{
+                color: inherit;
+            }
     
 /* div_7 */
 
