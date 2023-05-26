@@ -1832,6 +1832,8 @@ body {
          }   
              .div6purple{
              color:#9A6AFF;
+                 margin: 0;
+                 padding: 0;
             }
     
             #div6text1{
@@ -1993,26 +1995,33 @@ body {
 /* div_7 */
 
 
-    #div7winmillions{
+
+    .div7winmillions{
     background: linear-gradient(180deg,#0b4576 0%,#091115 100%);
     border: rgb(2, 49, 74) solid 1px;
-    height: 800px;
+        width: 100%;
+    height: 100%;
     position: relative;
     display: flex;
     justify-content: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
-       #div7card{
+       .div7card{
            display: flex;
            justify-content: center;
+           height: auto;
+           align-content: center;
        }
-    
-       #div7frame{
+
+       .div7frame{
            background-color: rgba(8, 6, 11, 0.6);
            backdrop-filter:blur(10px);
-           max-width: 840px;
-           min-width: 840px;
+           max-width: 920px;
            width: 100%;
-           height: 600px;
+           height: 100%;
+           padding-left: 160px;
+           padding-right: 160px;
            border: 1px solid #383241;
            border-radius: 75px;
            color: white;    
@@ -2020,8 +2029,6 @@ body {
            display: flex;
            flex-direction: column;
            z-index: 1;
-           padding: 16px;
-           margin-top: 96px;
            }
     
         #div7caption1{
@@ -2037,34 +2044,62 @@ body {
                margin-bottom: 10px;
                font-size: 40px;
                font-weight: 600;
+                width: 500px;
             }
             #div7p1{
                color:#b8add2;
-               font-size: 16px;
+               font-size: 18px;
                font-weight: 400;
                justify-content: center;
                margin-bottom: 0px;
+                line-height: 24px;
             }
             #div7p2{
                color:#b8add2;
-               font-size: 16px;
+               font-size: 18px;
                font-weight: 400;
                justify-content: center;
                margin:0px;
             }
-    
-    
-    
-        #div72cards{
+@media screen and (max-width: 948px) {
+    #div72cards{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    #div7yellowcard{
+        rotate: 0deg;
+    }
+    #div7purplecard{
+        rotate: 0deg;
+        margin-left: -20px;
+    }
+    #div7ball2 {
+        width: 150px;
+        height: 150px;
+    }
+    #div7ball6,#div7ball9,#div7ball4,#div7ball7, #div7greencard,#div7bluecard,#div7redcard,#div7greenbottomcard{
+        width: 250px;
+        height: 250px;
+    }
+    #div7h1{
+
+    }
+
+}
+
+        .div72cards{
            display: flex;
+            flex-direction: row;
            justify-content: center;
+            align-items: center;
            padding: 10px;
-           margin-bottom: 15px;
+            width: 100%;
        }
     
-            #div7yellowcard{
-            width: 280px;
-            height: 350px;
+            .div7yellowcard{
+            max-width: 320px;
+            max-height: 395px;
             background: linear-gradient(rgb(255, 178, 55) 0%, rgb(255, 205, 81) 50%, rgb(255, 231, 106) 100%);
             border-bottom: 3px solid rgb(249, 183, 16);
             border-radius: 25px;
@@ -2116,10 +2151,9 @@ body {
                     }
               
     
-            #div7purplecard{
-            width: 280px;
-            max-width: 280px;
-            height: 350px;
+            .div7purplecard{
+            max-width: 315px;
+            max-height: 390px;
             background: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
             border-bottom: 4px solid rgb(72, 40, 135);
             border-radius: 25px;
@@ -2185,7 +2219,7 @@ body {
             }
     
     
-                 #div7ball2{
+                 .div7ball2{
                  width: 400px;
                  height: 400px;
                  position: absolute;
@@ -2214,7 +2248,7 @@ body {
                             transform: translate(0px, 0px);
                         }
                     }
-                  #div7ball7{
+                  .div7ball7{
                  width: 510px;
                  height: 500px;
                  position: absolute;
@@ -2240,7 +2274,7 @@ body {
                         transform: translate(0px, 0px);
                     }
                   }
-                  #div7ball4{
+                  .div7ball4{
                  position: absolute;
                  top: 0px;
                  right:0px;
@@ -2266,10 +2300,10 @@ body {
                         transform: translate(0px, 0px);
                     }
                   }
-                  #div7ball6{
+                  .div7ball6{
                  position: absolute;
-                 top: 0px;
-                 right:0px;
+                 top: 0;
+                 right:0;
                  width: 510px;
                  height: 500px;
                  animation-name: ball6;
@@ -2292,7 +2326,7 @@ body {
                         transform: translate(0px, 0px);
                     }
                   }
-                  #div7ball9{
+                  .div7ball9{
                  position: absolute;
                  top: 0px;
                  right:0px;
@@ -2318,7 +2352,7 @@ body {
                         transform: translate(0px, 0px);
                     }
                  }
-                 #div7greencard{
+                 .div7greencard{
                 position: absolute;
                 bottom: 0px;
                 left:0px;
@@ -2344,7 +2378,7 @@ body {
                         transform: translate(0px, 0px);
                     }
                  }
-                 #div7bluecard{
+                 .div7bluecard{
                 position: absolute;
                 bottom: 0px;
                 left: 0px;
@@ -2370,7 +2404,7 @@ body {
                         transform: translate(0px, 0px);
                     }
                  } 
-                 #div7redcard{
+                 .div7redcard{
                 position: absolute;
                 bottom: 0px;
                 left: 0px;
@@ -2396,7 +2430,7 @@ body {
                             transform: translate(0px, 0px);
                         }
                  } 
-                 #div7greenbottomcard{
+                 .div7greenbottomcard{
                 position: absolute;
                 bottom: 0px;
                 left: 0px;
@@ -2422,15 +2456,10 @@ body {
                         transform: translate(0px, 0px);
                     }
                  }
-                 #div7card{
-                display: flex;
-                justify-content: center;
-                align-content: center;
-                 }
     .div7_parent {
-        overflow: hidden;
         display: flex;
         flex-direction: column;
+        height: 100%;
     }
 
 /* div_8 */
