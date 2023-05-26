@@ -22,10 +22,10 @@ hiddenRow1.style.display = "none";
 toggleHidden1.addEventListener("click", function() {
   if (hiddenRow1.style.display === "none") {
     hiddenRow1.style.display = "flex";
-    detailsButton1.innerHTML = "Hide<img src='images/affi_down_arrow.svg' style='margin-left:8px;top:5px;position:relative;transform:rotate(180deg);'>";
+    detailsButton1.innerHTML = "Hide<img src='images/affi-images/affi_down_arrow.svg' style='margin-left:8px;top:5px;position:relative;transform:rotate(180deg);'>";
   } else {
     hiddenRow1.style.display = "none";
-    detailsButton1.innerHTML = "Details<img src='images/affi_down_arrow.svg' style='margin-left:8px;top:5px;position:relative;'>";
+    detailsButton1.innerHTML = "Details<img src='images/affi-images/affi_down_arrow.svg' style='margin-left:8px;top:5px;position:relative;'>";
   }
 });
 
