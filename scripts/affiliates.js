@@ -33,10 +33,10 @@ hiddenRow2.style.display = "none";
 toggleHidden2.addEventListener("click", function() {
   if (hiddenRow2.style.display === "none") {
     hiddenRow2.style.display = "flex";
-    detailsButton2.innerHTML = "Hide<img src='images/affi_down_arrow.svg' style='margin-left:8px;top:5px;position:relative;transform:rotate(180deg);'>";
+    detailsButton2.innerHTML = "Hide<img src='images/affi-images/affi_down_arrow.svg' style='margin-left:8px;top:5px;position:relative;transform:rotate(180deg);'>";
   } else {
     hiddenRow2.style.display = "none";
-    detailsButton2.innerHTML = "Details<img src='images/affi_down_arrow.svg' style='margin-left:8px;top:5px;position:relative;'>";
+    detailsButton2.innerHTML = "Details<img src='images/affi-images/affi_down_arrow.svg' style='margin-left:8px;top:5px;position:relative;'>";
   }
 });
 
@@ -44,10 +44,10 @@ hiddenRow3.style.display = "none";
 toggleHidden3.addEventListener("click", function() {
   if (hiddenRow3.style.display === "none") {
     hiddenRow3.style.display = "flex";
-    detailsButton3.innerHTML = "Hide<img src='images/affi_down_arrow.svg' style='margin-left:8px;top:5px;position:relative;transform:rotate(180deg);'>";
+    detailsButton3.innerHTML = "Hide<img src='images/affi-images/affi_down_arrow.svg' style='margin-left:8px;top:5px;position:relative;transform:rotate(180deg);'>";
   } else {
     hiddenRow3.style.display = "none";
-    detailsButton3.innerHTML = "Details<img src='images/affi_down_arrow.svg' style='margin-left:8px;top:5px;position:relative;'>";
+    detailsButton3.innerHTML = "Details<img src='images/affi-images/affi_down_arrow.svg' style='margin-left:8px;top:5px;position:relative;'>";
   }
 });
 
@@ -55,10 +55,10 @@ hiddenRow4.style.display = "none";
 toggleHidden4.addEventListener("click", function() {
   if (hiddenRow4.style.display === "none") {
     hiddenRow4.style.display = "flex";
-    detailsButton4.innerHTML = "Hide<img src='images/affi_down_arrow.svg' style='margin-left:8px;top:5px;position:relative;transform:rotate(180deg);'>";
+    detailsButton4.innerHTML = "Hide<img src='images/affi-images/affi_down_arrow.svg' style='margin-left:8px;top:5px;position:relative;transform:rotate(180deg);'>";
   } else {
     hiddenRow4.style.display = "none";
-    detailsButton4.innerHTML = "Details<img src='images/affi_down_arrow.svg' style='margin-left:8px;top:5px;position:relative;'>";
+    detailsButton4.innerHTML = "Details<img src='images/affi-images/affi_down_arrow.svg' style='margin-left:8px;top:5px;position:relative;'>";
   }
 });
 
@@ -66,9 +66,9 @@ hiddenRow5.style.display = "none";
 toggleHidden5.addEventListener("click", function() {
   if (hiddenRow5.style.display === "none") {
     hiddenRow5.style.display = "flex";
-    detailsButton5.innerHTML = "Hide<img src='images/affi_down_arrow.svg' style='margin-left:8px;top:5px;position:relative;transform:rotate(180deg);'>";
+    detailsButton5.innerHTML = "Hide<img src='images/affi-images/affi_down_arrow.svg' style='margin-left:8px;top:5px;position:relative;transform:rotate(180deg);'>";
   } else {
     hiddenRow5.style.display = "none";
-    detailsButton5.innerHTML = "Details<img src='images/affi_down_arrow.svg' style='margin-left:8px;top:5px;position:relative;'>";
+    detailsButton5.innerHTML = "Details<img src='images/affi-images/affi_down_arrow.svg' style='margin-left:8px;top:5px;position:relative;'>";
   }
 });
