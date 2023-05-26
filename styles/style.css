@@ -2824,6 +2824,7 @@ body {
 }
 
 /* div_9 */
+/* div_9 */
 * {
     font-family: Kanit, sans-serif;
 }
@@ -2893,6 +2894,7 @@ body {
 }
 
 .many1 {
+    max-width: 1200px;
     visibility: visible;
     overflow: hidden;
     position: absolute;
@@ -3097,50 +3099,97 @@ a{
 }
 
 /* div 10 */
-@media screen and (max-width: 736px){
-    #content{
-        display: flex;
-        flex-direction: column;
-        justify-content: normal;
+
+#div10 {
+    background: #27262c;
+    display: flex;
+    justify-content: center;
+    padding: 40px 16px;
+    margin-bottom: 44px;
+}
+
+@media screen and (min-width: 576px) {
+    #div10 {
+        padding: 56px 40px 32px;
+        margin-bottom: 0px;
+        position: relative;
     }
 }
 
-.div10 {
-    background: #27262c;
-}
-
-.tenthdiv {
+#div10 .tenthdiv {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    border: 1px solid green;
-    max-width: 1200px;
-    width: auto;
 }
 
-.content {
+@media screen and (min-width: 576px) {
+    .tenthdiv {
+        width: 1200px;
+    }
+}
+
+.firstpancklogo {
+    margin-bottom: 24px;
+    display: block;
+}
+
+.pancklogo {
+    align-self: center;
+    flex-shrink: 0;
+}
+
+@media screen and (min-width: 576px) {
+    .firstpancklogo {
+        display: none;
+    }
+}
+
+#div10 .content {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 42px;
 }
 
-
-.contentlist {
-    display: flex;
-    flex-direction: column;
+@media screen and (min-width: 576px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 36px;
+    }
 }
-.about {
+
+#div10 .contentlist {
+    margin-bottom: 40px;
+    list-style: none;
+    display: block;
+}
+
+@media screen and (min-width: 852px) {
+    .contentlist {
+        margin-bottom: 0px;
+        list-style: none;
+    }
+}
+
+#div10 #about {
     color: #9a6aff;
     font-weight: 600;
     text-transform: uppercase;
     font-size: 16px;
     margin-bottom: 8px;
 }
-.about-info {
+
+#div10 .about-info {
     font-size: 16px;
     margin-bottom: 8px;
     text-transform: capitalize;
 }
 
-.div10 .contacted {
+#div10 .contacted {
     color: #ffb237;
     font-size: 16px;
     display: flex;
@@ -3148,10 +3197,9 @@ a{
     width: fit-content;
     font-weight: 400;
     line-height: 1.5;
-    text-decoration: none;
 }
 
-.div10 .frombrand {
+#div10 .frombrand {
     color: #f4eeff;
     display: flex;
     align-items: center;
@@ -3159,33 +3207,30 @@ a{
     font-weight: 400;
     line-height: 1.5;
     font-size: 16px;
-    text-decoration: none;
-    
 }
 
- .iconpage {
+#div10 #iconpage {
     border-bottom: 1px solid #383241;
     display: flex;
-     gap: 2rem;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
 }
 
-.socials_icon {
+#div10 .socials_icon {
     fill:  #b8add2;
     display: flex;
     align-items: center;
     width: fit-content;
     line-height: 1.5;
+    margin-left: 40px;
     text-decoration: none;
 }
-.pancklogo {
-    width: 160px;
-    fill: #f4eeff;
+
+#div10 #announcements {
+    position: relative;
 }
 
-#announcements {
-}
-
-.div10 .langs {
+#div10 .langs {
     width: max-content;
     display: flex;
     flex-direction: column;
@@ -3198,12 +3243,61 @@ a{
 
 }
 
-.div10 .translation-lang {
+#div10 .translation-lang {
     font-size: 16px;
     color: #b8add2;
     display: flex;
     align-items: center;
     width: fit-content;
+}
+/* page up button */
+.page-up {
+    visibility: hidden;
+    position: fixed;
+    bottom: 135px;
+    right: 100px;
+    background-color: #1fc7d4;
+    color: #fff;
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+}
+
+.theme {
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    padding: 24px 0px;
+    margin-bottom: 24px;
+    order: 1;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 576px) {
+    .theme {
+        border-top-width: 0px;
+        border-bottom-width: 0px;
+        padding: 0px;
+        margin-bottom: 0px;
+        border-color: #383241;
+        border-style: solid;
+        order: 3;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.theme2 {
+    order: 2;
+}
+
+@media screen and (min-width: 576px) {
+    .theme2 {
+        order: 1;
+        display: flex;
+        align-items: center;
+    }
 }
 
 .dark-theme {
@@ -3211,18 +3305,12 @@ a{
     width: 56px;
     height: 32px;
     overflow: hidden;
-    display: block;
-}
-.theme{
-
 }
 
 .langs {
-    transform: translate(0px);
+    transform: translateX(0px);
     position: relative;
     will-change: opacity;
-    opacity: 0;
-    display: block;
 }
 
 .langs.appear {
@@ -3268,7 +3356,6 @@ a{
     position: absolute;
     width: 100%;
     z-index: 3;
-    left: calc(100%);
 }
 
 .mooncake {
@@ -3284,7 +3371,7 @@ a{
     transition-property: left;
     width: 26px;
     z-index: 1;
-    display: block;
+    left: 3px;
 }
 
 .sunshine {
@@ -3295,9 +3382,6 @@ a{
 }
 
 .langs-svg {
-    color: #9a6aff;
-    width: 20px;
-    fill: #9a6aff;
     align-self: center;
     flex-shrink: 0;
 }
@@ -3311,11 +3395,8 @@ a{
 }
 
 .svgtenth {
-    color: #27262c;
-    width: 20px;
     align-self: center;
     flex-shrink: 0;
-    fill: #27262c;
 }
 
 .race {
@@ -3349,9 +3430,6 @@ a{
 }
 
 .langexchange {
-    fill: #b8add2;
-    color: #b8add2;
-    width: 24px;
     align-self: center;
     flex-shrink: 0;
     margin-right: 0.5rem;
@@ -3388,6 +3466,74 @@ a{
 }
 
 .endlogo {
+    order: 1;
+    margin-bottom: 24px;
+}
+
+@media screen and (min-width: 576px) {
+    .endlogo {
+        order: 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+}
+
+.startFooter {
     margin-right: 20px;
-    display: block;
+}
+
+.standardPrice {
+    display: flex;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+}
+
+.logosvg {
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: transform;
+    align-self: center;
+    flex-shrink: 0;
+    margin-right: 8px;
+}
+
+.price {
+    color: #b8add2;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.buycake {
+    position: relative;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    height: 32px;
+    padding: 0px 16px;
+    background-color: #1fc7d4;
+    color: #191326;
+    transition-duration: 0.2s, 0.2s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
+    transition-property: background-color, opacity;
+}
+
+.buycakesvg {
+    align-self: center;
+    flex-shrink: 0;
+    margin-left: 0.5rem;
 }
