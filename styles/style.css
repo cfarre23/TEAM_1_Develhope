@@ -2050,6 +2050,9 @@ body {
     #div6fifthc{
         grid-area: 3/2/3/3;
     }
+    #div6text1{
+        font-size: 30px;
+    }
 
 }
 
