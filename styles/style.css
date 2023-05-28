@@ -115,12 +115,12 @@ body {
     position: fixed;
     bottom: 0;
     justify-content: space-between;
-    border: 1px solid red;
     width: 100%;
     background-color: #27262c;
     border-top: 1px solid #383241;
     z-index: 20;
-    padding: 10px;
+    padding: 5px;
+    height: 40px
 }
 .mbImgs{
     width: 75%;
@@ -2016,25 +2016,15 @@ body {
     position: relative;
     display: flex;
     justify-content: center;
-        padding-top: 100px;
-        padding-bottom: 100px;
     }
-       .div7card{
-           display: flex;
-           justify-content: center;
-           height: auto;
-           align-content: center;
-       }
+
 
        .div7frame{
            background-color: rgba(8, 6, 11, 0.6);
            backdrop-filter:blur(10px);
-           max-width: 920px;
-           width: 100%;
-           height: 100%;
-           padding-left: 160px;
-           padding-right: 160px;
-           border: 1px solid #383241;
+           height: auto;
+           width: 920px;
+           padding-bottom: 50px;
            border-radius: 75px;
            color: white;    
            text-align: center;
@@ -2045,40 +2035,34 @@ body {
     
         #div7caption1{
          color: white;
-         opacity: 1;
-         display: grid;
-         grid-template-rows: 2fr 1fr 1fr;
-         width: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
         }
             #div7h1{
-               display: flex;
-               justify-content: center;
-               margin-bottom: 10px;
                font-size: 40px;
                font-weight: 600;
-                width: 500px;
             }
             #div7p1{
                color:#b8add2;
                font-size: 18px;
                font-weight: 400;
-               justify-content: center;
-               margin-bottom: 0px;
                 line-height: 24px;
+                margin-top: -15px;
             }
-            #div7p2{
-               color:#b8add2;
-               font-size: 18px;
-               font-weight: 400;
-               justify-content: center;
-               margin:0px;
-            }
+
 @media screen and (max-width: 948px) {
+
+    #div7frame{
+        width: 100%;
+    }
     #div72cards{
         display: flex;
         flex-direction: column;
         gap: 32px;
     }
+
     #div7yellowcard{
         rotate: 0deg;
     }
@@ -3181,6 +3165,7 @@ a{
     width: fit-content;
     line-height: 1.5;
     text-decoration: none;
+    font-size: 16px;
 }
 .pancklogo {
     width: 160px;
