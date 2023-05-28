@@ -13,10 +13,10 @@ window.addEventListener("scroll", () => {
 
 //div 6 table switch
 
-const visibleTable = document.getElementById("div6_visible")
-const hiddenTable = document.getElementById("div6_hidden")
-const switchButton = document.getElementById("div6_switch");
-const title = document.getElementById("d6farms");
+const visibleTable = document.querySelector(".div6_visible")
+const hiddenTable = document.querySelector(".div6_hidden")
+const switchButton = document.querySelector(".div6_switch");
+const title = document.querySelector(".d6farms");
 
 function switchTable() {
   if (visibleTable.style.display === "none") {
