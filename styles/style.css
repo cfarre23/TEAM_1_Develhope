@@ -115,12 +115,12 @@ body {
     position: fixed;
     bottom: 0;
     justify-content: space-between;
-    border: 1px solid red;
     width: 100%;
     background-color: #27262c;
     border-top: 1px solid #383241;
     z-index: 20;
-    padding: 10px;
+    padding: 5px;
+    height: 40px
 }
 .mbImgs{
     width: 75%;
@@ -2016,25 +2016,15 @@ body {
     position: relative;
     display: flex;
     justify-content: center;
-        padding-top: 100px;
-        padding-bottom: 100px;
     }
-       .div7card{
-           display: flex;
-           justify-content: center;
-           height: auto;
-           align-content: center;
-       }
+
 
        .div7frame{
            background-color: rgba(8, 6, 11, 0.6);
            backdrop-filter:blur(10px);
-           max-width: 920px;
-           width: 100%;
-           height: 100%;
-           padding-left: 160px;
-           padding-right: 160px;
-           border: 1px solid #383241;
+           height: auto;
+           width: 920px;
+           padding-bottom: 50px;
            border-radius: 75px;
            color: white;    
            text-align: center;
@@ -2045,40 +2035,34 @@ body {
     
         #div7caption1{
          color: white;
-         opacity: 1;
-         display: grid;
-         grid-template-rows: 2fr 1fr 1fr;
-         width: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
         }
             #div7h1{
-               display: flex;
-               justify-content: center;
-               margin-bottom: 10px;
                font-size: 40px;
                font-weight: 600;
-                width: 500px;
             }
             #div7p1{
                color:#b8add2;
                font-size: 18px;
                font-weight: 400;
-               justify-content: center;
-               margin-bottom: 0px;
                 line-height: 24px;
+                margin-top: -15px;
             }
-            #div7p2{
-               color:#b8add2;
-               font-size: 18px;
-               font-weight: 400;
-               justify-content: center;
-               margin:0px;
-            }
+
 @media screen and (max-width: 948px) {
+
+    #div7frame{
+        width: 100%;
+    }
     #div72cards{
         display: flex;
         flex-direction: column;
         gap: 32px;
     }
+
     #div7yellowcard{
         rotate: 0deg;
     }
@@ -3100,96 +3084,52 @@ a{
 
 /* div 10 */
 
-#div10 {
-    background: #27262c;
-    display: flex;
-    justify-content: center;
-    padding: 40px 16px;
-    margin-bottom: 44px;
-}
-
-@media screen and (min-width: 576px) {
-    #div10 {
-        padding: 56px 40px 32px;
-        margin-bottom: 0px;
-        position: relative;
+@media screen and (max-width: 736px){
+    #content{
+        display: flex;
+        flex-direction: column;
+        justify-content: normal;
     }
 }
 
-#div10 .tenthdiv {
-    width: 100%;
+.div10 {
+    display: flex;
+    background: #27262c;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tenthdiv {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.contentlist {
     display: flex;
     flex-direction: column;
 }
-
-@media screen and (min-width: 576px) {
-    .tenthdiv {
-        width: 1200px;
-    }
-}
-
-.firstpancklogo {
-    margin-bottom: 24px;
-    display: block;
-}
-
-.pancklogo {
-    align-self: center;
-    flex-shrink: 0;
-}
-
-@media screen and (min-width: 576px) {
-    .firstpancklogo {
-        display: none;
-    }
-}
-
-#div10 .content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 42px;
-}
-
-@media screen and (min-width: 576px) {
-    .content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin-bottom: 36px;
-    }
-}
-
-#div10 .contentlist {
-    margin-bottom: 40px;
-    list-style: none;
-    display: block;
-}
-
-@media screen and (min-width: 852px) {
-    .contentlist {
-        margin-bottom: 0px;
-        list-style: none;
-    }
-}
-
-#div10 #about {
+.about {
     color: #9a6aff;
     font-weight: 600;
     text-transform: uppercase;
     font-size: 16px;
     margin-bottom: 8px;
 }
-
-#div10 .about-info {
+.about-info {
     font-size: 16px;
     margin-bottom: 8px;
     text-transform: capitalize;
 }
 
-#div10 .contacted {
+.div10 .contacted {
     color: #ffb237;
     font-size: 16px;
     display: flex;
@@ -3197,9 +3137,10 @@ a{
     width: fit-content;
     font-weight: 400;
     line-height: 1.5;
+    text-decoration: none;
 }
 
-#div10 .frombrand {
+.div10 .frombrand {
     color: #f4eeff;
     display: flex;
     align-items: center;
@@ -3207,30 +3148,34 @@ a{
     font-weight: 400;
     line-height: 1.5;
     font-size: 16px;
+    text-decoration: none;
+
 }
 
-#div10 #iconpage {
+.iconpage {
     border-bottom: 1px solid #383241;
     display: flex;
-    padding-bottom: 32px;
-    margin-bottom: 32px;
+    gap: 2rem;
 }
 
-#div10 .socials_icon {
+.socials_icon {
     fill:  #b8add2;
     display: flex;
     align-items: center;
     width: fit-content;
     line-height: 1.5;
-    margin-left: 40px;
     text-decoration: none;
+    font-size: 16px;
+}
+.pancklogo {
+    width: 160px;
+    fill: #f4eeff;
 }
 
-#div10 #announcements {
-    position: relative;
+#announcements {
 }
 
-#div10 .langs {
+.div10 .langs {
     width: max-content;
     display: flex;
     flex-direction: column;
@@ -3241,6 +3186,30 @@ a{
     z-index: 10;
     border-radius: 4px;
 
+}
+
+.div10 .translation-lang {
+    font-size: 16px;
+    color: #b8add2;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.dark-theme {
+    position: relative;
+    width: 56px;
+    height: 32px;
+    overflow: hidden;
+    display: block;
+}
+.theme{
+
+}
+
+.langs {
+    transform: translate(0px);
+    position: relative;
 }
 
 #div10 .translation-lang {
