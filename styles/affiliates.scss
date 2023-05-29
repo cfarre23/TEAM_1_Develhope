@@ -466,20 +466,6 @@ $middle_weight: 400;
     margin-right: 5px;
 }
 
-footer {
-    display: flex;
-    min-height: 400px;
-    background: $color-text3-dark;
-    color: $color-text1-dark;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    &::after {
-        content: "Footer";
-    }
-}
-
 .bluebutton {
     display: flex;
     align-items: center;
@@ -543,6 +529,9 @@ footer {
     #pageup {
         right: 30px;
         bottom: 30px;
+    }
+    .tenthdiv {
+        max-width: 370px;
     }
 
 }
