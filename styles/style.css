@@ -90,7 +90,7 @@ body {
 
     #navbar {
         display: flex;
-        gap: 0.1rem;
+        gap: 3rem;
         justify-content: normal;
         width: 100%;
     }

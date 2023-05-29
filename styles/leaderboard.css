@@ -1,5 +1,6 @@
 #leaderboard_div1 {
-    background-color: #27262c;
+    background-color: black;
+    padding: 20px;
     position: relative;
     display: flex;
     max-width: 100vw;
