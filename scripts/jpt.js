@@ -6,13 +6,6 @@ const walletText = document.querySelector('.btn_cwallect')
 const globe = document.querySelector('#img_globe')
 const toggleButton = document.querySelector(".toggle")
 const options6 = document.getElementById('options6')
-const ifoPAGE = document.querySelector('.ifoMain')
-const bodyDisappear = document.querySelector('.bodyDisappear')
-const btnDetails = document.querySelectorAll('.btnDetails')
-const arrow = document.querySelectorAll('.darrow')
-const heheDetails = document.querySelectorAll('.hehe')
-const smallerAds = document.querySelectorAll('.adSmall')
-const ifoPageButton = document.querySelector('#ifoPAGEBtn')
 const EarnBtn = document.querySelector('#earnBtn')
 const WinBtn = document.querySelector('#winBtn')
 const NftBtn = document.querySelector('#nftBtn')
@@ -21,7 +14,7 @@ const Earn = document.querySelector('#earn')
 const Win = document.querySelector('#win')
 const Nft = document.querySelector('#nft')
 const Dots = document.querySelector('#dots')
-
+const cWal = document.querySelector('.cWallet')
 
 // Fred Homepage Section Starts
 //Media query to remove a word
@@ -39,10 +32,44 @@ function good() {
         images.style.width = '20px'
     }
 }
+var prevScrollPos = window.pageYOffset;
+var isScrollingUp = false;
+
+window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+
+    if (prevScrollPos > currentScrollPos) {
+        // Scrolling up
+        isScrollingUp = true;
+        document.getElementById("navbar").style.top = "0";
+    } else {
+        // Scrolling down
+        isScrollingUp = false;
+        if (currentScrollPos > 1200) {
+            document.getElementById("navbar").style.top = "-100px";
+        }
+    }
+
+    prevScrollPos = currentScrollPos;
+};
 
 window.onload = good;
 window.onresize = good;
-
+//Cwallet Section
+var x = 1;
+// walletText.addEventListener('click',function (){
+//
+//
+//     if (x === 1){
+//         cWal.style.display = 'block'
+//         x++
+//     }
+//     else{
+//         cWal.style.display = 'none'
+//         x--
+//     }
+//
+// })
 //Mobile site Navbar
 EarnBtn.addEventListener('mouseover',function (){
     Earn.style.display = 'flex'
@@ -183,120 +210,3 @@ toggleButton.addEventListener("change", () => {
 })
 
 // Fred Homepage Section ends
-
-const pageUp = document.querySelector('.page-up');
-
-window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 450) {
-        pageUp.style.display = 'flex';
-        pageUp.style.visibility =  'visible'
-    } else {
-        pageUp.style.display = 'none';
-    }
-});
-
-// IFO SECTION
-ifoPageButton.addEventListener('click',function (){
-    window.location.href = "IFO.html";
-})
-btnDetails.forEach(function (button,index){
-    var clicked = true
-    //changes Details to hide when clicked and arrow rotates 180deg
-    button.addEventListener('click',function (){
-        if (clicked) {
-            if (index === 0) {
-                heheDetails[0].innerText = 'hide'
-                arrow[0].style.transform = 'rotate(180deg)'
-                clicked = false
-            }
-            if (index === 1) {
-                heheDetails[1].innerText = 'hide'
-                arrow[1].style.transform = 'rotate(180deg)'
-                smallerAds[0].style.setProperty('display','block')
-                clicked = false
-            }
-            if (index === 2) {
-                heheDetails[2].innerText = 'hide'
-                arrow[2].style.transform = 'rotate(180deg)'
-                smallerAds[1].style.setProperty('display','block')
-                clicked = false
-            }
-            if (index === 3) {
-                heheDetails[3].innerText = 'hide'
-                arrow[3].style.transform = 'rotate(180deg)'
-                smallerAds[2].style.setProperty('display','block')
-                clicked = false
-            }
-            if (index === 4) {
-                heheDetails[4].innerText = 'hide'
-                arrow[4].style.transform = 'rotate(180deg)'
-                smallerAds[3].style.setProperty('display','block')
-                clicked = false
-            }
-            if (index === 5) {
-                heheDetails[5].innerText = 'hide'
-                arrow[5].style.transform = 'rotate(180deg)'
-                smallerAds[4].style.setProperty('display','block')
-                clicked = false
-            }
-            if (index === 6) {
-                heheDetails[6].innerText = 'hide'
-                arrow[6].style.transform = 'rotate(180deg)'
-                smallerAds[5].style.setProperty('display','block')
-                clicked = false
-            }
-        }
-        else if (!clicked){
-            if (index === 0){
-                arrow[0].style.transform = 'rotate(0)'
-                heheDetails[0].innerText = 'Details'
-                clicked = true
-            }
-            if (index === 1){
-                arrow[1].style.transform = 'rotate(0)'
-                smallerAds[0].style.removeProperty('display')
-                heheDetails[1].innerText = 'Details'
-                clicked = true
-            }
-            if (index === 2){
-                arrow[2].style.transform = 'rotate(0)'
-                smallerAds[1].style.removeProperty('display')
-                heheDetails[2].innerText = 'Details'
-                clicked = true
-            }
-            if (index === 3){
-                arrow[3].style.transform = 'rotate(0)'
-                smallerAds[2].style.removeProperty('display')
-                heheDetails[3].innerText = 'Details'
-                clicked = true
-            }
-            if (index === 4){
-                arrow[4].style.transform = 'rotate(0)'
-                smallerAds[3].style.removeProperty('display')
-                heheDetails[4].innerText = 'Details'
-                clicked = true
-            }
-            if (index === 5){
-                arrow[5].style.transform = 'rotate(0)'
-                smallerAds[4].style.removeProperty('display')
-                heheDetails[5].innerText = 'Details'
-                clicked = true
-            }
-            if (index === 6){
-                arrow[6].style.transform = 'rotate(0)'
-                smallerAds[5].style.removeProperty('display')
-                heheDetails[6].innerText = 'Details'
-                clicked = true
-            }
-            if (index === 7){
-                arrow[7].style.transform = 'rotate(0)'
-                smallerAds[6].style.removeProperty('display')
-                heheDetails[7].innerText = 'Details'
-                clicked = true
-            }
-        }
-
-    })
-})
-//IFO SECTION ENDS
-
