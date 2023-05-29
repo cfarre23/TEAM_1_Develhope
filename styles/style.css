@@ -2038,7 +2038,7 @@ body {
 }
 @media screen and (max-width: 580px) {
     #div6_hidden,#div6_visible{
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
     #div6thirdc {
@@ -3761,4 +3761,108 @@ a {
     align-self: center;
     flex-shrink: 0;
     margin-left: 0.5rem;
+}
+
+/* mobile padding fix */
+@media screen and (max-width: 576px) {
+    #div6text1 {
+        padding: 20px;
+    }
+    .div6text2 {
+        padding: 20px;
+    }
+    .div6_content_bottom {
+        padding: 20px;
+    }
+    .div6topsyruppoolstext {
+        padding: 20px;
+    }
+    .div6content {
+        padding-bottom: 0px;
+    }
+    .div7frame {
+        border-radius: 0px;
+    }
+}
+
+/* lottery padding fix */
+@media screen and (min-width: 576px) {
+.btmm {
+    max-width: 1000px;
+}
+.div7frame {
+    margin: 100px;
+}
+.div6content {
+    padding-left: 30px;
+}
+}
+
+#div7yctext4 {
+    padding: 15px;
+}
+#div7pctext4 {
+    padding: 15px;
+}
+#div7winmillions {
+    overflow: hidden;
+}
+#div7_play, #div7_buytickets {
+    position: relative;
+    left: 19px;
+}
+.div7purplecard {
+    padding: 4px;
+}
+
+.div8_buycake {
+    z-index: 999;
+}
+
+/* footer padding fix */
+.tenthdiv {
+    padding: 40px;
+}
+
+html {
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #b8add2;
+        border-radius: 8px;
+    }
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px rgb(51, 51, 51);
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    html {
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}
+
+/* caroussel & div1 mobile fix */
+@media screen and (max-width: 576px) {
+.discover_slide1_button {
+    font-size: 16px;
+    padding: 6px;
+    height: inherit;
+    border-bottom: 2px solid rgb(99, 129, 238);
+}
+.title_slide1 {
+    font-size: 14px;
+}
+.text_slide1 {
+    font-size: 12px;
+}
+.astro_pa {
+    font-size: 20px;
+    line-height: 105%;
+    font-weight: 600;
+}
 }
