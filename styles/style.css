@@ -823,8 +823,9 @@ body{
     align-items: center;
     padding: 0.3rem 0.6rem;
     margin-top: 0.2rem;
-    box-shadow: 0 0.1rem #1fc7d4;
+    box-shadow: 0 0.1rem #105c62;
     width: auto;
+    margin-right: 20px;
 }
 
 .sep1, .sep2 {
@@ -869,6 +870,7 @@ body{
     justify-content: center;
     align-items: center;
     width: auto;
+    margin-left: 8px;
 }
 
 #img_globe:hover, #img_settings:hover, #div_bnb:hover, .btn_cwallect:hover, .btn_cwallect2:hover, .btn_trade_now:hover {
@@ -2433,6 +2435,9 @@ body {
     top: 5px;
 }
 
+.div6upperpart {
+    overflow: hidden;
+}
 
 .div7ball2 {
     width: 400px;
@@ -3520,7 +3525,20 @@ a {
     height: 48px;
     border-radius: 16px;
 }
-
+@media screen and (max-width: 576px) {
+    .page-up {
+        visibility: hidden;
+        position: fixed;
+        bottom: 60px;
+        right: 30px;
+        background-color: #1fc7d4;
+        color: #fff;
+        border: none;
+        width: 48px;
+        height: 48px;
+        border-radius: 16px;
+    }
+}
 .theme {
     border-top-width: 1px;
     border-bottom-width: 1px;
