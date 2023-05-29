@@ -108,7 +108,7 @@ body {
     }
 }
 body{
-    display: flex;
+    width: 100%;
 }
 .cWallet{
     position: fixed;
@@ -131,29 +131,34 @@ body{
 
 .navbar {
     position: fixed;
-    width: 100%;
     display: flex;
+    width: 100%;
     justify-content: space-between;
     background-color: #27262c;
     font-family: kanit, sans-serif;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
-    height: 2rem;
-    transition: top 0.3s ease-in-out;
+    padding: 0.5rem 0;
+    height: 2.1rem;
+    transition: top 0.2s ease-in-out;
     z-index: 1321231;
 }
 
+
 .mbNavbar {
+    width: 100%;
     display: none;
     position: fixed;
     bottom: 0;
     justify-content: space-between;
-    width: 100%;
     background-color: #27262c;
     border-top: 1px solid #383241;
     z-index: 20;
     padding: 5px;
     height: 40px
+}
+@media screen and (max-width: 390px) {
+    #mbNavbar{
+
+    }
 }
 
 .mbImgs {
@@ -288,6 +293,7 @@ body{
     }
 
     #navbar {
+        position: fixed;
         width: 100%;
     }
 
