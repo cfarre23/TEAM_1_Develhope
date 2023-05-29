@@ -14,7 +14,7 @@ const Earn = document.querySelector('#earn')
 const Win = document.querySelector('#win')
 const Nft = document.querySelector('#nft')
 const Dots = document.querySelector('#dots')
-
+const cWal = document.querySelector('.cWallet')
 
 // Fred Homepage Section Starts
 //Media query to remove a word
@@ -32,10 +32,44 @@ function good() {
         images.style.width = '20px'
     }
 }
+var prevScrollPos = window.pageYOffset;
+var isScrollingUp = false;
+
+window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+
+    if (prevScrollPos > currentScrollPos) {
+        // Scrolling up
+        isScrollingUp = true;
+        document.getElementById("navbar").style.top = "0";
+    } else {
+        // Scrolling down
+        isScrollingUp = false;
+        if (currentScrollPos > 1200) {
+            document.getElementById("navbar").style.top = "-100px";
+        }
+    }
+
+    prevScrollPos = currentScrollPos;
+};
 
 window.onload = good;
 window.onresize = good;
-
+//Cwallet Section
+var x = 1;
+// walletText.addEventListener('click',function (){
+//
+//
+//     if (x === 1){
+//         cWal.style.display = 'block'
+//         x++
+//     }
+//     else{
+//         cWal.style.display = 'none'
+//         x--
+//     }
+//
+// })
 //Mobile site Navbar
 EarnBtn.addEventListener('mouseover',function (){
     Earn.style.display = 'flex'
