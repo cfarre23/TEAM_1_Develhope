@@ -199,7 +199,7 @@
 .section3_bottom {
   position: relative;
   margin-top: 92px;
-  z-index: 99;
+  z-index: 19;
 }
 .section3_bottom_1 {
   display: flex;
