@@ -16,6 +16,8 @@ const Nft = document.querySelector('#nft')
 const Dots = document.querySelector('#dots')
 const cWal = document.querySelector('.cWallet')
 
+
+
 // Fred Homepage Section Starts
 //Media query to remove a word
 function good() {

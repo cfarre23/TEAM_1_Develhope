@@ -22,6 +22,23 @@ const Win = document.querySelector('#win')
 const Nft = document.querySelector('#nft')
 const Dots = document.querySelector('#dots')
 
+function animateValue(obj, start, end, duration) {
+    let startTimestamp = null;
+    const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        obj.innerHTML = Math.floor(progress * (end - start) + start);
+        if (progress < 1) {
+            window.requestAnimationFrame(step);
+        }
+    };
+    window.requestAnimationFrame(step);
+}
+
+const obj = document.getElementById("json");
+const obj2 = document.getElementById("json2");
+animateValue(obj, 855, 85, 1500);
+animateValue(obj2, 718, 18 , 1500);
 
 // IFO SECTION
 btnDetails.forEach(function (button,index){
