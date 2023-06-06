@@ -236,14 +236,10 @@ export function Hompage(){
                             </a>
                             <span className="opt_kids">Liquid</span>
                             <span className="opt_kids">Liquidity</span>
-                            <span className="opt_kids" id="perpetual">
-            Perpetual <img src="images/l-arrow.svg" />
-          </span>
-                            <span className="opt_kids" id="bridge">
-            Bridge <img src="images/l-arrow.svg" />
-          </span>
+                            <span className="opt_kids" id="perpetual"> Perpetual <img src="images/l-arrow.svg" /></span>
+                            <span className="opt_kids" id="bridge">Bridge <img src="images/l-arrow.svg" /></span>
                         </div>
-                        <button className="buttons" id="btn_earn">
+                        <button className="buttons" id="btn_eFFarn">
                             Earn <span className="scale_borders" />
                         </button>
                         <div className="options" id="options2">

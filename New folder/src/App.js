@@ -13,8 +13,6 @@ function App() {
 
   return (
       <div>
-          <LeaderboardPage></LeaderboardPage>
-        <IFOPage></IFOPage>
         <Hompage></Hompage>
       </div>
 
