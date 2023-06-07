@@ -1,4 +1,4 @@
-import './Styles.css';
+import './styles.css';
 import './Ifo.css'
 import {Hompage} from "./Hompage";
 import {LeaderboardPage} from "./Leaderboard Page";
@@ -13,8 +13,6 @@ function App() {
 
   return (
       <div>
-          <LeaderboardPage></LeaderboardPage>
-        <IFOPage></IFOPage>
         <Hompage></Hompage>
       </div>
 

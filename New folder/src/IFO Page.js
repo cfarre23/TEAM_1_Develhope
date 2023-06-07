@@ -1,5 +1,5 @@
 import './Ifo.css'
-import './Styles.css';
+import './styles.css';
 import {useEffect} from "react";
 export function IFOPage(){
     useEffect(() => {

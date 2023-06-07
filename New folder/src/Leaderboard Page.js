@@ -1,5 +1,5 @@
 import './Leaderboard.css'
-import './Styles.css'
+import './styles.css'
 
 import {useEffect} from "react";
 export function LeaderboardPage(){

@@ -1,5 +1,5 @@
 import './Swap'
-import './Styles.css'
+import './styles.css'
 export function SwapPage(){
     return(
         <>
