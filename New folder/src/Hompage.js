@@ -220,144 +220,162 @@ export function Hompage(){
                 <div id="sep1" className="sep1">
                     <div id="sec1" className="sec_1">
                         <a href="index.html">
-                            <img className={  'imgs' } id="img_beer" src="images/beer.svg" />
+                            <img className="imgs" id="img_beer" src="images/beer.svg" />
                         </a>
                         <span className="ps_word" id="ps_word">
           PancakeSwap
         </span>
                     </div>
-                    <button className="buttons" id="btn_trade">
-                        Trade <span className="scale_borders" />
-                    </button>
                     <div className="sec_2">
-                        <div className="options" id="options1">
-                            <a id="oo" href="swap.html">
-                                <span className="opt_kids">Swap</span>
-                            </a>
-                            <span className="opt_kids">Liquid</span>
-                            <span className="opt_kids">Liquidity</span>
-                            <span className="opt_kids" id="perpetual"> Perpetual <img src="images/l-arrow.svg" /></span>
-                            <span className="opt_kids" id="bridge">Bridge <img src="images/l-arrow.svg" /></span>
+                        <div id="TradeDiv1" className="TradeDiv">
+                            <button className="buttons" id="btn_trade">
+                                Trade <span className="scale_borders" />
+                            </button>
+                            <div className="options" id="options1">
+                                <a id="oo" href="swap.html">
+                                    <span className="opt_kids">Swap</span>
+                                </a>
+                                <span className="opt_kids">Liquid</span>
+                                <span className="opt_kids">Liquidity</span>
+                                <span className="opt_kids" id="perpetual">
+              Perpetual <img src="images/l-arrow.svg" />
+            </span>
+                                <span className="opt_kids" id="bridge">
+              Bridge <img src="images/l-arrow.svg" />
+            </span>
+                            </div>
                         </div>
-                        <button className="buttons" id="btn_eFFarn">
-                            Earn <span className="scale_borders" />
-                        </button>
-                        <div className="options" id="options2">
-                            <span className="opt_kids">Farms</span>
-                            <span className="opt_kids">Pools</span>
+                        <div id="TradeDiv2" className="TradeDiv">
+                            <button className="buttons" id="btn_earn">
+                                Earn <span className="scale_borders" />
+                            </button>
+                            <div className="options" id="options2">
+                                <span className="opt_kids">Farms</span>
+                                <span className="opt_kids">Pools</span>
+                            </div>
                         </div>
-                        <button className="buttons" id="btn_win">
-                            Win
-                            <span className="green_dot" />
-                            <span className="scale_borders" />
-                        </button>
-                        <div className="options" id="options3">
-                            <span className="opt_kids">Trading Competition</span>
-                            <span className="opt_kids">Prediction(BETA)</span>
-                            <span className="opt_kids">Lottery</span>
-                            <span className="opt_kids" id="potteryDiv">
-            Pottery (BETA) <span className="pottery">POT OPEN</span>
-          </span>
+                        <div id="TradeDiv3" className="TradeDiv">
+                            <button className="buttons" id="btn_win">
+                                Win
+                                <span className="green_dot" />
+                                <span className="scale_borders" />
+                            </button>
+                            <div className="options" id="options3">
+                                <span className="opt_kids">Trading Competition</span>
+                                <span className="opt_kids">Prediction(BETA)</span>
+                                <span className="opt_kids">Lottery</span>
+                                <span className="opt_kids" id="potteryDiv">
+              Pottery (BETA) <span className="pottery">POT OPEN</span>
+            </span>
+                            </div>
                         </div>
-                        <button className="buttons" id="btn_nft">
-                            NFT <span className="scale_borders" />
-                        </button>
-                        <button className="buttons" id="btn_(... .)">
-                            <span className="scale_borders" />
-                            <span className="div_cir_dot" id="div_cir_dot">
-            <span className="cir_dot" />
-            <span className="cir_dot" />
-            <span className="cir_dot" />
-                                &nbsp;
-          </span>
-                        </button>
-                        <div className="options" id="options4">
-                            <span className="opt_kids">Overview</span>
-                            <span className="opt_kids">Collections</span>
-                            <span className="opt_kids">Activity</span>
+                        <div id="TradeDiv4" className="TradeDiv">
+                            <button className="buttons" id="btn_nft">
+                                NFT <span className="scale_borders" />
+                            </button>
+                            <div className="options" id="options4">
+                                <span className="opt_kids">Overview</span>
+                                <span className="opt_kids">Collections</span>
+                                <span className="opt_kids">Activity</span>
+                            </div>
                         </div>
-                        <div className="options" id="options5">
-                            <span className="opt_kids">Info</span>
-                            <a id="ifo" href="IFO.html">
-                                <span className="opt_kids">IFO</span>
-                            </a>
-                            <span className="opt_kids">Voting</span>
-                            <a id="o" href="affiliates-program.html">
-                                <span className="opt_kids">Affiliate Program</span>
-                            </a>
-                            <a id="ooo" href="leaderboard.html">
-                                <span className="opt_kids">Leaderboard</span>
-                            </a>
-                            <span className="opt_kids" id="blog">
-            Blog <img src="images/l-arrow.svg" />
-          </span>
-                            <span className="opt_kids" id="docs">
-            Docs <img src="images/l-arrow.svg" />{" "}
-          </span>
+                        <div id="TradeDiv5" className="TradeDiv">
+                            <button className="buttons" id="btn_(... .)">
+                                <span className="scale_borders" />
+                                <span className="div_cir_dot" id="div_cir_dot">
+              <span className="cir_dot" />
+              <span className="cir_dot" />
+              <span className="cir_dot" />
+                                    &nbsp;
+            </span>
+                            </button>
+                            <div className="options" id="options5">
+                                <span className="opt_kids">Info</span>
+                                <a id="ifo" href="IFO.html">
+                                    <span className="opt_kids">IFO</span>
+                                </a>
+                                <span className="opt_kids">Voting</span>
+                                <a id="o" href="affiliates-program.html">
+                                    <span className="opt_kids">Affiliate Program</span>
+                                </a>
+                                <a id="ooo" href="leaderboard.html">
+                                    <span className="opt_kids">Leaderboard</span>
+                                </a>
+                                <span className="opt_kids" id="blog">
+              Blog <img src="images/l-arrow.svg" />
+            </span>
+                                <span className="opt_kids" id="docs">
+              Docs <img src="images/l-arrow.svg" />{" "}
+            </span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div id="sep2" className="sep2">
                     <div className="sec_3" id="sec_3">
-                        <img className={  'imgs' } id="img_deer2" src="images/7186.png" />
+                        <img className="imgs" id="img_deer2" src="images/7186.png" />
                         <span className="api-price">$1.234</span>
                     </div>
                     <div id="sec4" className="sec_4">
-                        <img className={  'imgs' } id="img_globe" src="images/globe.svg" />
-                        <img className={  'imgs' } id="img_settings" src="images/settings.svg" />
-                        <span id="div_bnb" className="div_bnb">
-          <img className={  'imgs' } id="img_bnb" src="images/56.png" />
-          <p id="bnb_word" className="bnb_word">
-            BNB Smart Chain
-          </p>
-          <img
-              className={  'imgs' }
-              id="down_arrow"
-              src="images/down arrow.svg"
-              alt=""
-          />
-        </span>
+                        <div id="TradeDiv6" className="TradeDiv2">
+                            <img className="imgs" id="img_globe" src="images/globe.svg" />
+                            <div className="options" id="options7">
+                                <ul className="list">
+                                    <li>العربية</li>
+                                    <li>বাংলা</li>
+                                    <li>English</li>
+                                    <li>Deutsch</li>
+                                    <li>Ελληνικά</li>
+                                    <li>Español</li>
+                                    <li>Suomalainen</li>
+                                    <li>Filipino</li>
+                                    <li>Français</li>
+                                    <li>हिंदी</li>
+                                    <li>Magyar</li>
+                                    <li>Bahasa Indonesia</li>
+                                    <li>Italiano</li>
+                                    <li>日本語</li>
+                                    <li>한국어</li>
+                                    <li>Nederlands</li>
+                                    <li>Polski</li>
+                                    <li>Português (Brazil)</li>
+                                    <li>Português</li>
+                                    <li>Română</li>
+                                    <li>Русский</li>
+                                    <li>Svenska</li>
+                                    <li>தமிழ்</li>
+                                    <li>Türkçe</li>
+                                    <li>Українська</li>
+                                    <li>Tiếng Việt</li>
+                                    <li>简体中文</li>
+                                    <li>繁體中文</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <img className="imgs" id="img_settings" src="images/settings.svg" />
+                        <div id="TradeDiv7" className="TradeDiv3">
+          <span id="div_bnb" className="div_bnb">
+            <img className="imgs" id="img_bnb" src="images/56.png" />
+            <p id="bnb_word" className="bnb_word">
+              BNB Smart Chain
+            </p>
+            <img
+                className="imgs"
+                id="down_arrow"
+                src="images/down arrow.svg"
+                alt=""
+            />
+          </span>
+                            <div id="options6">
+                                <span className="opt_kids">Select a network</span>
+                                <span className="opt_kids">BNB Smart Chain</span>
+                                <span className="opt_kids">Ethereum</span>
+                                <span className="opt_kids">Aptos</span>
+                            </div>
+                        </div>
                     </div>
-                    <div className='btn_cwallect'>Connect Wallet</div>
-                    <div id="options6">
-                        <span className="opt_kids">Select a network</span>
-                        <span className="opt_kids">BNB Smart Chain</span>
-                        <span className="opt_kids">Ethereum</span>
-                        <span className="opt_kids">Aptos</span>
-                    </div>
+                    <div className="btn_cwallect">Connect Wallet</div>
                 </div>
-            </div>
-            <div className="options" id="options7">
-                <ul className="list">
-                    <li>العربية</li>
-                    <li>বাংলা</li>
-                    <li>English</li>
-                    <li>Deutsch</li>
-                    <li>Ελληνικά</li>
-                    <li>Español</li>
-                    <li>Suomalainen</li>
-                    <li>Filipino</li>
-                    <li>Français</li>
-                    <li>हिंदी</li>
-                    <li>Magyar</li>
-                    <li>Bahasa Indonesia</li>
-                    <li>Italiano</li>
-                    <li>日本語</li>
-                    <li>한국어</li>
-                    <li>Nederlands</li>
-                    <li>Polski</li>
-                    <li>Português (Brazil)</li>
-                    <li>Português</li>
-                    <li>Română</li>
-                    <li>Русский</li>
-                    <li>Svenska</li>
-                    <li>தமிழ்</li>
-                    <li>Türkçe</li>
-                    <li>Українська</li>
-                    <li>Tiếng Việt</li>
-                    <li>简体中文</li>
-                    <li>繁體中文</li>
-                </ul>
             </div>
             <main>
                 <div className="div2_div3">
@@ -526,7 +544,7 @@ export function Hompage(){
                                 <img
                                     className="img_astronaut"
                                     id="img_astronaut"
-                                    src="/images/astronaut-bunny.png"
+                                    src="images/astronaut-bunny.png"
                                 />
                                 <img className="top_star" src="images/star-top-r@2x.webp" />
                                 <img className="bottom_star" src="images/star-r@2x.webp" />
@@ -1412,6 +1430,7 @@ export function Hompage(){
                 .
             </div>
         </>
+
     )
 
 }

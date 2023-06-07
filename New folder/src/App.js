@@ -1,4 +1,4 @@
-import './Styles.css';
+import './styles.css';
 import './Ifo.css'
 import {Hompage} from "./Hompage";
 import {LeaderboardPage} from "./Leaderboard Page";
