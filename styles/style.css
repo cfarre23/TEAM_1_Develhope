@@ -71,9 +71,6 @@ body {
     --White: hsl(0, 0%, 100%);
 }
 
-.bodyDisappear {
-    display: block;
-}
 
 :root {
     --wavy_line: linear-gradient(to right, #09070e, #171226)
@@ -86,14 +83,24 @@ body {
 
     #sep2, #sec3, #sec4 {
         gap: 1rem;
+        align-items: center;
+        justify-content: center;
     }
+
+   #TradeDiv6 > #options7{
+       width: 12rem;
+   }
+   #TradeDiv7 > #options6{
+       left: -4rem;
+       width: 8rem;
+   }
 
     #navbar {
         display: flex;
-        gap: 1.5rem;
         justify-content: normal;
         width: 100%;
     }
+
 
     #div_bnb {
         padding-right: 0;
@@ -268,9 +275,6 @@ body{
 }
 
 @media screen and (max-width: 1130px) {
-   #options2, #options3, #options4, #options5 {
-        top: 4rem;
-    }
 
     .btn_cwallect {
         font-size: 0.97rem;
@@ -334,6 +338,7 @@ body{
     border-radius: 1.2rem;
     color: #b8add2;
     z-index: 5;
+    margin-left: -30px;
 }
 
 #options2 {
@@ -374,6 +379,9 @@ body{
     border-radius: 1.2rem;
     color: #b8add2;
     z-index: 1;
+    position: absolute;
+    top: 2.6rem;
+    left: -2rem;
 }
 
 /* Style the select tag */
@@ -385,10 +393,6 @@ body{
 }
 
 /* Style the scrollbar */
-#options7::-webkit-scrollbar {
-    width: 0.5rem;
-
-}
 
 #potteryDiv, #potteryDiv2 {
     display: flex;
@@ -417,17 +421,8 @@ body{
     justify-content: space-between;
 }
 
-#options7::-webkit-scrollbar-thumb {
-    background-color: #b8add2;
-    border-radius: 1rem;
-    width: 0.8rem;
-}
 
 
-#options7::-webkit-scrollbar-track {
-    border-radius: 3px;
-    background-color: inherit;
-}
 
 .div_cir_dot {
     display: flex;
@@ -563,30 +558,6 @@ body{
 }
 
 @media screen and (max-width: 1105px) {
-    #options1 {
-
-    }
-
-    #options2 {
-        top: 3.7rem;
-        left: 6.7rem
-    }
-
-    #options3 {
-        top: 3.7rem;
-        left: 11rem;
-    }
-
-    #options4 {
-        top: 3.7rem;
-        left: 15.2rem;
-    }
-
-    #options5 {
-        top: 3.7rem;
-        left: 19.4rem;
-    }
-
     #sec_3 {
         display: none;
     }
@@ -686,7 +657,7 @@ body{
     padding: 0 24px;
     background-color: #1fc7d4;
     color: #191a2d;
-    transition: 0s opacity;
+    transition: 0s opacity ease-in-out;
 }
 
 .btn_trade_now {
@@ -745,8 +716,8 @@ body{
     padding: 0.3rem 0.6rem;
     margin-top: 0.2rem;
     box-shadow: 0 0.1rem #105c62;
-    width: 8rem;
     margin-right: 15px;
+    transition: opacity 300ms;
 }
 
 .sep1, .sep2 {
@@ -863,9 +834,8 @@ body{
 .sec_4 {
     display: flex;
     gap: 1.5rem;
-    justify-content: center;
     align-items: center;
-
+    justify-content: center;
 }
 
 .ps_word {
@@ -3844,27 +3814,55 @@ html::-webkit-scrollbar-track {
     display: flex;
     flex-direction: column;
     width: 3rem;
-    border: 1px solid red;
-}
-#options7 {
-    visibility: visible;
-    display: flex;
-    width: 14rem;
-    border-radius: 0;
-    padding: 0;
-    overflow: auto;
-    background-color: #191326;
-    color: #b8add2;
+    gap: 1rem;
 }
 
+
+
 .TradeDiv2{
+    position: relative;
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
     width: 1.8rem;
     height: 100%;
 }
-#TradeDiv6{
+.TradeDiv3{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 10px;
+}
+#options6{
 
 }
+
+#options7 {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+    width: 14rem;
+    border-radius: 0;
+    padding: 0;
+    overflow-y: auto;
+    background-color: #191326;
+    color: #b8add2;
+    height: 390px;
+    top: 2.5rem;
+    left: -2rem;
+}
+#options7::-webkit-scrollbar-thumb {
+    background-color: #b8add2;
+    border-radius: 1rem;
+    width: 0.8rem;
+}
+#options7::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+#options7::-webkit-scrollbar-track {
+    border-radius: 3px;
+    background-color: inherit;
+}
+
 
