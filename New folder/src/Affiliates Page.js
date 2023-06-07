@@ -1,5 +1,6 @@
-import './affiliates.scss'
+import './affiliate.css'
 import {useEffect} from "react";
+import {Navbar} from "./Hompage";
 export function AffiliatesPage(){
     useEffect(function (){
         var toggleHidden1 = document.getElementById("faqtoggle1");
@@ -79,6 +80,7 @@ export function AffiliatesPage(){
     })
     return(
         <>
+            <Navbar></Navbar>
             <a href="#" className="page-up" id="pageup">
                 <svg
                     viewBox="0 0 24 24"

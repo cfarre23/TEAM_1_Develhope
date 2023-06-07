@@ -1,221 +1,193 @@
 import React, {useEffect, useLayoutEffect, useState} from "react";
 
-export function Hompage(){
-    useLayoutEffect(() => {
-            const buttons = document.querySelectorAll(".buttons");
-            const options = document.querySelectorAll(".options");
-            const images = document.querySelectorAll('.imgs');
-            const bnbText = document.getElementById('bnb_word')
-            const walletText = document.querySelector('.btn_cwallect')
-            const globe = document.querySelector('#img_globe')
-            const toggleButton = document.querySelector(".toggle")
-            const options6 = document.getElementById('options6')
-            const EarnBtn = document.querySelector('#earnBtn')
-            const WinBtn = document.querySelector('#winBtn')
-            const NftBtn = document.querySelector('#nftBtn')
-            const DotsBtn = document.querySelector('#dotsBtn')
-            const Earn = document.querySelector('#earn')
-            const Win = document.querySelector('#win')
-            const Nft = document.querySelector('#nft')
-            const Dots = document.querySelector('#dots')
-            const cWal = document.querySelector('.cWallet')
+export function Navbar(){
+    useEffect(() => {
+        const bnbText = document.getElementById('bnb_word')
+        const walletText = document.querySelector('.btn_cwallect')
+        const buttons = document.querySelectorAll(".buttons");
+        const options = document.querySelectorAll(".options");
+        const images = document.querySelectorAll('.imgs');
+        const globe = document.querySelector('#img_globe')
+        const toggleButton = document.querySelector(".toggle")
+        const options6 = document.getElementById('options6')
+        const EarnBtn = document.querySelector('#earnBtn')
+        const WinBtn = document.querySelector('#winBtn')
+        const NftBtn = document.querySelector('#nftBtn')
+        const DotsBtn = document.querySelector('#dotsBtn')
+        const Earn = document.querySelector('#earn')
+        const Win = document.querySelector('#win')
+        const Nft = document.querySelector('#nft')
+        const Dots = document.querySelector('#dots')
+        const cWal = document.querySelector('.cWallet')
 
+        function good() {
+            if (window.matchMedia("(max-width: 1127px)").matches) {
+                walletText.textContent ='Connect'
+                bnbText.textContent = 'BNB';
 
+            } else {
+                walletText.textContent ='Connect Wallet'
+                bnbText.textContent = 'BNB Smart Chain';
+            }
+            if (window.matchMedia("(max-width: 767px)").matches) {
+                bnbText.innerHTML = '';
+            }
+        }
+        var prevScrollPos = window.pageYOffset;
+        var isScrollingUp = false;
 
-// Fred Homepage Section Starts
-//Media query to remove a word
-            function good() {
-                if (window.matchMedia("(max-width: 1127px)").matches) {
-                    walletText.textContent ='Connect'
-                    bnbText.textContent = 'BNB';
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
 
-                } else {
-                    walletText.textContent ='Connect Wallet'
-                    bnbText.textContent = 'BNB Smart Chain';
-                }
-                if (window.matchMedia("(max-width: 767px)").matches) {
-                    bnbText.innerHTML = '';
+            if (prevScrollPos > currentScrollPos) {
+                // Scrolling up
+                isScrollingUp = true;
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                // Scrolling down
+                isScrollingUp = false;
+                if (currentScrollPos > 1200) {
+                    document.getElementById("navbar").style.top = "-100px";
                 }
             }
-            var prevScrollPos = window.pageYOffset;
-            var isScrollingUp = false;
 
-            window.onscroll = function() {
-                var currentScrollPos = window.pageYOffset;
+            prevScrollPos = currentScrollPos;
+        };
 
-                if (prevScrollPos > currentScrollPos) {
-                    // Scrolling up
-                    isScrollingUp = true;
-                    document.getElementById("navbar").style.top = "0";
-                } else {
-                    // Scrolling down
-                    isScrollingUp = false;
-                    if (currentScrollPos > 1200) {
-                        document.getElementById("navbar").style.top = "-100px";
-                    }
-                }
-
-                prevScrollPos = currentScrollPos;
-            };
-
-            window.onload = good;
-            window.onresize = good;
+        window.onload = good;
+        window.onresize = good;
 
 
-            EarnBtn.addEventListener('mouseover',function (){
-                Earn.style.display = 'flex'
-                Win.style.display = 'none'
-                Nft.style.display = 'none'
-                Dots.style.display = 'none'
-            })
+        EarnBtn.addEventListener('mouseover',function (){
+            Earn.style.display = 'flex'
+            Win.style.display = 'none'
+            Nft.style.display = 'none'
+            Dots.style.display = 'none'
+        })
 
-            EarnBtn.addEventListener('mouseout',function (){
-                Earn.style.display = 'none'
-                Win.style.display = 'none'
-                Nft.style.display = 'none'
-                Dots.style.display = 'none'
-            })
-            WinBtn.addEventListener('mouseover',function (){
-                Earn.style.display = 'none'
-                Win.style.display = 'flex'
-                Nft.style.display = 'none'
-                Dots.style.display = 'none'
-            })
-            WinBtn.addEventListener('mouseout',function (){
-                Earn.style.display = 'none'
-                Win.style.display = 'none'
-                Nft.style.display = 'none'
-                Dots.style.display = 'none'
-            })
-            NftBtn.addEventListener('mouseover',function (){
-                Earn.style.display = 'none'
-                Win.style.display = 'none'
-                Nft.style.display = 'flex'
-                Dots.style.display = 'none'
-            })
-            NftBtn.addEventListener('mouseout',function (){
-                Earn.style.display = 'none'
-                Win.style.display = 'none'
-                Nft.style.display = 'none'
-                Dots.style.display = 'none'
-            })
-            DotsBtn.addEventListener('mouseover',function (){
-                Earn.style.display = 'none'
-                Win.style.display = 'none'
-                Nft.style.display = 'none'
-                Dots.style.display = 'flex'
-            })
-            DotsBtn.addEventListener('mouseout',function (){
-                Earn.style.display = 'none'
-                Win.style.display = 'none'
-                Nft.style.display = 'none'
-                Dots.style.display = 'none'
-            })
-            buttons.forEach((button, index) => {
-                let timeoutId;
-                const divs = options[index]
-                button.addEventListener("mouseover", function showOptions() {
+        EarnBtn.addEventListener('mouseout',function (){
+            Earn.style.display = 'none'
+            Win.style.display = 'none'
+            Nft.style.display = 'none'
+            Dots.style.display = 'none'
+        })
+        WinBtn.addEventListener('mouseover',function (){
+            Earn.style.display = 'none'
+            Win.style.display = 'flex'
+            Nft.style.display = 'none'
+            Dots.style.display = 'none'
+        })
+        WinBtn.addEventListener('mouseout',function (){
+            Earn.style.display = 'none'
+            Win.style.display = 'none'
+            Nft.style.display = 'none'
+            Dots.style.display = 'none'
+        })
+        NftBtn.addEventListener('mouseover',function (){
+            Earn.style.display = 'none'
+            Win.style.display = 'none'
+            Nft.style.display = 'flex'
+            Dots.style.display = 'none'
+        })
+        NftBtn.addEventListener('mouseout',function (){
+            Earn.style.display = 'none'
+            Win.style.display = 'none'
+            Nft.style.display = 'none'
+            Dots.style.display = 'none'
+        })
+        DotsBtn.addEventListener('mouseover',function (){
+            Earn.style.display = 'none'
+            Win.style.display = 'none'
+            Nft.style.display = 'none'
+            Dots.style.display = 'flex'
+        })
+        DotsBtn.addEventListener('mouseout',function (){
+            Earn.style.display = 'none'
+            Win.style.display = 'none'
+            Nft.style.display = 'none'
+            Dots.style.display = 'none'
+        })
+        buttons.forEach((button, index) => {
+            let timeoutId;
+            const divs = options[index]
+            button.addEventListener("mouseover", function showOptions() {
+                options[index].style.visibility = "visible";
+                divs.addEventListener("mouseover", function showOptions() {
                     options[index].style.visibility = "visible";
-                    divs.addEventListener("mouseover", function showOptions() {
-                        options[index].style.visibility = "visible";
-                    });
                 });
+            });
 
 //
-                button.addEventListener('mouseout', () => {
-                    timeoutId = setTimeout(() => {
-                        hideBoth();
-                    }, 40);
-                    divs.addEventListener('mouseout', () => {
-                        hideBoth();
-                    });
-                });
-
-
-                // Function to hide the div
-                function hideBoth() {
-                    // Only hide the div if both the button and the div are not currently being hovered over
-                    const buttonNotHovered = !button.matches(':hover');
-                    const divNotHovered = !divs.matches(':hover');
-
-                    if (buttonNotHovered && divNotHovered) {
-                        divs.style.visibility = 'hidden';
-                    }
-                }
-
-            })
-
-            globe.addEventListener('mouseover', function todo() {
-                options[5].style.visibility = "visible";
-                options[5].style.display = "flex";
-                options[5].addEventListener("mouseover", function showOptions() {
-                    options6.style.visibility = "visible";
-                });
-            })
-            globe.addEventListener('mouseout', function () {
-                setTimeout(removes, 60);
-                options[5].addEventListener('mouseout', () => {
-                    removes();
+            button.addEventListener('mouseout', () => {
+                timeoutId = setTimeout(() => {
+                    hideBoth();
+                }, 40);
+                divs.addEventListener('mouseout', () => {
+                    hideBoth();
                 });
             });
 
-            function removes() {
-                if (!globe.matches(':hover') && !options[5].matches(':hover')) {
-                    options[5].style.visibility = 'hidden';
-                    options[5].style.display = "none";
 
+            // Function to hide the div
+            function hideBoth() {
+                // Only hide the div if both the button and the div are not currently being hovered over
+                const buttonNotHovered = !button.matches(':hover');
+                const divNotHovered = !divs.matches(':hover');
+
+                if (buttonNotHovered && divNotHovered) {
+                    divs.style.visibility = 'hidden';
                 }
             }
 
-            function remove() {
-                if (!bnbDiv.matches(':hover') && !options6.matches(':hover')) {
-                    options6.style.visibility = 'hidden';
-                    options6.style.display = "none";
-                }
-            }
+        })
 
-
-            const bnbDiv = document.querySelector('#div_bnb')
-            bnbDiv.addEventListener('mouseover', function todo() {
+        globe.addEventListener('mouseover', function todo() {
+            options[5].style.visibility = "visible";
+            options[5].style.display = "flex";
+            options[5].addEventListener("mouseover", function showOptions() {
                 options6.style.visibility = "visible";
-                options6.style.display = "flex";
-                options6.addEventListener("mouseover", function showOptions() {
-                    options[5].style.visibility = "visible";
-                });
-            })
-            bnbDiv.addEventListener('mouseout', function () {
-                setTimeout(remove, 60);
-                options6.addEventListener('mouseout', () => {
-                    remove();
-                });
             });
-        // toggleButton.addEventListener("click", () => {
-        //     if (toggleButton.checked){
-        //         toggleButton.style.transform = "translate(100%)"
-        //         document.querySelector('body').style.background='white'
-        //
-        //     }
-        //     else{
-        //         toggleButton.style.transform = "translate(-100%)"
-        //         document.querySelector('body').style.background='#08060b'
-        //     }
-        // })
-    }, [])
-    return(
-        <>
-            <a href="#" className="page-up">
-                <svg
-                    viewBox="0 0 24 24"
-                    color="invertedContrast"
-                    width="20px"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="sc-231a1e38-0 duevIU"
-                    style={{ marginLeft: 0 }}
-                >
-                    <path d="M13 19V7.83001L17.88 12.71C18.27 13.1 18.91 13.1 19.3 12.71C19.69 12.32 19.69 11.69 19.3 11.3L12.71 4.71001C12.32 4.32001 11.69 4.32001 11.3 4.71001L4.69997 11.29C4.30997 11.68 4.30997 12.31 4.69997 12.7C5.08997 13.09 5.71997 13.09 6.10997 12.7L11 7.83001V19C11 19.55 11.45 20 12 20C12.55 20 13 19.55 13 19Z" />
-                </svg>
-            </a>
-            <div className="cWallet"></div>
+        })
+        globe.addEventListener('mouseout', function () {
+            setTimeout(removes, 60);
+            options[5].addEventListener('mouseout', () => {
+                removes();
+            });
+        });
+
+        function removes() {
+            if (!globe.matches(':hover') && !options[5].matches(':hover')) {
+                options[5].style.visibility = 'hidden';
+                options[5].style.display = "none";
+
+            }
+        }
+
+        function remove() {
+            if (!bnbDiv.matches(':hover') && !options6.matches(':hover')) {
+                options6.style.visibility = 'hidden';
+                options6.style.display = "none";
+            }
+        }
+
+
+        const bnbDiv = document.querySelector('#div_bnb')
+        bnbDiv.addEventListener('mouseover', function todo() {
+            options6.style.visibility = "visible";
+            options6.style.display = "flex";
+            options6.addEventListener("mouseover", function showOptions() {
+                options[5].style.visibility = "visible";
+            });
+        })
+        bnbDiv.addEventListener('mouseout', function () {
+            setTimeout(remove, 60);
+            options6.addEventListener('mouseout', () => {
+                remove();
+            });
+        });
+    }, []);
+
+        return(
             <div id="navbar" className="navbar">
                 <div id="sep1" className="sep1">
                     <div id="sec1" className="sec_1">
@@ -377,6 +349,42 @@ export function Hompage(){
                     <div className="btn_cwallect">Connect Wallet</div>
                 </div>
             </div>
+            )
+}
+export function Hompage(){
+    useEffect(() => {
+
+
+
+        // toggleButton.addEventListener("click", () => {
+        //     if (toggleButton.checked){
+        //         toggleButton.style.transform = "translate(100%)"
+        //         document.querySelector('body').style.background='white'
+        //
+        //     }
+        //     else{
+        //         toggleButton.style.transform = "translate(-100%)"
+        //         document.querySelector('body').style.background='#08060b'
+        //     }
+        // })
+    }, [])
+    return(
+        <>
+            <Navbar></Navbar>
+            <a href="#" className="page-up">
+                <svg
+                    viewBox="0 0 24 24"
+                    color="invertedContrast"
+                    width="20px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="sc-231a1e38-0 duevIU"
+                    style={{ marginLeft: 0 }}
+                >
+                    <path d="M13 19V7.83001L17.88 12.71C18.27 13.1 18.91 13.1 19.3 12.71C19.69 12.32 19.69 11.69 19.3 11.3L12.71 4.71001C12.32 4.32001 11.69 4.32001 11.3 4.71001L4.69997 11.29C4.30997 11.68 4.30997 12.31 4.69997 12.7C5.08997 13.09 5.71997 13.09 6.10997 12.7L11 7.83001V19C11 19.55 11.45 20 12 20C12.55 20 13 19.55 13 19Z" />
+                </svg>
+            </a>
+            <div className="cWallet"></div>
+
             <main>
                 <div className="div2_div3">
                     <div className="carousel-parent1">
