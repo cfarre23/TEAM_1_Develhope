@@ -2,12 +2,14 @@ import './Leaderboard.css'
 import './styles.css'
 
 import {useEffect} from "react";
+import {Navbar} from "./Hompage";
 export function LeaderboardPage(){
     useEffect(function (){
 
     })
     return(
-        <div>
+        <>
+            <Navbar></Navbar>
             <a href="#" className="page-up" id="pageup">
                 <svg
                     viewBox="0 0 24 24"
@@ -579,6 +581,6 @@ export function LeaderboardPage(){
                     .
                 </div>
             </div>
-        </div>
+        </>
     )
 }
