@@ -123,15 +123,15 @@ export function AffiliatesPage(){
                         <div className="section1_floating">
                             <img
                                 id="floimg1"
-                                src="TEAM_1_Develhope_React/src/images/affi-images/affi-bobbing-1.png"
+                                src="images/affi-images/affi-bobbing-1.png"
                             />
                             <img
                                 id="floimg2"
-                                src="TEAM_1_Develhope_React/src/images/affi-images/affi-bobbing-2.png"
+                                src="images/affi-images/affi-bobbing-2.png"
                             />
                             <img
                                 id="floimg3"
-                                src="TEAM_1_Develhope_React/src/images/affi-images/affi-bobbing-3.png"
+                                src="images/affi-images/affi-bobbing-3.png"
                             />
                         </div>
                         <div className="section1_transition">
@@ -169,7 +169,7 @@ export function AffiliatesPage(){
                             </div>
                         </div>
                         <div className="section1_left">
-                            <img src="TEAM_1_Develhope_React/src/images/affi-images/affi_banner.webp" />
+                            <img src="images/affi-images/affi_banner.webp" />
                         </div>
                         <div className="section1_right">
                             <div className="section1_right_a">
@@ -207,7 +207,7 @@ export function AffiliatesPage(){
                     <div className="div4">
                         <img
                             className="div4_svg1"
-                            src="TEAM_1_Develhope_React/src/images/div4_1.svg"
+                            src="images/div4_1.svg"
                             style={{ width: 36, height: 36 }}
                         />
                         <h2 id="div4_text1">Good things</h2>
@@ -313,23 +313,23 @@ export function AffiliatesPage(){
                         <div className="section3_float">
                             <img
                                 id="floimg3-1"
-                                src="TEAM_1_Develhope_React/src/images/affi-images/affi_floimg3-1.png"
+                                src="images/affi-images/affi_floimg3-1.png"
                             />
                             <img
                                 id="floimg3-2"
-                                src="TEAM_1_Develhope_React/src/images/affi-images/affi_floimg3-2.png"
+                                src="images/affi-images/affi_floimg3-2.png"
                             />
                             <img
                                 id="floimg3-3"
-                                src="TEAM_1_Develhope_React/src/images/affi-images/affi_floimg3-3.png"
+                                src="images/affi-images/affi_floimg3-3.png"
                             />
                             <img
                                 id="floimg3-4"
-                                src="TEAM_1_Develhope_React/src/images/affi-images/affi_floimg3-4.png"
+                                src="images/affi-images/affi_floimg3-4.png"
                             />
                             <img
                                 id="floimg3-5"
-                                src="TEAM_1_Develhope_React/src/images/affi-images/affi_floimg3-5.png"
+                                src="images/affi-images/affi_floimg3-5.png"
                             />
                         </div>
                         <div className="section3_top_container">
@@ -363,7 +363,7 @@ export function AffiliatesPage(){
                             <div className="section3_bottom_2">
                                 <div className="section3_bottom_2a">
                                     <div className="section3_bottom_2a_x">
-                                        <img src="TEAM_1_Develhope_React/src/images/affi-images/affi_sec3_1.png" />
+                                        <img src="images/affi-images/affi_sec3_1.png" />
                                     </div>
                                     <div className="section3_bottom_2a_y">
                                         <div className="section3_bottom_2a_y1">
@@ -374,7 +374,7 @@ export function AffiliatesPage(){
                                 </div>
                                 <div className="section3_bottom_2b">
                                     <div className="section3_bottom_2b_x">
-                                        <img src="TEAM_1_Develhope_React/src/images/affi-images/affi_sec3_2.png" />
+                                        <img src="images/affi-images/affi_sec3_2.png" />
                                     </div>
                                     <div className="section3_bottom_2b_y">
                                         <div className="section3_bottom_2b_y1">PERPETUAL</div>
@@ -383,7 +383,7 @@ export function AffiliatesPage(){
                                 </div>
                                 <div className="section3_bottom_2c">
                                     <div className="section3_bottom_2c_x">
-                                        <img src="TEAM_1_Develhope_React/src/images/affi-images/affi_sec3_3.png" />
+                                        <img src="images/affi-images/affi_sec3_3.png" />
                                     </div>
                                     <div className="section3_bottom_2c_y">
                                         <div className="section3_bottom_2c_y1">COMING SOON!</div>
@@ -404,7 +404,7 @@ export function AffiliatesPage(){
                     <div className="div4">
                         <img
                             className="div4_svg1"
-                            src="TEAM_1_Develhope_React/src/images/div4_1.svg"
+                            src="images/div4_1.svg"
                             style={{ width: 36, height: 36 }}
                         />
                         <h2 id="div4_text1">Unlock the Power of PancakeSwap</h2>
@@ -415,7 +415,7 @@ export function AffiliatesPage(){
                     <div className="section4">
                         <div className="section4_box_imgtext">
                             <div className="section4_box_img">
-                                <img src="TEAM_1_Develhope_React/src/images/affi-images/affi_sec4_1.webp" />
+                                <img src="images/affi-images/affi_sec4_1.webp" />
                             </div>
                             <div className="section4_box_text">
                                 <div className="section4_box_right_top">
@@ -436,12 +436,12 @@ export function AffiliatesPage(){
                                 </div>
                             </div>
                             <div className="section4_box_img">
-                                <img src="TEAM_1_Develhope_React/src/images/affi-images/affi_sec4_2.webp" />
+                                <img src="images/affi-images/affi_sec4_2.webp" />
                             </div>
                         </div>
                         <div className="section4_box_imgtext">
                             <div className="section4_box_img">
-                                <img src="TEAM_1_Develhope_React/src/images/affi-images/affi_sec4_3.webp" />
+                                <img src="images/affi-images/affi_sec4_3.webp" />
                             </div>
                             <div className="section4_box_text">
                                 <div className="section4_box_right_top">
@@ -461,12 +461,12 @@ export function AffiliatesPage(){
                                 </div>
                             </div>
                             <div className="section4_box_img">
-                                <img src="TEAM_1_Develhope_React/src/images/affi-images/affi_sec4_4.webp" />
+                                <img src="images/affi-images/affi_sec4_4.webp" />
                             </div>
                         </div>
                         <div className="section4_box_imgtext">
                             <div className="section4_box_img">
-                                <img src="TEAM_1_Develhope_React/src/images/affi-images/affi_sec4_5.webp" />
+                                <img src="images/affi-images/affi_sec4_5.webp" />
                             </div>
                             <div className="section4_box_text">
                                 <div className="section4_box_right_top">Personalized Support</div>
@@ -498,7 +498,7 @@ export function AffiliatesPage(){
                                                 <button id="faqbutton1">
                                                     Details
                                                     <img
-                                                        src="TEAM_1_Develhope_React/src/images/affi-images/affi_down_arrow.svg"
+                                                        src="images/affi-images/affi_down_arrow.svg"
                                                         style={{ marginLeft: 8, top: 5, position: "relative" }}
                                                     />
                                                 </button>
@@ -530,7 +530,7 @@ export function AffiliatesPage(){
                                                 <button id="faqbutton2">
                                                     Details
                                                     <img
-                                                        src="TEAM_1_Develhope_React/src/images/affi-images/affi_down_arrow.svg"
+                                                        src="images/affi-images/affi_down_arrow.svg"
                                                         style={{ marginLeft: 8, top: 5, position: "relative" }}
                                                     />
                                                 </button>
@@ -570,7 +570,7 @@ export function AffiliatesPage(){
                                                 <button id="faqbutton3">
                                                     Details
                                                     <img
-                                                        src="TEAM_1_Develhope_React/src/images/affi-images/affi_down_arrow.svg"
+                                                        src="images/affi-images/affi_down_arrow.svg"
                                                         style={{ marginLeft: 8, top: 5, position: "relative" }}
                                                     />
                                                 </button>
@@ -603,7 +603,7 @@ export function AffiliatesPage(){
                                                 <button id="faqbutton4">
                                                     Details
                                                     <img
-                                                        src="TEAM_1_Develhope_React/src/images/affi-images/affi_down_arrow.svg"
+                                                        src="images/affi-images/affi_down_arrow.svg"
                                                         style={{ marginLeft: 8, top: 5, position: "relative" }}
                                                     />
                                                 </button>
@@ -632,7 +632,7 @@ export function AffiliatesPage(){
                                                 <button id="faqbutton5">
                                                     Details
                                                     <img
-                                                        src="TEAM_1_Develhope_React/src/images/affi-images/affi_down_arrow.svg"
+                                                        src="images/affi-images/affi_down_arrow.svg"
                                                         style={{ marginLeft: 8, top: 5, position: "relative" }}
                                                     />
                                                 </button>
@@ -677,10 +677,10 @@ export function AffiliatesPage(){
                 <span className="opt_kids">Voting</span>
                 <span className="opt_kids">Leaderboard</span>
                 <span className="opt_kids" id="blog2">
-      Blog <img src="TEAM_1_Develhope_React/src/images/l-arrow.svg" />
+      Blog <img src="images/l-arrow.svg" />
     </span>
                 <span className="opt_kids" id="docs2">
-      Docs <img src="TEAM_1_Develhope_React/src/images/l-arrow.svg" />{" "}
+      Docs <img src="images/l-arrow.svg" />{" "}
     </span>
             </div>
             <div id="mbNavbar" className="mbNavbar">
@@ -688,14 +688,14 @@ export function AffiliatesPage(){
       <span className="mbBtns">
         <img
             className="mbImgs"
-            src="TEAM_1_Develhope_React/src/images/1s.svg"
+            src="images/1s.svg"
         />
         <span>Trade</span>
       </span>
                 </div>
                 <div id="earnBtn" className="mbBtns">
                     {" "}
-                    <img className="mbImgs" src="TEAM_1_Develhope_React/src/images/2s.svg" />
+                    <img className="mbImgs" src="images/2s.svg" />
                     <span>Earn</span>
                 </div>
                 <div id="winBtn" className="mbBtns">
@@ -703,7 +703,7 @@ export function AffiliatesPage(){
                     <img
                         id="trophy"
                         className="mbImgs"
-                        src="TEAM_1_Develhope_React/src/images/3strophy.svg"
+                        src="images/3strophy.svg"
                     />
                     <span>Win</span>
                 </div>
@@ -711,7 +711,7 @@ export function AffiliatesPage(){
                     {" "}
                     <img
                         className="mbImgs"
-                        src="TEAM_1_Develhope_React/src/images/4snft.svg"
+                        src="images/4snft.svg"
                     />
                     <span>NFT</span>
                 </div>
@@ -889,7 +889,7 @@ export function AffiliatesPage(){
                             </a>
                             <div id="announcements">
                                 <img
-                                    src="TEAM_1_Develhope_React/src/images/announcement.svg"
+                                    src="images/announcement.svg"
                                     alt="Languages"
                                     className="socials_icon"
                                 />
@@ -903,7 +903,7 @@ export function AffiliatesPage(){
                                 className="socials_icon"
                             >
                                 <img
-                                    src="TEAM_1_Develhope_React/src/images/reddit.svg"
+                                    src="images/reddit.svg"
                                     alt="Reddit icon"
                                     className="reddit-icon"
                                 />
@@ -914,7 +914,7 @@ export function AffiliatesPage(){
                                 className="socials_icon"
                             >
                                 <img
-                                    src="TEAM_1_Develhope_React/src/images/ig.svg"
+                                    src="images/ig.svg"
                                     className="ig-svg"
                                     alt="Instagram"
                                 />
@@ -925,7 +925,7 @@ export function AffiliatesPage(){
                                 className="socials_icon"
                             >
                                 <img
-                                    src="TEAM_1_Develhope_React/src/images/github.svg"
+                                    src="images/github.svg"
                                     className="github-svg"
                                     alt="github"
                                 />
@@ -936,7 +936,7 @@ export function AffiliatesPage(){
                                 className="socials_icon"
                             >
                                 <img
-                                    src="TEAM_1_Develhope_React/src/images/discord.svg"
+                                    src="images/discord.svg"
                                     alt="discord"
                                     className="discord-svg"
                                 />
@@ -947,7 +947,7 @@ export function AffiliatesPage(){
                                 className="socials_icon"
                             >
                                 <img
-                                    src="TEAM_1_Develhope_React/src/images/youtube.svg"
+                                    src="images/youtube.svg"
                                     alt="youtube"
                                     className="youtube-svg"
                                 />
@@ -966,7 +966,7 @@ export function AffiliatesPage(){
                                             <div className="mooncake">
                                                 <div className="sunshine">
                                                     <img
-                                                        src="TEAM_1_Develhope_React/src/images/sunshine.svg"
+                                                        src="images/sunshine.svg"
                                                         alt="Sun svg"
                                                         className="langs-svg"
                                                     />
@@ -974,12 +974,12 @@ export function AffiliatesPage(){
                                             </div>
                                             <div className="lang-button">
                                                 <img
-                                                    src="TEAM_1_Develhope_React/src/images/sunny.svg"
+                                                    src="images/sunny.svg"
                                                     alt="Sun"
                                                     className="svgtenth"
                                                 />
                                                 <img
-                                                    src="TEAM_1_Develhope_React/src/images/moon.svg"
+                                                    src="images/moon.svg"
                                                     alt="Moon"
                                                     className="svgtenth"
                                                 />
@@ -990,7 +990,7 @@ export function AffiliatesPage(){
                                 <div className="race">
                                     <button className="worldlang">
                                         <img
-                                            src="TEAM_1_Develhope_React/src/images/world.svg"
+                                            src="images/world.svg"
                                             alt="world"
                                             className="langexchange"
                                         />
@@ -1006,7 +1006,7 @@ export function AffiliatesPage(){
                                         className="standardPrice"
                                     >
                                         <img
-                                            src="TEAM_1_Develhope_React/src/images/logo.svg"
+                                            src="images/logo.svg"
                                             alt="logo"
                                             className="logosvg"
                                         />
@@ -1019,7 +1019,7 @@ export function AffiliatesPage(){
                                 >
                                     Buy CAKE
                                     <img
-                                        src="TEAM_1_Develhope_React/src/images/buycake.svg"
+                                        src="images/buycake.svg"
                                         className="buycakesvg"
                                         alt="Buy Cake"
                                     />

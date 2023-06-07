@@ -14,7 +14,7 @@ function App() {
 
   return (
       <div>
-         <Hompage></Hompage>
+       <AffiliatesPage></AffiliatesPage>
       </div>
 
   )
