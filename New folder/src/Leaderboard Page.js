@@ -47,7 +47,7 @@ export function LeaderboardPage(){
                                             <div className="csoon">
                                                 <div className="comingsn">
                                                     <img
-                                                        src="leadersvgs/trophy.svg"
+                                                        src="images/images/leadersvgs/trophy.svg"
                                                         alt="Trophy img"
                                                         className="cupsvg"
                                                     />
@@ -55,7 +55,7 @@ export function LeaderboardPage(){
                                                 </div>
                                                 <div className="totalnumbers">
                                                     <img
-                                                        src="leadersvgs/people.svg"
+                                                        src="images/images/leadersvgs/people.svg"
                                                         alt="People img"
                                                         className="many-people"
                                                     />
@@ -102,7 +102,7 @@ export function LeaderboardPage(){
                                             <div className="csoon">
                                                 <div className="comingsn">
                                                     <img
-                                                        src="leadersvgs/trophy.svg"
+                                                        src="images/leadersvgs/trophy.svg"
                                                         alt="Trophy img"
                                                         className="cupsvg"
                                                     />
@@ -110,7 +110,7 @@ export function LeaderboardPage(){
                                                 </div>
                                                 <div className="totalnumbers">
                                                     <img
-                                                        src="leadersvgs/people.svg"
+                                                        src="images/leadersvgs/people.svg"
                                                         className="many-people"
                                                         alt="People img"
                                                     />
@@ -157,7 +157,7 @@ export function LeaderboardPage(){
                                             <div className="csoon">
                                                 <div className="comingsn">
                                                     <img
-                                                        src="leadersvgs/trophy.svg"
+                                                        src="images/leadersvgs/trophy.svg"
                                                         className="cupsvg"
                                                         alt="Trophy img"
                                                     />
@@ -165,7 +165,7 @@ export function LeaderboardPage(){
                                                 </div>
                                                 <div className="totalnumbers">
                                                     <img
-                                                        src="leadersvgs/people.svg"
+                                                        src="images/leadersvgs/people.svg"
                                                         alt="People img"
                                                         className="many-people"
                                                     />
