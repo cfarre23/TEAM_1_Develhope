@@ -8,7 +8,6 @@ export function LeaderboardPage(){
     })
     return(
         <>
-           <Navbar></Navbar>
             <div id="leaderboard_div1">
                 <div className="leaderboard_div2">
                     <div className="inner_board">
@@ -47,7 +46,7 @@ export function LeaderboardPage(){
                                             <div className="csoon">
                                                 <div className="comingsn">
                                                     <img
-                                                        src="images/images/leadersvgs/trophy.svg"
+                                                        src="leadersvgs/trophy.svg"
                                                         alt="Trophy img"
                                                         className="cupsvg"
                                                     />
@@ -55,7 +54,7 @@ export function LeaderboardPage(){
                                                 </div>
                                                 <div className="totalnumbers">
                                                     <img
-                                                        src="images/images/leadersvgs/people.svg"
+                                                        src="leadersvgs/people.svg"
                                                         alt="People img"
                                                         className="many-people"
                                                     />
@@ -102,7 +101,7 @@ export function LeaderboardPage(){
                                             <div className="csoon">
                                                 <div className="comingsn">
                                                     <img
-                                                        src="images/leadersvgs/trophy.svg"
+                                                        src="leadersvgs/trophy.svg"
                                                         alt="Trophy img"
                                                         className="cupsvg"
                                                     />
@@ -110,7 +109,7 @@ export function LeaderboardPage(){
                                                 </div>
                                                 <div className="totalnumbers">
                                                     <img
-                                                        src="images/leadersvgs/people.svg"
+                                                        src="leadersvgs/people.svg"
                                                         className="many-people"
                                                         alt="People img"
                                                     />
@@ -157,7 +156,7 @@ export function LeaderboardPage(){
                                             <div className="csoon">
                                                 <div className="comingsn">
                                                     <img
-                                                        src="images/leadersvgs/trophy.svg"
+                                                        src="leadersvgs/trophy.svg"
                                                         className="cupsvg"
                                                         alt="Trophy img"
                                                     />
@@ -165,7 +164,7 @@ export function LeaderboardPage(){
                                                 </div>
                                                 <div className="totalnumbers">
                                                     <img
-                                                        src="images/leadersvgs/people.svg"
+                                                        src="leadersvgs/people.svg"
                                                         alt="People img"
                                                         className="many-people"
                                                     />
