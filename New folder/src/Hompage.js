@@ -1,5 +1,5 @@
 import React, {useEffect, useLayoutEffect, useState} from "react";
-
+import './styles.css'
 export function Navbar(){
     useEffect(() => {
         const bnbText = document.getElementById('bnb_word')
@@ -121,7 +121,7 @@ export function Navbar(){
             button.addEventListener('mouseout', () => {
                 timeoutId = setTimeout(() => {
                     hideBoth();
-                }, 40);
+                }, 50);
                 divs.addEventListener('mouseout', () => {
                     hideBoth();
                 });
@@ -144,12 +144,13 @@ export function Navbar(){
         globe.addEventListener('mouseover', function todo() {
             options[5].style.visibility = "visible";
             options[5].style.display = "flex";
+            options[5].id = 'options72'
             options[5].addEventListener("mouseover", function showOptions() {
                 options6.style.visibility = "visible";
             });
         })
         globe.addEventListener('mouseout', function () {
-            setTimeout(removes, 60);
+            setTimeout(removes, 80);
             options[5].addEventListener('mouseout', () => {
                 removes();
             });
@@ -209,12 +210,8 @@ export function Navbar(){
                                 </a>
                                 <span className="opt_kids">Liquid</span>
                                 <span className="opt_kids">Liquidity</span>
-                                <span className="opt_kids" id="perpetual">
-              Perpetual <img src="images/l-arrow.svg" />
-            </span>
-                                <span className="opt_kids" id="bridge">
-              Bridge <img src="images/l-arrow.svg" />
-            </span>
+                                <span className="opt_kids" id="perpetual">Perpetual<img src="images/l-arrow.svg" /></span>
+                                <span className="opt_kids" id="bridge">Bridge<img src="images/l-arrow.svg" /></span>
                             </div>
                         </div>
                         <div id="TradeDiv2" className="TradeDiv">
@@ -222,8 +219,8 @@ export function Navbar(){
                                 Earn <span className="scale_borders" />
                             </button>
                             <div className="options" id="options2">
-                                <span className="opt_kids">Farms</span>
-                                <span className="opt_kids">Pools</span>
+                                <span id={'farms'} className="opt_kids">Farms</span>
+                                <span id={'pl'} className="opt_kids">Pools</span>
                             </div>
                         </div>
                         <div id="TradeDiv3" className="TradeDiv">
@@ -233,7 +230,7 @@ export function Navbar(){
                                 <span className="scale_borders" />
                             </button>
                             <div className="options" id="options3">
-                                <span className="opt_kids">Trading Competition</span>
+                                <span id={'tr'} className="opt_kids">Trading Competition</span>
                                 <span className="opt_kids">Prediction(BETA)</span>
                                 <span className="opt_kids">Lottery</span>
                                 <span className="opt_kids" id="potteryDiv">
@@ -246,9 +243,9 @@ export function Navbar(){
                                 NFT <span className="scale_borders" />
                             </button>
                             <div className="options" id="options4">
-                                <span className="opt_kids">Overview</span>
+                                <span id={'ovr'} className="opt_kids">Overview</span>
                                 <span className="opt_kids">Collections</span>
-                                <span className="opt_kids">Activity</span>
+                                <span id={'act'} className="opt_kids">Activity</span>
                             </div>
                         </div>
                         <div id="TradeDiv5" className="TradeDiv">
@@ -262,7 +259,7 @@ export function Navbar(){
             </span>
                             </button>
                             <div className="options" id="options5">
-                                <span className="opt_kids">Info</span>
+                                <span id={'info'} className="opt_kids">Info</span>
                                 <a id="ifo" href="IFO.html">
                                     <span className="opt_kids">IFO</span>
                                 </a>
@@ -273,12 +270,8 @@ export function Navbar(){
                                 <a id="ooo" href="leaderboard.html">
                                     <span className="opt_kids">Leaderboard</span>
                                 </a>
-                                <span className="opt_kids" id="blog">
-              Blog <img src="images/l-arrow.svg" />
-            </span>
-                                <span className="opt_kids" id="docs">
-              Docs <img src="images/l-arrow.svg" />{" "}
-            </span>
+                                <span className="opt_kids" id="blog">Blog <img src="images/l-arrow.svg" /></span>
+                                <span className="opt_kids" id="docs">Docs <img src="images/l-arrow.svg" />{" "}</span>
                             </div>
                         </div>
                     </div>
@@ -292,61 +285,53 @@ export function Navbar(){
                         <div id="TradeDiv6" className="TradeDiv2">
                             <img className="imgs" id="img_globe" src="images/globe.svg" />
                             <div className="options" id="options7">
-                                <ul className="list">
-                                    <li>العربية</li>
-                                    <li>বাংলা</li>
-                                    <li>English</li>
-                                    <li>Deutsch</li>
-                                    <li>Ελληνικά</li>
-                                    <li>Español</li>
-                                    <li>Suomalainen</li>
-                                    <li>Filipino</li>
-                                    <li>Français</li>
-                                    <li>हिंदी</li>
-                                    <li>Magyar</li>
-                                    <li>Bahasa Indonesia</li>
-                                    <li>Italiano</li>
-                                    <li>日本語</li>
-                                    <li>한국어</li>
-                                    <li>Nederlands</li>
-                                    <li>Polski</li>
-                                    <li>Português (Brazil)</li>
-                                    <li>Português</li>
-                                    <li>Română</li>
-                                    <li>Русский</li>
-                                    <li>Svenska</li>
-                                    <li>தமிழ்</li>
-                                    <li>Türkçe</li>
-                                    <li>Українська</li>
-                                    <li>Tiếng Việt</li>
-                                    <li>简体中文</li>
-                                    <li>繁體中文</li>
-                                </ul>
+                                    <span>العربية</span>
+                                    <span>বাংলা</span>
+                                    <span>Engspansh</span>
+                                    <span>Deutsch</span>
+                                    <span>Ελληνικά</span>
+                                    <span>Español</span>
+                                    <span>Suomalainen</span>
+                                    <span>Fispanpino</span>
+                                    <span>Français</span>
+                                    <span>हिंदी</span>
+                                    <span>Magyar</span>
+                                    <span>Bahasa Indonesia</span>
+                                    <span>Itaspanano</span>
+                                    <span>日本語</span>
+                                    <span>한국어</span>
+                                    <span>Nederlands</span>
+                                    <span>Polski</span>
+                                    <span>Português (Brazil)</span>
+                                    <span>Português</span>
+                                    <span>Română</span>
+                                    <span>Русский</span>
+                                    <span>Svenska</span>
+                                    <span>தமிழ்</span>
+                                    <span>Türkçe</span>
+                                    <span>Українська</span>
+                                    <span>Tiếng Việt</span>
+                                    <span>简体中文</span>
+                                    <span>繁體中文</span>
                             </div>
                         </div>
                         <img className="imgs" id="img_settings" src="images/settings.svg" />
                         <div id="TradeDiv7" className="TradeDiv3">
           <span id="div_bnb" className="div_bnb">
             <img className="imgs" id="img_bnb" src="images/56.png" />
-            <p id="bnb_word" className="bnb_word">
-              BNB Smart Chain
-            </p>
-            <img
-                className="imgs"
-                id="down_arrow"
-                src="images/down arrow.svg"
-                alt=""
-            />
+            <p id="bnb_word" className="bnb_word">BNB Smart Chain</p>
+              <img className='darr' src='images/downarr.svg'/>
           </span>
                             <div id="options6">
-                                <span className="opt_kids">Select a network</span>
+                                <span id={'sln'} className="opt_kids">Select a network</span>
                                 <span className="opt_kids">BNB Smart Chain</span>
                                 <span className="opt_kids">Ethereum</span>
-                                <span className="opt_kids">Aptos</span>
+                                <span id={'apt'} className="opt_kids">Aptos</span>
                             </div>
                         </div>
+                        <div className="btn_cwallect">Connect Wallet</div>
                     </div>
-                    <div className="btn_cwallect">Connect Wallet</div>
+
                 </div>
             </div>
             )
