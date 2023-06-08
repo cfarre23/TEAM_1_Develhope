@@ -1,4 +1,4 @@
-import './Swap'
+import './Swap.css'
 import './styles.css'
 import {Navbar} from "./Hompage";
 export function SwapPage(){

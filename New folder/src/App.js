@@ -11,8 +11,8 @@ import { useMediaQuery } from 'react-responsive'
 function App() {
 
   return (
+      // place your page inside this div like  <div><Hompage/></div> or <div><Hompage></Hompage></div>
       <div>
-       <Hompage></Hompage>
       </div>
 
   )

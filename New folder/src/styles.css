@@ -361,7 +361,7 @@ body{
     border: 1px solid #383241;
 }
 #o,#oo,#ooo,#ifo{
-   height: 48px;
+    height: 48px;
     display: inline-flex;
 }
 
