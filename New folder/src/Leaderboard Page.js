@@ -8,7 +8,6 @@ export function LeaderboardPage(){
     })
     return(
         <>
-           <Navbar></Navbar>
             <div id="leaderboard_div1">
                 <div className="leaderboard_div2">
                     <div className="inner_board">
