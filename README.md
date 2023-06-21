@@ -1,45 +1,25 @@
 <a name="readme-top"></a>
 
 
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
-
-
 <br />
 <div align="center">
   <a href="https://github.com/AliZadil/TEAM_1_Develhope">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/favicon.ico" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">PancakeSwap Clone Project</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    A team project where four students of Develhope learn and develope!
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://www.canva.com/design/DAFj_Z-V7Fo/39kqMUeqrZe1NW9zwaLs8g/edit?utm_content=DAFj_Z-V7Fo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"><strong>Explore the presentation »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://alizadil.github.io/TEAM_1_Develhope/">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://alizadil.github.io/TEAM_1_Develhope/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://alizadil.github.io/TEAM_1_Develhope/issues">Request Feature</a>
   </p>
 </div>
 
@@ -76,7 +56,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]]([https://example.com](https://document-export.canva.com/8E2FU/DAFl-38E2FU/1/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20230621%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230621T180409Z&X-Amz-Expires=10432&X-Amz-Signature=99319fdb299cf44a8b45eee2aa6253985ed7d6b3d377ff37f2ae01a7ca06a8e9&X-Amz-SignedHeaders=host&response-expires=Wed%2C%2021%20Jun%202023%2020%3A58%3A01%20GMT))
 
 There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
@@ -97,14 +77,7 @@ Use the `BLANK_README.md` to get started.
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -243,7 +216,7 @@ Use this space to list resources you find helpful and would like to give credit 
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: https://document-export.canva.com/8E2FU/DAFl-38E2FU/1/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20230621%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230621T180409Z&X-Amz-Expires=10432&X-Amz-Signature=99319fdb299cf44a8b45eee2aa6253985ed7d6b3d377ff37f2ae01a7ca06a8e9&X-Amz-SignedHeaders=host&response-expires=Wed%2C%2021%20Jun%202023%2020%3A58%3A01%20GMT
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
