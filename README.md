@@ -56,7 +56,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<div align="center">[![Product Name Screen Shot][product-screenshot]](https://document-export.canva.com/8E2FU/DAFl-38E2FU/1/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20230621%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230621T180409Z&X-Amz-Expires=10432&X-Amz-Signature=99319fdb299cf44a8b45eee2aa6253985ed7d6b3d377ff37f2ae01a7ca06a8e9&X-Amz-SignedHeaders=host&response-expires=Wed%2C%2021%20Jun%202023%2020%3A58%3A01%20GMT)</div>
+[![Product Name Screen Shot][product-screenshot]](https://document-export.canva.com/8E2FU/DAFl-38E2FU/1/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20230621%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230621T180409Z&X-Amz-Expires=10432&X-Amz-Signature=99319fdb299cf44a8b45eee2aa6253985ed7d6b3d377ff37f2ae01a7ca06a8e9&X-Amz-SignedHeaders=host&response-expires=Wed%2C%2021%20Jun%202023%2020%3A58%3A01%20GMT)
 
 There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
