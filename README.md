@@ -17,9 +17,9 @@
     <br />
     <a href="https://alizadil.github.io/TEAM_1_Develhope/">View Demo</a>
     ·
-    <a href="https://alizadil.github.io/TEAM_1_Develhope/issues">Report Bug</a>
+    <a href="https://github.com/AliZadil/TEAM_1_Develhope/issues">Report Bug</a>
     ·
-    <a href="https://alizadil.github.io/TEAM_1_Develhope/issues">Request Feature</a>
+    <a href="https://github.com/AliZadil/TEAM_1_Develhope/issues">Request Feature</a>
   </p>
 </div>
 
